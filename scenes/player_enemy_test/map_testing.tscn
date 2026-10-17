@@ -1,6 +1,11 @@
 [gd_scene format=3 uid="uid://q17pnta0048x"]
 
+[ext_resource type="Script" uid="uid://b7v0fcc8vbytj" path="res://scripts/tests/test_combat.gd" id="1_dpoos"]
 [ext_resource type="PackedScene" uid="uid://6a76tged43n0" path="res://scenes/enemy_movement/moving_enemy.tscn" id="1_e5i3t"]
+[ext_resource type="Script" uid="uid://dvmox6kffbnxp" path="res://scripts/health_component.gd" id="3_kcrdd"]
+[ext_resource type="Script" uid="uid://cxgnm2ph6v17j" path="res://scripts/hitbox.gd" id="4_o15l4"]
+[ext_resource type="Script" uid="uid://c0ces1i788qmt" path="res://scripts/hurtbox.gd" id="5_1sprn"]
+[ext_resource type="Script" uid="uid://cwqpobp1lgjry" path="res://scripts/tests/player.gd" id="6_5qeqh"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rm5gi"]
 
@@ -12,17 +17,27 @@ size = Vector2(9, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_08kbh"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7q7yw"]
+size = Vector2(10, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_02dbs"]
+size = Vector2(8, 3)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ti7dk"]
+size = Vector2(10, 10)
+
 [node name="Node2D" type="Node2D" unique_id=2037404271]
+script = ExtResource("1_dpoos")
 
 [node name="Floor" type="StaticBody2D" parent="." unique_id=1944496507]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=1574802846]
 shape = SubResource("WorldBoundaryShape2D_rm5gi")
 
-[node name="MovingEnemy" parent="." unique_id=148833900 instance=ExtResource("1_e5i3t")]
+[node name="Enemy" parent="." unique_id=148833900 instance=ExtResource("1_e5i3t")]
 position = Vector2(28, -6)
 
-[node name="ColorRect" type="ColorRect" parent="MovingEnemy" unique_id=944508223]
+[node name="ColorRect" type="ColorRect" parent="Enemy" unique_id=944508223]
 offset_left = -5.0
 offset_top = -6.0
 offset_right = 5.0
@@ -38,10 +53,10 @@ position = Vector2(-31, -39)
 position = Vector2(-23, 16)
 shape = SubResource("RectangleShape2D_rm5gi")
 
-[node name="MovingEnemy2" parent="." unique_id=1562208550 instance=ExtResource("1_e5i3t")]
+[node name="Enemy2" parent="." unique_id=1562208550 instance=ExtResource("1_e5i3t")]
 position = Vector2(-55, -32)
 
-[node name="ColorRect" type="ColorRect" parent="MovingEnemy2" unique_id=1861479702]
+[node name="ColorRect" type="ColorRect" parent="Enemy2" unique_id=1861479702]
 offset_left = -5.0
 offset_top = -6.0
 offset_right = 5.0
@@ -58,3 +73,42 @@ position = Vector2(47, -11)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2" unique_id=1174089271]
 shape = SubResource("RectangleShape2D_08kbh")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=632708249]
+position = Vector2(-12, -7)
+collision_layer = 512
+script = ExtResource("6_5qeqh")
+
+[node name="ColorRect" type="ColorRect" parent="Player" unique_id=846697604]
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 5.0
+offset_bottom = 5.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1757686840]
+shape = SubResource("RectangleShape2D_7q7yw")
+
+[node name="Hitbox" type="Area2D" parent="Player" unique_id=417439175]
+position = Vector2(7, -1)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4_o15l4")
+metadata/_custom_type_script = "uid://cxgnm2ph6v17j"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Hitbox" unique_id=333700366]
+shape = SubResource("RectangleShape2D_02dbs")
+
+[node name="Hurtbox" type="Area2D" parent="Player" unique_id=1750284027 node_paths=PackedStringArray("health")]
+collision_layer = 0
+collision_mask = 4
+script = ExtResource("5_1sprn")
+health = NodePath("../HealthComponent")
+metadata/_custom_type_script = "uid://c0ces1i788qmt"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Hurtbox" unique_id=470707258]
+shape = SubResource("RectangleShape2D_ti7dk")
+
+[node name="HealthComponent" type="Node" parent="Player" unique_id=1147437262]
+script = ExtResource("3_kcrdd")
+metadata/_custom_type_script = "uid://dvmox6kffbnxp"
