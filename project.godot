@@ -40,6 +40,11 @@ jump={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_2="player_hitbox"
+2d_physics/layer_3="enemy_hitbox"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

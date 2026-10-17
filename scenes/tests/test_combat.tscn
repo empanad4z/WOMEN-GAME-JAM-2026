@@ -1,0 +1,148 @@
+[gd_scene format=3 uid="uid://52x6tjj6dyfb"]
+
+[ext_resource type="Script" uid="uid://b7v0fcc8vbytj" path="res://scripts/tests/test_combat.gd" id="1_kvn21"]
+[ext_resource type="Script" uid="uid://cwqpobp1lgjry" path="res://scripts/tests/player.gd" id="1_wv7lx"]
+[ext_resource type="Script" uid="uid://dvmox6kffbnxp" path="res://scripts/health_component.gd" id="2_q87vi"]
+[ext_resource type="Script" uid="uid://cxgnm2ph6v17j" path="res://scripts/hitbox.gd" id="4_cvkga"]
+[ext_resource type="Script" uid="uid://c0ces1i788qmt" path="res://scripts/hurtbox.gd" id="5_n617u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_blf6y"]
+size = Vector2(38, 38)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qa2gp"]
+size = Vector2(42, 42)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xg6vf"]
+size = Vector2(38, 38)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+size = Vector2(38, 38)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pukvj"]
+size = Vector2(42, 42)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gnvis"]
+size = Vector2(40, 40)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6pmnr"]
+
+[node name="TestCombat" type="Node2D" unique_id=881664125]
+script = ExtResource("1_kvn21")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=342993636]
+position = Vector2(13, -52)
+script = ExtResource("1_wv7lx")
+
+[node name="ColorRect" type="ColorRect" parent="Player" unique_id=1272125333]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=468700151]
+position = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_blf6y")
+
+[node name="Hitbox" type="Area2D" parent="Player" unique_id=159628239]
+position = Vector2(47, 15)
+scale = Vector2(0.725351, 0.13943073)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4_cvkga")
+metadata/_custom_type_script = "uid://cxgnm2ph6v17j"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Hitbox" unique_id=688723968]
+shape = SubResource("RectangleShape2D_qa2gp")
+
+[node name="Hurtbox" type="Area2D" parent="Player" unique_id=1181559669 node_paths=PackedStringArray("health")]
+position = Vector2(20, 20)
+collision_layer = 0
+collision_mask = 4
+script = ExtResource("5_n617u")
+health = NodePath("../HealthComponent")
+metadata/_custom_type_script = "uid://c0ces1i788qmt"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Hurtbox" unique_id=1631528803]
+shape = SubResource("RectangleShape2D_xg6vf")
+
+[node name="HealthComponent" type="Node" parent="Player" unique_id=1450361904]
+script = ExtResource("2_q87vi")
+metadata/_custom_type_script = "uid://dvmox6kffbnxp"
+
+[node name="Enemy" type="CharacterBody2D" parent="." unique_id=2057771559]
+position = Vector2(163, -42)
+
+[node name="ColorRect" type="ColorRect" parent="Enemy" unique_id=700763540]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=764835941]
+position = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_6pmnr")
+
+[node name="Hurtbox" type="Area2D" parent="Enemy" unique_id=1289838684 node_paths=PackedStringArray("health")]
+position = Vector2(20, 19)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("5_n617u")
+health = NodePath("../HealthComponent")
+metadata/_custom_type_script = "uid://c0ces1i788qmt"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/Hurtbox" unique_id=1939212536]
+shape = SubResource("RectangleShape2D_pukvj")
+
+[node name="HealthComponent" type="Node" parent="Enemy" unique_id=2040614334]
+script = ExtResource("2_q87vi")
+metadata/_custom_type_script = "uid://dvmox6kffbnxp"
+
+[node name="Hitbox" type="Area2D" parent="Enemy" unique_id=1992127585]
+position = Vector2(20, 20)
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("4_cvkga")
+metadata/_custom_type_script = "uid://cxgnm2ph6v17j"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/Hitbox" unique_id=897026444]
+shape = SubResource("RectangleShape2D_gnvis")
+
+[node name="Enemy2" type="CharacterBody2D" parent="." unique_id=128562055]
+position = Vector2(197, -41)
+
+[node name="ColorRect" type="ColorRect" parent="Enemy2" unique_id=43521450]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy2" unique_id=1017348193]
+position = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_6pmnr")
+
+[node name="Hurtbox" type="Area2D" parent="Enemy2" unique_id=98405173 node_paths=PackedStringArray("health")]
+position = Vector2(20, 19)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("5_n617u")
+health = NodePath("../HealthComponent")
+metadata/_custom_type_script = "uid://c0ces1i788qmt"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy2/Hurtbox" unique_id=1617774871]
+shape = SubResource("RectangleShape2D_pukvj")
+
+[node name="HealthComponent" type="Node" parent="Enemy2" unique_id=2067802235]
+script = ExtResource("2_q87vi")
+metadata/_custom_type_script = "uid://dvmox6kffbnxp"
+
+[node name="Hitbox" type="Area2D" parent="Enemy2" unique_id=2118432974]
+position = Vector2(20, 20)
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("4_cvkga")
+metadata/_custom_type_script = "uid://cxgnm2ph6v17j"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy2/Hitbox" unique_id=1945357949]
+shape = SubResource("RectangleShape2D_gnvis")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2061903223]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1702852705]
+shape = SubResource("WorldBoundaryShape2D_6pmnr")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=132873790]
+position = Vector2(141, -119)
