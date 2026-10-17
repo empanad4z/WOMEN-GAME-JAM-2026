@@ -2,12 +2,19 @@
 
 [ext_resource type="Script" uid="uid://dj45qlw41gtib" path="res://scripts/game_over.gd" id="1_xeevv"]
 
-[node name="game_over" type="Control" unique_id=913253484]
-layout_mode = 3
-anchors_preset = 0
+[node name="game_over" type="CanvasLayer" unique_id=1333393699]
+process_mode = 3
 script = ExtResource("1_xeevv")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=915431203]
+[node name="Control" type="Control" parent="." unique_id=104582015]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=915431203]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,30 +24,32 @@ grow_vertical = 2
 offset_transform_enabled = true
 color = Color(0.011764706, 0.011764706, 0.011764706, 0.49019608)
 
-[node name="PanelContainer" type="PanelContainer" parent="." unique_id=662189429]
-custom_minimum_size = Vector2(300, 150)
+[node name="PanelContainer" type="PanelContainer" parent="Control" unique_id=662189429]
+custom_minimum_size = Vector2(500, 400)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 154.0
-offset_top = 131.0
-offset_right = 454.0
-offset_bottom = 281.0
+offset_left = -150.0
+offset_top = -75.0
+offset_right = 150.0
+offset_bottom = 75.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=2082587864]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/PanelContainer" unique_id=2082587864]
 layout_mode = 2
 theme_override_constants/separation = 15
 
-[node name="Label" type="Label" parent="PanelContainer/VBoxContainer" unique_id=725658627]
+[node name="Label" type="Label" parent="Control/PanelContainer/VBoxContainer" unique_id=725658627]
 layout_mode = 2
 text = "Game Over!"
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="PanelContainer/VBoxContainer" unique_id=673829861]
+[node name="Button" type="Button" parent="Control/PanelContainer/VBoxContainer" unique_id=673829861]
 layout_mode = 2
 text = "Reiniciar"
+
+[connection signal="pressed" from="Control/PanelContainer/VBoxContainer/Button" to="." method="_on_boton_reiniciar_pressed"]

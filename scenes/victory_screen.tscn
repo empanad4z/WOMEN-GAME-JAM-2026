@@ -2,16 +2,18 @@
 
 [ext_resource type="Script" uid="uid://bs4afgcibk37c" path="res://scripts/victory_screen.gd" id="1_ujlt3"]
 
-[node name="Victoryscreen" type="Control" unique_id=1379223172]
+[node name="Victoryscreen" type="CanvasLayer" unique_id=1184947720]
+script = ExtResource("1_ujlt3")
+
+[node name="Control" type="Control" parent="." unique_id=1031505047]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ujlt3")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=556440450]
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=556440450]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,30 +22,32 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.27297407, 0.7695758, 0.32437554, 0.4862745)
 
-[node name="PanelContainer" type="PanelContainer" parent="." unique_id=468397703]
-custom_minimum_size = Vector2(300, 150)
+[node name="PanelContainer" type="PanelContainer" parent="Control" unique_id=468397703]
+custom_minimum_size = Vector2(500, 400)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+offset_left = -150.0
+offset_top = -75.0
+offset_right = 150.0
+offset_bottom = 75.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1077937930]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/PanelContainer" unique_id=1077937930]
 layout_mode = 2
 theme_override_constants/separation = 15
 
-[node name="Label" type="Label" parent="PanelContainer/VBoxContainer" unique_id=2017560638]
+[node name="Label" type="Label" parent="Control/PanelContainer/VBoxContainer" unique_id=2017560638]
 layout_mode = 2
 text = "Nivel Completado!"
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="PanelContainer/VBoxContainer" unique_id=2070536313]
+[node name="Button" type="Button" parent="Control/PanelContainer/VBoxContainer" unique_id=2070536313]
 layout_mode = 2
 text = "Siguiente Nivel"
+
+[connection signal="pressed" from="Control/PanelContainer/VBoxContainer/Button" to="." method="_on_boton_siguiente_pressed"]
