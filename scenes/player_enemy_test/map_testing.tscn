@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://q17pnta0048x"]
+
+[ext_resource type="PackedScene" uid="uid://6a76tged43n0" path="res://scenes/enemy_movement/moving_enemy.tscn" id="1_e5i3t"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rm5gi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rm5gi"]
+size = Vector2(36, 9)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrxyo"]
+size = Vector2(9, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_08kbh"]
+
+[node name="Node2D" type="Node2D" unique_id=2037404271]
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=1944496507]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=1574802846]
+shape = SubResource("WorldBoundaryShape2D_rm5gi")
+
+[node name="MovingEnemy" parent="." unique_id=148833900 instance=ExtResource("1_e5i3t")]
+position = Vector2(28, -6)
+
+[node name="ColorRect" type="ColorRect" parent="MovingEnemy" unique_id=944508223]
+offset_left = -5.0
+offset_top = -6.0
+offset_right = 5.0
+offset_bottom = 4.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=125589772]
+zoom = Vector2(5, 5)
+
+[node name="Platform" type="StaticBody2D" parent="." unique_id=1469165135]
+position = Vector2(-31, -39)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform" unique_id=1522721813]
+position = Vector2(-23, 16)
+shape = SubResource("RectangleShape2D_rm5gi")
+
+[node name="MovingEnemy2" parent="." unique_id=1562208550 instance=ExtResource("1_e5i3t")]
+position = Vector2(-55, -32)
+
+[node name="ColorRect" type="ColorRect" parent="MovingEnemy2" unique_id=1861479702]
+offset_left = -5.0
+offset_top = -6.0
+offset_right = 5.0
+offset_bottom = 4.0
+
+[node name="Wall1" type="StaticBody2D" parent="." unique_id=1053780305]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall1" unique_id=1770047047]
+position = Vector2(-28.5, -11)
+shape = SubResource("RectangleShape2D_xrxyo")
+
+[node name="Wall2" type="StaticBody2D" parent="." unique_id=1959164312]
+position = Vector2(47, -11)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2" unique_id=1174089271]
+shape = SubResource("RectangleShape2D_08kbh")
