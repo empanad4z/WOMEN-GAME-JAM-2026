@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://6a76tged43n0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_00287"]
+size = Vector2(10, 10)
+
+[node name="MovingEnemy" type="CharacterBody2D" unique_id=148833900]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1900815128]
+position = Vector2(0, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=705002578]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_00287")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=754141803]
+position = Vector2(-8, -40)
+
+[node name="RayCast2D2" type="RayCast2D" parent="." unique_id=1329303648]
+position = Vector2(9.536743e-07, -2)
+rotation = 1.5707964
+scale = Vector2(0.17, 0.17)
