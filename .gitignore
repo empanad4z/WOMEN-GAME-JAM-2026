@@ -5,6 +5,10 @@
 .godot/
 .nomedia
 
+# Ignorar archivos UID y remap temporales si aparecen fuera de la carpeta .godot
+*.uid
+*.remap
+
 # Godot-specific ignores
 .import/
 export.cfg
