@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://6a76tged43n0"]
 
-[ext_resource type="Script" uid="uid://c3jdqn8fc3v1i" path="res://scripts/enemy_movement/moving_enemy.gd" id="1_4baig"]
+[ext_resource type="Script" uid="uid://d33mpiqtf48ki" path="res://scripts/enemy_movement/moving_enemy.gd" id="1_4baig"]
 [ext_resource type="Script" uid="uid://c0ces1i788qmt" path="res://scripts/hurtbox.gd" id="1_12gsx"]
 [ext_resource type="Script" uid="uid://cxgnm2ph6v17j" path="res://scripts/hitbox.gd" id="2_4baig"]
 [ext_resource type="Script" uid="uid://dvmox6kffbnxp" path="res://scripts/health_component.gd" id="4_smecd"]
@@ -13,6 +13,9 @@ size = Vector2(12, 11)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrxyo"]
 size = Vector2(10, 11)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rm5gi"]
+radius = 25.079872
 
 [node name="MovingEnemy" type="CharacterBody2D" unique_id=148833900]
 script = ExtResource("1_4baig")
@@ -55,3 +58,10 @@ position = Vector2(-8, -40)
 position = Vector2(9.536743e-07, -2)
 rotation = 1.5707964
 scale = Vector2(0.17, 0.17)
+
+[node name="Detection" type="Area2D" parent="." unique_id=540425880]
+collision_layer = 0
+collision_mask = 512
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detection" unique_id=400337840]
+shape = SubResource("CircleShape2D_rm5gi")
