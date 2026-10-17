@@ -34,7 +34,7 @@ func patrol():
 	velocity.x = -speed if is_moving_left else speed
 	
 func chase():
-	print("Detecta a player")
+	#print("Detecta a player")
 	var dir = target.global_position.x - global_position.x
 	if absf(dir) < 4.0:
 		velocity.x = 0
