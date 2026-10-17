@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://6a76tged43n0"]
+
+[ext_resource type="Script" uid="uid://c3jdqn8fc3v1i" path="res://scripts/enemy_movement/moving_enemy.gd" id="1_4baig"]
+[ext_resource type="Script" uid="uid://c0ces1i788qmt" path="res://scripts/hurtbox.gd" id="1_12gsx"]
+[ext_resource type="Script" uid="uid://cxgnm2ph6v17j" path="res://scripts/hitbox.gd" id="2_4baig"]
+[ext_resource type="Script" uid="uid://dvmox6kffbnxp" path="res://scripts/health_component.gd" id="4_smecd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_00287"]
+size = Vector2(10, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rm5gi"]
+size = Vector2(12, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrxyo"]
+size = Vector2(10, 11)
+
+[node name="MovingEnemy" type="CharacterBody2D" unique_id=148833900]
+script = ExtResource("1_4baig")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=705002578]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_00287")
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=1002235309 node_paths=PackedStringArray("health")]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_12gsx")
+health = NodePath("../HealthComponent")
+metadata/_custom_type_script = "uid://c0ces1i788qmt"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=170630288]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_rm5gi")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=250105442]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("2_4baig")
+metadata/_custom_type_script = "uid://cxgnm2ph6v17j"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=470660758]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_xrxyo")
+
+[node name="HealthComponent" type="Node" parent="." unique_id=1261842416]
+script = ExtResource("4_smecd")
+metadata/_custom_type_script = "uid://dvmox6kffbnxp"
+
+[node name="Pivot" type="Node2D" parent="." unique_id=527775122]
+
+[node name="RayCast2D" type="RayCast2D" parent="Pivot" unique_id=754141803]
+position = Vector2(-8, -40)
+
+[node name="RayCast2D2" type="RayCast2D" parent="Pivot" unique_id=1329303648]
+position = Vector2(9.536743e-07, -2)
+rotation = 1.5707964
+scale = Vector2(0.17, 0.17)
