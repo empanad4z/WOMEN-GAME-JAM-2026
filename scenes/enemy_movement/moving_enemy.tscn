@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://6a76tged43n0"]
 
-[ext_resource type="Script" uid="uid://c3jdqn8fc3v1i" path="res://scripts/enemy_movement/moving_enemy.gd" id="1_4baig"]
+[ext_resource type="Script" uid="uid://d33mpiqtf48ki" path="res://scripts/enemy_movement/moving_enemy.gd" id="1_4baig"]
 [ext_resource type="Script" uid="uid://c0ces1i788qmt" path="res://scripts/hurtbox.gd" id="1_12gsx"]
 [ext_resource type="Script" uid="uid://cxgnm2ph6v17j" path="res://scripts/hitbox.gd" id="2_4baig"]
 [ext_resource type="Script" uid="uid://dvmox6kffbnxp" path="res://scripts/health_component.gd" id="4_smecd"]
@@ -15,6 +15,7 @@ size = Vector2(12, 11)
 size = Vector2(10, 11)
 
 [node name="MovingEnemy" type="CharacterBody2D" unique_id=148833900]
+collision_layer = 16
 script = ExtResource("1_4baig")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=705002578]
