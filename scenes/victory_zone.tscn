@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://begmy88w5vc3v"]
 
-[ext_resource type="Texture2D" uid="uid://dvmnx7ra4jof5" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/fourSeasonsPlatformer_ [tileset, version 2.0]/objects_/coin_.png" id="1_4da8e"]
 [ext_resource type="Script" uid="uid://wgwchgu2k8xq" path="res://scripts/victory_zone.gd" id="1_qkseb"]
+[ext_resource type="Texture2D" uid="uid://b7vja5n06yixe" path="res://assets/sprites/pruebas/knight/coin.png" id="2_qkseb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fcw7g"]
 radius = 6.0
@@ -14,7 +14,7 @@ script = ExtResource("1_qkseb")
 shape = SubResource("CircleShape2D_fcw7g")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1410906333]
-texture = ExtResource("1_4da8e")
+texture = ExtResource("2_qkseb")
 region_enabled = true
 region_rect = Rect2(3, 3, 10, 10)
 
