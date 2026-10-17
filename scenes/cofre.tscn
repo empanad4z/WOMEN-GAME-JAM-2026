@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://dawhbj8fa33hi"]
+
+[ext_resource type="Texture2D" uid="uid://dvmnx7ra4jof5" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/fourSeasonsPlatformer_ [tileset, version 2.0]/objects_/coin_.png" id="1_aie4e"]
+[ext_resource type="Script" uid="uid://cx5g4u8i2wei7" path="res://scripts/cofre.gd" id="2_71iw2"]
+[ext_resource type="Resource" uid="uid://d13vsl140tfsn" path="res://dialoges/objetos.dialogue" id="3_71iw2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x654f"]
+radius = 5.3851647
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lw0iv"]
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1013539641]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=729763723]
+texture = ExtResource("1_aie4e")
+hframes = 12
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2146741679]
+shape = SubResource("CircleShape2D_x654f")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=609910822 node_paths=PackedStringArray("prompt")]
+script = ExtResource("2_71iw2")
+dialogue = ExtResource("3_71iw2")
+title = "Cofre"
+prompt = NodePath("Label")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1602016234]
+shape = SubResource("CircleShape2D_lw0iv")
+
+[node name="Label" type="Label" parent="Area2D" unique_id=1297809070]
+visible = false
+offset_right = 40.0
+offset_bottom = 23.0
+text = "E"
