@@ -18,6 +18,7 @@ size = Vector2(10, 11)
 radius = 25.079872
 
 [node name="MovingEnemy" type="CharacterBody2D" unique_id=148833900]
+collision_layer = 16
 script = ExtResource("1_4baig")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=705002578]
@@ -61,7 +62,7 @@ scale = Vector2(0.17, 0.17)
 
 [node name="Detection" type="Area2D" parent="." unique_id=540425880]
 collision_layer = 0
-collision_mask = 512
+collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detection" unique_id=400337840]
 shape = SubResource("CircleShape2D_rm5gi")
