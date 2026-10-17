@@ -12,7 +12,7 @@ Estas instrucciones valen para todas las personas del equipo que trabajen en est
 - Escena principal: `scenes/main.tscn` (raíz `Node2D` llamada `Main`).
 - Carpetas: `scenes/` (.tscn), `scripts/` (.gd), `ui/`, `assets/sprites/`, `assets/audio/`, `assets/fonts/`. Respetá esta estructura; no crees carpetas nuevas sin motivo.
 - Indentación de GDScript: tabs (definido en `.editorconfig`).
-- Acciones de input ya creadas en `project.godot`: `move_left` (flecha izquierda), `move_right` (flecha derecha), `jump` (espacio). Usá `Input.is_action_pressed("jump")`, nunca teclas fijas en el código.
+- Acciones de input ya creadas en `project.godot`: `move_left` (tecla A), `move_right` (tecla D), `jump` (tecla Z), `attack` (tecla X), `sprint` (Shift). Usá `Input.is_action_pressed("jump")`, nunca teclas fijas en el código.
 - Documentación oficial: https://docs.godotengine.org/es/stable/ (verificá siempre que la API sea de Godot 4, no de Godot 3).
 - No edites `project.godot` ni `export_presets.cfg` mientras Godot está abierto: el editor puede sobrescribir los cambios. Pedí que lo cierren antes.
 

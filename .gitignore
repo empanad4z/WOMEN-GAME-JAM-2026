@@ -5,8 +5,7 @@
 .godot/
 .nomedia
 
-# Ignorar archivos UID y remap temporales si aparecen fuera de la carpeta .godot
-*.uid
+# Ignorar archivos remap temporales si aparecen fuera de la carpeta .godot
 *.remap
 
 # Godot-specific ignores
