@@ -6,6 +6,14 @@
 [ext_resource type="Texture2D" uid="uid://bvt4otrpginxb" path="res://assets/sprites/pruebas/knight/knight.png" id="2_qlg0r"]
 [ext_resource type="Script" uid="uid://cxgnm2ph6v17j" path="res://scripts/hitbox.gd" id="3_qhqgy"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujl30"]
+atlas = ExtResource("2_qlg0r")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31cv2"]
+atlas = ExtResource("2_qlg0r")
+region = Rect2(128, 64, 32, 32)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_tuyoq"]
 atlas = ExtResource("2_qlg0r")
 region = Rect2(0, 0, 32, 32)
@@ -92,6 +100,17 @@ region = Rect2(224, 96, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y4r1p"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujl30")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31cv2")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_tuyoq")
@@ -189,9 +208,8 @@ script = ExtResource("1_dqkch")
 position = Vector2(6.5599976, -4.4400024)
 scale = Vector2(5.535, 5.535)
 sprite_frames = SubResource("SpriteFrames_y4r1p")
-animation = &"jump"
+animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.20929268
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1642977503]
 position = Vector2(6.950012, 16.559998)
@@ -207,6 +225,7 @@ collision_layer = 0
 collision_mask = 4
 script = ExtResource("2_qhqgy")
 health = NodePath("../HealthComponent")
+invincibility_time = 1.0
 metadata/_custom_type_script = "uid://c0ces1i788qmt"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=1052719299]

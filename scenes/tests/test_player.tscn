@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b7v0fcc8vbytj" path="res://scripts/tests/test_combat.gd" id="1_6rgxd"]
 [ext_resource type="PackedScene" uid="uid://dcnimqo3mepwo" path="res://scenes/player.tscn" id="1_om70x"]
 [ext_resource type="PackedScene" uid="uid://6a76tged43n0" path="res://scenes/enemy_movement/moving_enemy.tscn" id="2_16x7c"]
+[ext_resource type="PackedScene" uid="uid://m0xgjtncfmwx" path="res://scenes/killzone.tscn" id="4_4norh"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6pmnr"]
 
@@ -23,3 +24,6 @@ position = Vector2(-456, -110)
 [node name="Enemy" parent="." unique_id=148833900 instance=ExtResource("2_16x7c")]
 position = Vector2(129.00003, -76)
 scale = Vector2(5.5, 5.5551763)
+
+[node name="Killzone" parent="." unique_id=2068063459 instance=ExtResource("4_4norh")]
+position = Vector2(343, -765)

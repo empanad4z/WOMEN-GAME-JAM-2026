@@ -4,6 +4,7 @@ extends CharacterBody2D
 const SPEED = 250.0
 const SPRINT_SPEED = 450.0
 const JUMP_VELOCITY = -400.0
+const GAME_OVER_SCENE := preload("res://scenes/game_over.tscn")
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var hitbox_shape: CollisionShape2D = $Hitbox/CollisionShape2D
@@ -11,7 +12,22 @@ const JUMP_VELOCITY = -400.0
 
 var is_attacking := false
 
+func _on_invincibility_started(duration: float) -> void:
+	var tween := create_tween().set_loops(int(duration / 0.2))
+	tween.tween_property(animated_sprite_2d, "modulate:a", 0.2, 0.1)   # se apaga
+	tween.tween_property(animated_sprite_2d, "modulate:a", 1.0, 0.1)   # se prende
+
+func _on_died():
+	var screen := GAME_OVER_SCENE.instantiate()
+	get_tree().root.add_child(screen)
+	get_tree().paused = true
+
+func _ready() -> void:
+	$Hurtbox.invincibility_started.connect(_on_invincibility_started)
+	$HealthComponent.died.connect(_on_died)
+
 func attack() -> void:
+	animated_sprite_2d.play("attack")
 	is_attacking = true
 	hitbox_shape.set_deferred("disabled", false)
 	await get_tree().create_timer(0.15).timeout
@@ -43,13 +59,15 @@ func _physics_process(delta: float) -> void:
 		hitbox.position.x = -abs(hitbox.position.x)
 		
 	# Player animations
-	if is_on_floor():
-		if direction == 0:
-			animated_sprite_2d.play("idle")
+	var is_attack_anim_playing := animated_sprite_2d.animation == "attack" and animated_sprite_2d.is_playing()
+	if not is_attack_anim_playing:
+		if is_on_floor():
+			if direction == 0:
+				animated_sprite_2d.play("idle")
+			else:
+				animated_sprite_2d.play("run")
 		else:
-			animated_sprite_2d.play("run")
-	else:
-		animated_sprite_2d.play("jump")
+			animated_sprite_2d.play("jump")
 	
 	# Apply movement
 	if direction:
