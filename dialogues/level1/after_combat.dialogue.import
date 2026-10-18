@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://gcrwsf207o5r"
+path="res://.godot/imported/after_combat.dialogue-c7648e230fcc5d672598f961d416e82d.tres"
+
+[deps]
+
+source_file="res://dialogues/level1/after_combat.dialogue"
+dest_files=["res://.godot/imported/after_combat.dialogue-c7648e230fcc5d672598f961d416e82d.tres"]
+
+[params]
+
+defaults=true
