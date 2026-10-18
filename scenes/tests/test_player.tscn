@@ -4,6 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://dcnimqo3mepwo" path="res://scenes/player.tscn" id="1_om70x"]
 [ext_resource type="PackedScene" uid="uid://6a76tged43n0" path="res://scenes/enemy_movement/moving_enemy.tscn" id="2_16x7c"]
 [ext_resource type="PackedScene" uid="uid://m0xgjtncfmwx" path="res://scenes/killzone.tscn" id="4_4norh"]
+[ext_resource type="PackedScene" uid="uid://bktsnhsldevym" path="res://scenes/dialogue.tscn" id="5_gkii3"]
+[ext_resource type="Resource" uid="uid://cf8g1pd0pkwsj" path="res://dialogues/Prueba.dialogue" id="6_qge55"]
+[ext_resource type="PackedScene" uid="uid://6qf3o3w8nrnm" path="res://dialoges_ballons/balloon.tscn" id="7_7xkib"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6pmnr"]
 
@@ -27,3 +30,11 @@ scale = Vector2(5.5, 5.5551763)
 
 [node name="Killzone" parent="." unique_id=2068063459 instance=ExtResource("4_4norh")]
 position = Vector2(343, -765)
+
+[node name="Interactable" parent="." unique_id=2114688861 instance=ExtResource("5_gkii3")]
+position = Vector2(-855, -100)
+scale = Vector2(3.155, 3.155)
+dialogue = ExtResource("6_qge55")
+mode = 1
+once = true
+balloon_scene = ExtResource("7_7xkib")
