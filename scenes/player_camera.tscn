@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://disno0wijrbr1"]
+
+[node name="PlayerCamera" type="Camera2D" unique_id=1464454565]
+offset = Vector2(0, -160)
+position_smoothing_enabled = true
+drag_vertical_enabled = true
+drag_top_margin = 0.25
+drag_bottom_margin = 0.25
+editor_draw_drag_margin = true
