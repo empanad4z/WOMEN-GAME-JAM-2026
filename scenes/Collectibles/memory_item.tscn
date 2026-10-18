@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bpobp4q0r8uwv"]
+
+[ext_resource type="Script" uid="uid://c2fkwqb2l4hy2" path="res://scripts/memory_item.gd" id="1_bogtd"]
+[ext_resource type="Texture2D" uid="uid://b4urxlkw3n68f" path="res://icon.svg" id="2_mn22w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mn22w"]
+
+[node name="MemoryItem" type="Area2D" unique_id=619595776]
+collision_layer = 0
+collision_mask = 512
+script = ExtResource("1_bogtd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1103732760]
+shape = SubResource("RectangleShape2D_mn22w")
+
+[node name="Visual" type="Node2D" parent="." unique_id=2082071914]
+
+[node name="Sprite2D" type="Sprite2D" parent="Visual" unique_id=187813233]
+position = Vector2(1.9073486e-06, 0.4999981)
+scale = Vector2(0.15625, 0.1484375)
+texture = ExtResource("2_mn22w")

@@ -6,6 +6,9 @@
 [ext_resource type="Script" uid="uid://cxgnm2ph6v17j" path="res://scripts/hitbox.gd" id="4_o15l4"]
 [ext_resource type="Script" uid="uid://c0ces1i788qmt" path="res://scripts/hurtbox.gd" id="5_1sprn"]
 [ext_resource type="Script" uid="uid://cwqpobp1lgjry" path="res://scripts/tests/player.gd" id="6_5qeqh"]
+[ext_resource type="PackedScene" uid="uid://bpobp4q0r8uwv" path="res://scenes/Collectibles/memory_item.tscn" id="7_kcrdd"]
+[ext_resource type="PackedScene" uid="uid://m0xgjtncfmwx" path="res://scenes/killzone.tscn" id="8_o15l4"]
+[ext_resource type="PackedScene" uid="uid://begmy88w5vc3v" path="res://scenes/victory_zone.tscn" id="9_1sprn"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rm5gi"]
 
@@ -25,6 +28,9 @@ size = Vector2(8, 3)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ti7dk"]
 size = Vector2(10, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o15l4"]
+size = Vector2(10, 8)
 
 [node name="Node2D" type="Node2D" unique_id=2037404271]
 script = ExtResource("1_dpoos")
@@ -112,3 +118,29 @@ shape = SubResource("RectangleShape2D_ti7dk")
 [node name="HealthComponent" type="Node" parent="Player" unique_id=1147437262]
 script = ExtResource("3_kcrdd")
 metadata/_custom_type_script = "uid://dvmox6kffbnxp"
+
+[node name="MemoryItem" parent="." unique_id=619595776 instance=ExtResource("7_kcrdd")]
+position = Vector2(74, -11)
+memory_id = &"papel"
+
+[node name="MemoryItem2" parent="." unique_id=1887506075 instance=ExtResource("7_kcrdd")]
+position = Vector2(4, -40)
+memory_id = &"foto"
+
+[node name="MemoryItem3" parent="." unique_id=2006005604 instance=ExtResource("7_kcrdd")]
+position = Vector2(-88, -12)
+memory_id = &"carta"
+
+[node name="Killzone" parent="." unique_id=2068063459 instance=ExtResource("8_o15l4")]
+position = Vector2(74, -743)
+collision_mask = 513
+
+[node name="CollisionShape2D" parent="Killzone" index="0" unique_id=92104602]
+position = Vector2(-199, 738)
+shape = SubResource("RectangleShape2D_o15l4")
+
+[node name="Victoryzone" parent="." unique_id=1134312133 instance=ExtResource("9_1sprn")]
+position = Vector2(103, -8)
+collision_mask = 513
+
+[editable path="Killzone"]
