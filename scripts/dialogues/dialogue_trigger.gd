@@ -9,7 +9,7 @@ enum Mode { INTERACT, ON_ENTER, MANUAL }
 @export var mode: Mode = Mode.INTERACT
 @export var once: bool = false
 @export var interact_action: StringName = &"interact"
-@export var player_group: StringName = &"player"
+@export var player_group: StringName = &"Player"
 @export var balloon_scene: PackedScene          # opcional: globo propio
 @export var prompt: CanvasItem                  # opcional: icono "E para hablar"
 
