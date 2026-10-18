@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 const SPEED = 250.0
 const SPRINT_SPEED = 450.0
-const JUMP_VELOCITY = -400.0
+const JUMP_VELOCITY = -550.0
 const GAME_OVER_SCENE := preload("res://scenes/game_over.tscn")
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
