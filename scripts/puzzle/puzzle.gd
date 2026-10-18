@@ -1,16 +1,32 @@
+class_name Puzzle
 extends Node2D
 
-# Para los  objetivo Recuerdo usar algo de este estilo:
-##########################################################
-#var puzzle := preload("res://puzzle_recuerdo_nodos.tscn").instantiate()
-#get_tree().current_scene.add_child(puzzle)
-#puzzle.get_node("Centro/Tablero/Puzzle").completado.connect(_on_puzzle_completado)
-#############################################################################
+# CÓMO ABRIR UN PUZZLE (desde cualquier script, con una sola línea):
+#
+#   Puzzle.abrir(self, "res://assets/puzzle_recuerdo_prueba")
+#
+# Para enterarse de cuando se arma o se cierra:
+#
+#   var puzzle := Puzzle.abrir(self, "res://assets/puzzle_recuerdo_prueba")
+#   if puzzle != null:
+#       puzzle.completado.connect(_on_puzzle_completado)
+#       puzzle.cerrado.connect(_on_puzzle_cerrado)
+#
+# Notas:
+# - Cada puzzle es una carpeta con sus piezas .png (todas del tamaño de la ilustración completa).
+# - Solo puede haber un puzzle abierto a la vez: si ya hay uno, abrir() devuelve null.
+# - Con Esc o con cerrar_puzzle() se cierra, y el juego sigue donde estaba.
 
 
 # Se avisa cuando se arma el puzzle y cuando se cierra
 signal completado
 signal cerrado
+
+# La escena que contiene este nodo (CanvasLayer > CenterContainer > Control > Puzzle)
+const RUTA_ESCENA := "res://scenes/layer_puzzle.tscn"
+
+# Para que no se abran dos puzzles a la vez
+static var hay_puzzle_abierto := false
 
 # Carpeta de donde se cargan las piezas. Podés cambiarle el nombre desde el Inspector
 @export_dir var carpeta_piezas := "res://assets/puzzle_recuerdo_prueba"
@@ -68,6 +84,26 @@ var estaba_pausado := false
 var vista_local := Rect2()
 
 
+# Abre un puzzle nuevo con las piezas de "carpeta". Devuelve el nodo Puzzle (para conectar sus señales)
+# o null si ya hay un puzzle abierto.
+static func abrir(padre: Node, carpeta: String) -> Puzzle:
+	if hay_puzzle_abierto:
+		return null
+	hay_puzzle_abierto = true
+
+	var capa: Node = load(RUTA_ESCENA).instantiate()
+	var puzzle := capa.find_child("Puzzle", true, false) as Puzzle
+	puzzle.carpeta_piezas = carpeta # ANTES del add_child, porque las piezas se cargan en _ready
+
+	# La capa tiene que dibujarse arriba de todo y seguir funcionando con el juego pausado
+	if capa is CanvasLayer:
+		capa.layer = 100
+	capa.process_mode = Node.PROCESS_MODE_ALWAYS
+
+	padre.get_tree().current_scene.add_child(capa)
+	return puzzle
+
+
 # Ahora se ejecuta al iniciar la escena, cambia por otra función si necesitas que se haga en otro momento
 func _ready() -> void:
 	# Las siluetas van en su propio nodo, siempre por debajo de las piezas
@@ -89,10 +125,19 @@ func _ready() -> void:
 	preparar_vista()
 
 
+# Al salir de la escena se libera el "cerrojo" para poder abrir otro puzzle
+func _exit_tree() -> void:
+	hay_puzzle_abierto = false
+
+
 # El centrado lo hacen los nodos: este nodo vive dentro de un "Tablero" (Control) que está dentro de
-# un CenterContainer. Acá solo le decimos al Tablero cuánto mide y el contenedor lo centra solo.
+# un CenterContainer, y todo eso dentro de un CanvasLayer. Acá solo le decimos al Tablero cuánto mide
+# y el contenedor lo centra solo. Si la escena no está armada así, avisamos qué falta y lo centramos igual.
 func preparar_vista() -> void:
 	visible = false # hasta que esté todo acomodado
+
+	# Esperamos un cuadro: mientras la escena se está armando no se pueden mover nodos de lugar
+	await get_tree().process_frame
 
 	# Pausamos el juego (el puzzle sigue funcionando porque su modo es "siempre")
 	if pausar_juego:
@@ -100,7 +145,6 @@ func preparar_vista() -> void:
 		process_mode = Node.PROCESS_MODE_ALWAYS
 		get_tree().paused = true
 
-	var tablero := get_parent() as Control
 	var tamano_pantalla := get_viewport_rect().size
 
 	# Escala para que el tablero ocupe "ancho_tablero" del ancho (y como mucho el 70% del alto)
@@ -108,28 +152,100 @@ func preparar_vista() -> void:
 	escala = minf(escala, escala_maxima)
 	scale = Vector2(escala, escala)
 
-	# El Tablero mide lo mismo que la ilustración (ya escalada): el CenterContainer lo centra solo
-	tablero.custom_minimum_size = (tamano_ilustracion * escala).round()
+	# Revisamos cómo está armada la escena
+	var problemas: Array[String] = []
+	var tablero := get_parent() as Control
+	var centro: CenterContainer = null
+	if tablero == null or tablero is Container:
+		problemas.append("El nodo Puzzle debe ser hijo de un Control (el Tablero). Ahora su padre es: " + str(get_parent().name) + " (" + get_parent().get_class() + ")")
+		tablero = null
+	else:
+		centro = tablero.get_parent() as CenterContainer
+		if centro == null:
+			problemas.append("El Tablero (Control) debe estar dentro de un CenterContainer")
+	var hay_canvas_layer := false
+	var cadena: Array[String] = []
+	var nodo := get_parent()
+	while nodo != null and not nodo is Viewport:
+		cadena.append(str(nodo.name) + " (" + nodo.get_class() + ")")
+		if nodo is CanvasLayer:
+			hay_canvas_layer = true
+		nodo = nodo.get_parent()
+	if not hay_canvas_layer:
+		# Sin CanvasLayer, los nodos de interfaz se acomodan en la "pantalla de referencia" que está en el
+		# origen del mundo (la de la configuración del proyecto), y no en lo que está viendo el jugador.
+		# Lo arreglamos: creamos un CanvasLayer y pasamos ahí la interfaz.
+		if pasar_a_pantalla():
+			problemas.append("La raíz de la escena no es un CanvasLayer (padres del Puzzle: " + " > ".join(cadena) + "). Lo arreglé por código, pero conviene cambiarlo: clic derecho en la raíz > Change Type > CanvasLayer")
+		else:
+			problemas.append("Ninguno de los padres del Puzzle es un CanvasLayer: " + " > ".join(cadena) + ". La raíz de la escena debe ser un CanvasLayer (clic derecho en la raíz > Change Type > CanvasLayer)")
+
+	if tablero != null:
+		# El Tablero mide lo mismo que la ilustración (ya escalada): el CenterContainer lo centra solo
+		tablero.custom_minimum_size = (tamano_ilustracion * escala).round()
+	if centro != null:
+		# Por si en el editor se olvidó el "Full Rect"
+		centro.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 
 	# Esperamos a que el contenedor lo acomode
 	await get_tree().process_frame
 	await get_tree().process_frame
 
+	if centro != null and centro.size.x < tamano_pantalla.x * 0.9:
+		problemas.append("El CenterContainer no ocupa toda la pantalla (Layout > Anchors Preset > Full Rect)")
+
+	# Si el tablero no quedó en el centro de la pantalla, lo corremos nosotros
+	var centro_actual := get_global_transform_with_canvas() * (tamano_ilustracion / 2.0)
+	var diferencia := tamano_pantalla / 2.0 - centro_actual
+	if diferencia.length() > 2.0:
+		position += scale.x * get_global_transform_with_canvas().affine_inverse().basis_xform(diferencia)
+		problemas.append("El tablero no quedó centrado y lo corregí por código")
+
+	if not problemas.is_empty():
+		push_warning("Puzzle: revisá la escena:\n - " + "\n - ".join(problemas))
+
 	# Lo que se ve en pantalla, en coordenadas de este nodo
 	vista_local = get_global_transform_with_canvas().affine_inverse() * get_viewport_rect()
 
-	# Piezas sueltas: una a la izquierda, otra a la derecha, siempre dentro de lo que se ve
+	# Piezas sueltas, siempre dentro de lo que se ve
 	for i in range(piezas.size()):
 		var pieza := piezas[i]
-		pieza.position = posicion_inicial(pieza, i % 2 == 0)
+		var posicion_pieza := posicion_inicial(pieza, i)
+		var limite_max := (vista_local.end - pieza.texture.get_size()).max(vista_local.position)
+		pieza.position = posicion_pieza.clamp(vista_local.position, limite_max).round()
 
 	visible = true
+
+
+# Crea un CanvasLayer (una capa que siempre ocupa la pantalla que ve el jugador) y le pasa los nodos de interfaz
+func pasar_a_pantalla() -> bool:
+	# Subimos por los padres mientras sean Control: el último es el nodo de interfaz "de más arriba"
+	var ui_raiz: Control = null
+	var nodo := get_parent()
+	while nodo is Control:
+		ui_raiz = nodo
+		nodo = nodo.get_parent()
+	if ui_raiz == null or ui_raiz.get_parent() == null:
+		return false
+
+	var padre := ui_raiz.get_parent()
+	var capa := CanvasLayer.new()
+	capa.layer = 100
+	capa.process_mode = Node.PROCESS_MODE_ALWAYS
+	padre.add_child(capa)
+
+	# Pasamos también a los Control hermanos (por ejemplo, el fondo oscuro)
+	for hermano in padre.get_children():
+		if hermano is Control:
+			hermano.reparent(capa, false)
+			(hermano as Control).set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	return true
 
 
 # Las amontonamos todas ordenadas en un sector a la derecha del tablero
 func posicion_inicial(pieza: Sprite2D, indice: int) -> Vector2:
 	var tamano_pieza := pieza.texture.get_size()
-	
+
 	# Definimos el recuadro a la derecha del tablero donde se acumularán las piezas
 	var x_min := tamano_ilustracion.x + SEPARACION
 	var x_max := x_min + 250.0  # Ancho de la zona de piezas
@@ -185,6 +301,7 @@ func crear_pieza(textura_completa: Texture2D) -> Sprite2D:
 func _input(evento: InputEvent) -> void:
 	# Con Esc se puede salir del puzzle en cualquier momento
 	if evento.is_action_pressed("ui_cancel"):
+		get_viewport().set_input_as_handled() # así el Esc no le llega a otros nodos (menú de pausa, etc.)
 		cerrar_puzzle()
 		return
 

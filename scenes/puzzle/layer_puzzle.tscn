@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://hcmr5dlc6j7"]
 
-[ext_resource type="PackedScene" uid="uid://cci7ka780k7tc" path="res://scenes/puzzle.tscn" id="1_ld465"]
+[ext_resource type="PackedScene" uid="uid://cci7ka780k7tc" path="res://scenes/puzzle/puzzle.tscn" id="1_04xda"]
 
-[node name="CanvasLayer" type="CanvasLayer" unique_id=1210388319]
+[node name="LayerPuzzle" type="CanvasLayer" unique_id=1210388319]
 process_mode = 3
 layer = 100
 
@@ -13,7 +13,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-color = Color(0, 0, 0, 0.8235294)
+color = Color(0, 0, 0, 0.78431374)
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=1981262379]
 anchors_preset = 15
@@ -27,4 +27,4 @@ mouse_filter = 2
 layout_mode = 2
 mouse_filter = 2
 
-[node name="Puzzle" parent="CenterContainer" unique_id=42912142 instance=ExtResource("1_ld465")]
+[node name="Puzzle" parent="CenterContainer/Control" unique_id=42912142 instance=ExtResource("1_04xda")]
