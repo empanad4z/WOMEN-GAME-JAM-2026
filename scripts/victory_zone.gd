@@ -9,6 +9,8 @@ func _on_body_entered(body: Node2D) -> void:
 		mostrar_pantalla_victoria()
 
 func mostrar_pantalla_victoria() -> void:
+	GameState.complete_level()
+	print("Recuerdos guardados: ", GameState.collected_memories)
 	# 1. Instanciamos la pantalla de victoria
 	var pantalla = victory_screen_escena.instantiate()
 	

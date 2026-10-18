@@ -1,5 +1,5 @@
 extends Node
-
+#Rutas de los nuveles, place holder
 const levels: Array[String] = []
 var level_index = 0
 var current_level = &""

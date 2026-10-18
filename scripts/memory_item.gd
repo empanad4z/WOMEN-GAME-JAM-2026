@@ -34,6 +34,6 @@ func _on_body_entered(body: Node2D):
 	_collected = true
 	set_deferred("monitoring", false)
 	GameState.collect_memory(memory_id)
-	print("Abrir puzle recuerdo")
+	print("Abrir puzle recuerdo", memory_id)
 	collected.emit(memory_id)
 	queue_free()

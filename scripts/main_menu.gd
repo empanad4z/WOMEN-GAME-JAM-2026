@@ -1,6 +1,7 @@
 extends Control
 
 func _on_boton_jugar_pressed() -> void:
+	GameState.new_game()
 	# Cambiar a ejemplo "res://scenes/Map1.tscn" por la ruta exacta del primer nivel
 	get_tree().change_scene_to_file("res://scenes/Map1.tscn")
 
