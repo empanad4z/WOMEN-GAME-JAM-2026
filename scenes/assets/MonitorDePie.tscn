@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c48pn6xvxk5yk"]
+
+[ext_resource type="Texture2D" uid="uid://ga1rlso8rjwy" path="res://assets/mobiliario/monitor de pie/monitor de pie prendido.png" id="1_aq751"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nbvux"]
+size = Vector2(1137, 968)
+
+[node name="Area2D" type="Area2D" unique_id=1535929972]
+
+[node name="MonitorDePiePrendido" type="Sprite2D" parent="." unique_id=1090352399]
+position = Vector2(101, 53)
+texture = ExtResource("1_aq751")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=374419760]
+position = Vector2(104.5, 60)
+shape = SubResource("RectangleShape2D_nbvux")

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c3i1k35ld20dk"]
+
+[ext_resource type="Texture2D" uid="uid://crbpru671f3fh" path="res://assets/escenario/PISO/piso beige.png" id="1_wivst"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_peapg"]
+size = Vector2(2483, 481)
+
+[node name="Area2D" type="Area2D" unique_id=104590152]
+
+[node name="PisoBeige" type="Sprite2D" parent="." unique_id=391230154]
+position = Vector2(243, 143)
+texture = ExtResource("1_wivst")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=793382319]
+position = Vector2(224.5, 359.5)
+shape = SubResource("RectangleShape2D_peapg")
