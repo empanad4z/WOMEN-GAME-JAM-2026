@@ -30,6 +30,9 @@
 [ext_resource type="Texture2D" uid="uid://d50267o4k6ot" path="res://assets/escenario/columnas/columna 2 gris.png" id="28_x0asd"]
 [ext_resource type="Texture2D" uid="uid://b7drwf2ynl2wi" path="res://assets/mobiliario/muestras.png" id="29_2mmf4"]
 [ext_resource type="Texture2D" uid="uid://b8gbgyobq2ilw" path="res://assets/mobiliario/monitor de pie/monitor de pie roto.png" id="30_pwxyk"]
+[ext_resource type="Texture2D" uid="uid://c7yysvo5guu5q" path="res://assets/maquinas/rotas/maquina 3 rota.png" id="31_i2d6k"]
+[ext_resource type="Texture2D" uid="uid://31eb2n68nlx5" path="res://assets/maquinas/rotas/maquina 4 rota.png" id="32_evibs"]
+[ext_resource type="Texture2D" uid="uid://dr3trltob2thc" path="res://assets/maquinas/rotas/maquina 2 rota.png" id="33_lj1dc"]
 
 [node name="design_level1" type="Node2D" unique_id=804521204]
 
@@ -2224,3 +2227,15 @@ texture = ExtResource("16_ojnpm")
 [node name="MonitorDePieRoto" type="Sprite2D" parent="." unique_id=1908294701]
 position = Vector2(99586, 18851)
 texture = ExtResource("30_pwxyk")
+
+[node name="Maquina3Rota" type="Sprite2D" parent="." unique_id=1508245878]
+position = Vector2(94905, 18554)
+texture = ExtResource("31_i2d6k")
+
+[node name="Maquina4Rota" type="Sprite2D" parent="." unique_id=1426681629]
+position = Vector2(94103, 18990)
+texture = ExtResource("32_evibs")
+
+[node name="Maquina2Rota" type="Sprite2D" parent="." unique_id=1835908012]
+position = Vector2(103515, 17141)
+texture = ExtResource("33_lj1dc")
