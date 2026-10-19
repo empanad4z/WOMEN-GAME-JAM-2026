@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c6gsv3vpni4jr"]
+
+[ext_resource type="Texture2D" uid="uid://e02bsdcsyf4q" path="res://assets/escenario/pisos/piso central.png" id="1_yp81p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+
+[node name="PisoCentral" type="StaticBody2D" unique_id=2093455642]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=952740488]
+visible = false
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_yp81p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1833252745]
+position = Vector2(0, 40.605)
+scale = Vector2(30.34, 4.585)
+shape = SubResource("RectangleShape2D_6pmnr")

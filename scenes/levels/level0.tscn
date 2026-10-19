@@ -1,0 +1,122 @@
+[gd_scene format=4 uid="uid://cqmod55c75sea"]
+
+[ext_resource type="Script" uid="uid://dkaugcgqilxt" path="res://scripts/levels/level.gd" id="1_d0grl"]
+[ext_resource type="PackedScene" uid="uid://bktsnhsldevym" path="res://scenes/dialogue.tscn" id="1_hghvf"]
+[ext_resource type="PackedScene" uid="uid://dcnimqo3mepwo" path="res://scenes/player.tscn" id="2_hghvf"]
+[ext_resource type="Resource" uid="uid://by1eiu3ne7mja" path="res://dialogues/level0/0_wakeup.dialogue" id="2_ry65h"]
+[ext_resource type="PackedScene" uid="uid://b2wek78wlqwlc" path="res://scenes/props/pisos/piso_izquierdo.tscn" id="2_vals0"]
+[ext_resource type="PackedScene" uid="uid://6qf3o3w8nrnm" path="res://dialoges_ballons/balloon.tscn" id="3_d0grl"]
+[ext_resource type="PackedScene" uid="uid://disno0wijrbr1" path="res://scenes/player_camera.tscn" id="7_1nvli"]
+[ext_resource type="PackedScene" uid="uid://c6gsv3vpni4jr" path="res://scenes/props/pisos/piso_central.tscn" id="7_vals0"]
+[ext_resource type="Texture2D" uid="uid://chvvcqab0pr2h" path="res://assets/tileset_pruebanivel1/main.png" id="9_oem7y"]
+[ext_resource type="Texture2D" uid="uid://dg4of4c28vv4u" path="res://assets/maquinas/rotas/maquina 5 rota.png" id="10_a76di"]
+[ext_resource type="Texture2D" uid="uid://bvcn38fx651h" path="res://assets/escenario/paredes/gris/panel gris 5.png" id="11_7s2gi"]
+[ext_resource type="Texture2D" uid="uid://ds7kg2m5l2jl5" path="res://assets/escenario/paredes/gris/panel gris 1.png" id="12_fj52k"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a76di"]
+texture = ExtResource("9_oem7y")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+7:2/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+4:4/0 = 0
+7:4/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+5:6/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_qa2gp"]
+tile_size = Vector2i(64, 64)
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_a76di")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+
+[node name="Level0" type="Node2D" unique_id=1247627693 node_paths=PackedStringArray("fade_rect")]
+script = ExtResource("1_d0grl")
+level_id = &"nivel_0"
+fade_rect = NodePath("ScreenFade/ColorRect")
+
+[node name="Piso" type="Node2D" parent="." unique_id=567904881]
+visible = false
+
+[node name="PisoIzquierdo" parent="Piso" unique_id=1038185713 instance=ExtResource("2_vals0")]
+position = Vector2(-321.975, 75)
+
+[node name="PisoCentral" parent="Piso" unique_id=2093455642 instance=ExtResource("7_vals0")]
+position = Vector2(0, 75)
+
+[node name="Dialogue1" parent="." unique_id=2114688861 instance=ExtResource("1_hghvf")]
+position = Vector2(0, -63.085)
+scale = Vector2(2.7101264, 3.8943353)
+dialogue = ExtResource("2_ry65h")
+mode = 1
+once = true
+balloon_scene = ExtResource("3_d0grl")
+
+[node name="Player" parent="." unique_id=1929255917 instance=ExtResource("2_hghvf")]
+position = Vector2(0, -163.395)
+
+[node name="PlayerCamera" parent="Player" unique_id=1464454565 instance=ExtResource("7_1nvli")]
+limit_left = -200
+
+[node name="ScreenFade" type="CanvasLayer" parent="." unique_id=1795839320]
+layer = 50
+
+[node name="ColorRect" type="ColorRect" parent="ScreenFade" unique_id=154580972]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1013322682]
+tile_map_data = PackedByteArray("AADy/wEAAQABAAEAAADz/wEAAQABAAEAAAD0/wEAAQABAAEAAAD1/wEAAQABAAEAAAD2/wEAAQABAAEAAAD3/wEAAQABAAEAAAD4/wEAAQABAAEAAAD5/wEAAQABAAEAAAD6/wEAAQABAAEAAAD7/wEAAQABAAEAAAD8/wEAAQABAAEAAAD9/wEAAQABAAEAAAD+/wEAAQABAAEAAAD//wEAAQABAAEAAAAAAAEAAQABAAEAAAABAAEAAQABAAEAAAACAAEAAQABAAEAAAADAAEAAQABAAEAAAAEAAEAAQABAAEAAAAFAAEAAQABAAEAAAAGAAEAAQABAAEAAAAHAAEAAQABAAEAAAAIAAEAAQABAAEAAAAJAAEAAQABAAEAAAAKAAEAAQABAAEAAAALAAEAAQABAAEAAAAMAAEAAQABAAEAAAANAAEAAQABAAEAAAAOAAEAAQABAAEAAAAPAAEAAQABAAEAAAAQAAEAAQABAAEAAAARAAEAAQABAAEAAAASAAEAAQABAAEAAAATAAEAAQABAAEAAAAUAAEAAQABAAEAAAAVAAEAAQABAAEAAAAWAAEAAQABAAEAAAAXAAEAAQABAAEAAAAYAAEAAQABAAEAAAAZAAEAAQABAAEAAAAaAAEAAQABAAEAAAAbAAEAAQABAAEAAAAcAAEAAQABAAEAAAAdAAEAAQABAAEAAAAeAAEAAQABAAEAAAAfAAEAAQABAAEAAAAgAAEAAQABAAEAAAD9/wAAAQABAAEAAAD9////AQABAAEAAAD9//7/AQABAAEAAAD9//3/AQABAAEAAAD9//z/AQABAAEAAAD9//v/AQABAAEAAAD9//r/AQABAAEAAAD9//n/AQABAAEAAAD9//j/AQABAAEAAAD9//f/AQABAAEAAAD9//b/AQABAAEAAAD9//X/AQABAAEAAAD9//T/AQABAAEAAAA=")
+tile_set = SubResource("TileSet_qa2gp")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=729816888]
+position = Vector2(1445, 0)
+rotation = 1.5707964
+
+[node name="Maquina5Rota" type="Sprite2D" parent="StaticBody2D" unique_id=582392551]
+scale = Vector2(0.145, 0.145)
+texture = ExtResource("10_a76di")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=8381474]
+scale = Vector2(6.13, 10.865)
+shape = SubResource("RectangleShape2D_6pmnr")
+
+[node name="PanelGris5" type="Sprite2D" parent="." unique_id=1637250155]
+position = Vector2(865, -722)
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("11_7s2gi")
+
+[node name="PanelGris1" type="Sprite2D" parent="." unique_id=1139493012]
+position = Vector2(2118, -567)
+texture = ExtResource("12_fj52k")
