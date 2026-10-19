@@ -1964,9 +1964,6 @@ position = Vector2(13534, 4307)
 [node name="PuertaCerrada4" parent="PuertaCerrada2" unique_id=1141896236 instance=ExtResource("3_6ehks")]
 position = Vector2(82705, 19537)
 
-[node name="PuertaCerrada5" parent="PuertaCerrada2" unique_id=84129005 instance=ExtResource("3_6ehks")]
-position = Vector2(31, -989)
-
 [node name="Columna1Beige" type="Sprite2D" parent="." unique_id=670571391]
 visible = false
 position = Vector2(13287, 466)
