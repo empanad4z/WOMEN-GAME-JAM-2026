@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://kkhh3osqybvp"]
+
+[ext_resource type="Texture2D" uid="uid://iq48etpkmgn1" path="res://assets/mobiliario/alacena.png" id="1_q3dj2"]
+
+[node name="Alacena" type="Sprite2D" unique_id=1732104091]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_q3dj2")

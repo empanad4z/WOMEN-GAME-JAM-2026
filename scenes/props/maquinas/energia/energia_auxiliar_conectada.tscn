@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c4yxyuvgltln6"]
+
+[ext_resource type="Texture2D" uid="uid://11mol4fpqj87" path="res://assets/maquinas/energia/energia auxiliar conectada.png" id="1_crpsl"]
+
+[node name="EnergiaAuxiliarConectada" type="Sprite2D" unique_id=997627394]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_crpsl")

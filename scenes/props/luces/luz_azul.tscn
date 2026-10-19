@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bnqn5gq1s0b4u"]
+
+[ext_resource type="Texture2D" uid="uid://yv1j1bfw31nt" path="res://assets/escenario/luz/luz azul.png" id="1_1ob7i"]
+
+[node name="LuzAzul" type="Sprite2D" unique_id=1606547833]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_1ob7i")

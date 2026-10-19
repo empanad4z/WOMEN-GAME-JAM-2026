@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://do0bhi3liagu2"]
+
+[ext_resource type="Texture2D" uid="uid://bejx8s1hs7g8u" path="res://assets/mobiliario/pc apagada.png" id="1_vtc4o"]
+
+[node name="PcApagada" type="Sprite2D" unique_id=588319350]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_vtc4o")

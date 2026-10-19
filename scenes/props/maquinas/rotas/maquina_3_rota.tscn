@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://v6vbtboac5ca"]
+
+[ext_resource type="Texture2D" uid="uid://c7yysvo5guu5q" path="res://assets/maquinas/rotas/maquina 3 rota.png" id="1_x71ee"]
+
+[node name="Maquina3Rota" type="Sprite2D" unique_id=218005723]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_x71ee")

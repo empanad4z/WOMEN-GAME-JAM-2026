@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://b8ux5fd5rvfqw"]
+
+[ext_resource type="Texture2D" uid="uid://d3dv54sk5hyg7" path="res://assets/mobiliario/caja.png" id="1_v223j"]
+
+[node name="Caja" type="Sprite2D" unique_id=500158024]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_v223j")

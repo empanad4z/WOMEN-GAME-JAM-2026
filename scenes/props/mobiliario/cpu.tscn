@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bfjh85p4fsoje"]
+
+[ext_resource type="Texture2D" uid="uid://32788i46touo" path="res://assets/mobiliario/cpu.png" id="1_wkytl"]
+
+[node name="Cpu" type="Sprite2D" unique_id=1759585337]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_wkytl")
