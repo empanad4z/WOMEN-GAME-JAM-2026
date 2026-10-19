@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2nxq36405ugw"
-path="res://.godot/imported/platforms.png-8d184a26d5e48e04015c64bd1bfb0ea3.ctex"
+uid="uid://dr3trltob2thc"
+path="res://.godot/imported/maquina 2 rota.png-abd9424dd04bc640208b1a0c1bc901ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/pruebas/knight/platforms.png"
-dest_files=["res://.godot/imported/platforms.png-8d184a26d5e48e04015c64bd1bfb0ea3.ctex"]
+source_file="res://assets/maquinas/rotas/maquina 2 rota.png"
+dest_files=["res://.godot/imported/maquina 2 rota.png-abd9424dd04bc640208b1a0c1bc901ee.ctex"]
 
 [params]
 

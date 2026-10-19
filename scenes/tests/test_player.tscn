@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bktsnhsldevym" path="res://scenes/dialogue.tscn" id="5_gkii3"]
 [ext_resource type="Resource" uid="uid://cf8g1pd0pkwsj" path="res://dialogues/Prueba.dialogue" id="6_qge55"]
 [ext_resource type="PackedScene" uid="uid://6qf3o3w8nrnm" path="res://dialoges_ballons/balloon.tscn" id="7_7xkib"]
+[ext_resource type="PackedScene" uid="uid://disno0wijrbr1" path="res://scenes/player_camera.tscn" id="8_7xkib"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6pmnr"]
 
@@ -18,11 +19,11 @@ script = ExtResource("1_6rgxd")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1953375722]
 shape = SubResource("WorldBoundaryShape2D_6pmnr")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=676467160]
-position = Vector2(0, -193)
-
 [node name="Player" parent="." unique_id=1929255917 instance=ExtResource("1_om70x")]
-position = Vector2(-456, -110)
+position = Vector2(-433, -118)
+
+[node name="PlayerCamera" parent="Player" unique_id=1464454565 instance=ExtResource("8_7xkib")]
+position = Vector2(456, 110)
 
 [node name="Enemy" parent="." unique_id=148833900 instance=ExtResource("2_16x7c")]
 position = Vector2(129.00003, -76)

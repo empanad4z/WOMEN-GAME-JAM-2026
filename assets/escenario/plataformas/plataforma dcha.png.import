@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gjhofw600cix"
-path="res://.godot/imported/slime_green.png-da04cb70080f2402485d37a3f67a64e0.ctex"
+uid="uid://cnvcxg6jqf3qx"
+path="res://.godot/imported/plataforma dcha.png-a260baf1a4f15c7aba86e88ce05b8cc7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/pruebas/knight/slime_green.png"
-dest_files=["res://.godot/imported/slime_green.png-da04cb70080f2402485d37a3f67a64e0.ctex"]
+source_file="res://assets/escenario/plataformas/plataforma dcha.png"
+dest_files=["res://.godot/imported/plataforma dcha.png-a260baf1a4f15c7aba86e88ce05b8cc7.ctex"]
 
 [params]
 

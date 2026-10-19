@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c05vuoecnpl5f"
-path="res://.godot/imported/world_tileset.png-67c964f3ccfbc433e58e200215c16148.ctex"
+uid="uid://ilh3nqkj5qpb"
+path="res://.godot/imported/columna 2 celeste.png-b30d5670ff10e0a0d65c6407aec52cb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/pruebas/knight/world_tileset.png"
-dest_files=["res://.godot/imported/world_tileset.png-67c964f3ccfbc433e58e200215c16148.ctex"]
+source_file="res://assets/escenario/columnas/columna 2 celeste.png"
+dest_files=["res://.godot/imported/columna 2 celeste.png-b30d5670ff10e0a0d65c6407aec52cb3.ctex"]
 
 [params]
 

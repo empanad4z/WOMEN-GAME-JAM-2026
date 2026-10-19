@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rvrte6dtt05s"
-path="res://.godot/imported/fruit.png-528d55fb01399b55373c908ec6e8e965.ctex"
+uid="uid://chcr3w4dbw7w8"
+path="res://.godot/imported/panel beige 4.png-a83f8570ffa45a670c4c325a76bd302d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/pruebas/knight/fruit.png"
-dest_files=["res://.godot/imported/fruit.png-528d55fb01399b55373c908ec6e8e965.ctex"]
+source_file="res://assets/escenario/paredes/beige/panel beige 4.png"
+dest_files=["res://.godot/imported/panel beige 4.png-a83f8570ffa45a670c4c325a76bd302d.ctex"]
 
 [params]
 

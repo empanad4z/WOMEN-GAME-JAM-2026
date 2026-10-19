@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di5qucp7shina"
-path="res://.godot/imported/slime_purple.png-1fa239ca7674faacc928b4cbc1b41b32.ctex"
+uid="uid://d3jvq37pw3m0k"
+path="res://.godot/imported/monitor de pie.png-e6557a94cbaa9f7c49be228a406084d7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/pruebas/knight/slime_purple.png"
-dest_files=["res://.godot/imported/slime_purple.png-1fa239ca7674faacc928b4cbc1b41b32.ctex"]
+source_file="res://assets/mobiliario/monitor de pie/monitor de pie.png"
+dest_files=["res://.godot/imported/monitor de pie.png-e6557a94cbaa9f7c49be228a406084d7.ctex"]
 
 [params]
 

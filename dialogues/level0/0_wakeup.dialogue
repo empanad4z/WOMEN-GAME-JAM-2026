@@ -1,0 +1,8 @@
+~ start
+# Pantalla en negro
+Alice: [speed=0.2]¿Dónde...[/speed] [wait=0.5]estoy?
+Alice: ¿Qué me pasó?
+# La imagen empieza a aparecer progresivamenente y luego aparece la siguiente linea:
+do fade_from_black(3.0)
+Alice: [speed=0.7]No recuerdo nada...
+=> END
