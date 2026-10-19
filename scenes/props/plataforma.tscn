@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://oyc2ae15ar5s"]
+
+[ext_resource type="Texture2D" uid="uid://cljggs1u6kal2" path="res://assets/escenario/plataformas/plataforma central.png" id="1_mex12"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+
+[node name="Plataforma" type="StaticBody2D" unique_id=672021793]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2060596350]
+scale = Vector2(0.495, 0.495)
+texture = ExtResource("1_mex12")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1287779020]
+shape = SubResource("RectangleShape2D_6pmnr")
