@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dfnhmbloodv0c"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fl7jv"]
+load_path = "res://.godot/imported/piso gris.png-0a639a88d1d9e5ca5e826816d3e77a23.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_peapg"]
+size = Vector2(2538, 507)
+
+[node name="Area2D" type="Area2D" unique_id=1243044212]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1717451201]
+position = Vector2(25.75, 44.250027)
+scale = Vector2(1.0206745, 1.1018413)
+texture = SubResource("CompressedTexture2D_fl7jv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1719665269]
+position = Vector2(10, 269.5)
+shape = SubResource("RectangleShape2D_peapg")

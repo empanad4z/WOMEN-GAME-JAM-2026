@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cbjq317rakh8c"]
 
 [ext_resource type="Texture2D" uid="uid://x6w3djf6esrq" path="res://assets/escenario/paredes/beige/panel beige 1.png" id="1_3h337"]
+[ext_resource type="Texture2D" uid="uid://yv1j1bfw31nt" path="res://assets/escenario/luz/luz azul.png" id="2_anty6"]
 [ext_resource type="PackedScene" uid="uid://xnalhtvui0kn" path="res://scenes/assets/Piso izq.tscn" id="2_x64yw"]
 [ext_resource type="PackedScene" uid="uid://cja5tdbgac1w1" path="res://scenes/assets/puerta_cerrada.tscn" id="3_6ehks"]
 [ext_resource type="PackedScene" uid="uid://c3i1k35ld20dk" path="res://scenes/assets/piso_final_izq.tscn" id="3_o0m5d"]
@@ -17,6 +18,18 @@
 [ext_resource type="Texture2D" uid="uid://yid26i2rk7xc" path="res://assets/mobiliario/pizarra.png" id="15_8cfio"]
 [ext_resource type="Texture2D" uid="uid://dvolbap4wqgub" path="res://assets/mobiliario/silla.png" id="16_ojnpm"]
 [ext_resource type="Texture2D" uid="uid://bypmawhmox68t" path="res://assets/escenario/tuberia/tubería tile.png" id="16_s33sl"]
+[ext_resource type="Texture2D" uid="uid://sywlflrbybd8" path="res://assets/mobiliario/monitor sin pie/monitor apagado.png" id="18_0kund"]
+[ext_resource type="Texture2D" uid="uid://crm2og7vhwa08" path="res://assets/mobiliario/monitor sin pie/monitor roto.png" id="19_01nje"]
+[ext_resource type="Texture2D" uid="uid://5wh5kwhfytfo" path="res://assets/mobiliario/monitor sin pie/monitor prendido.png" id="20_anty6"]
+[ext_resource type="Texture2D" uid="uid://e5sfehv8ekuw" path="res://assets/escenario/luz/luz roja.png" id="21_ruryg"]
+[ext_resource type="PackedScene" uid="uid://diunfojb57l8j" path="res://scenes/assets/puerta_cerrada_der.tscn" id="23_ruryg"]
+[ext_resource type="Texture2D" uid="uid://dgmeysvkf135n" path="res://assets/maquinas/energia/energia auxiliar desconectada.png" id="24_5ka5b"]
+[ext_resource type="Texture2D" uid="uid://dpihe70wku5fv" path="res://assets/maquinas/maquina 1.png" id="25_6lnan"]
+[ext_resource type="Texture2D" uid="uid://dhnwpfey2v8s2" path="res://assets/maquinas/maquina 5.png" id="26_2mmf4"]
+[ext_resource type="Texture2D" uid="uid://caijsg88anlgp" path="res://assets/maquinas/maquina 2.png" id="27_pwxyk"]
+[ext_resource type="Texture2D" uid="uid://d50267o4k6ot" path="res://assets/escenario/columnas/columna 2 gris.png" id="28_x0asd"]
+[ext_resource type="Texture2D" uid="uid://b7drwf2ynl2wi" path="res://assets/mobiliario/muestras.png" id="29_2mmf4"]
+[ext_resource type="Texture2D" uid="uid://b8gbgyobq2ilw" path="res://assets/mobiliario/monitor de pie/monitor de pie roto.png" id="30_pwxyk"]
 
 [node name="design_level1" type="Node2D" unique_id=804521204]
 
@@ -1540,6 +1553,16 @@ z_index = -1
 position = Vector2(928, 2)
 texture = ExtResource("1_3h337")
 
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=58773520]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="LuzAzul" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1227105066]
+z_index = 18
+position = Vector2(933.23486, 1204.1335)
+texture = ExtResource("2_anty6")
+
 [node name="PanelAzul1" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1" unique_id=154735245]
 position = Vector2(20257.479, 1829.5885)
 scale = Vector2(1.049325, 1.1013628)
@@ -1692,7 +1715,7 @@ texture = ExtResource("1_3h337")
 
 [node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=981145096]
 z_index = -1
-position = Vector2(928, 2)
+position = Vector2(973, 2)
 texture = ExtResource("1_3h337")
 
 [node name="Area2D" parent="." unique_id=1181563553 instance=ExtResource("2_x64yw")]
@@ -1935,14 +1958,11 @@ position = Vector2(31, -989)
 [node name="PuertaCerrada2" parent="PuertaCerrada2" unique_id=827906858 instance=ExtResource("3_6ehks")]
 position = Vector2(13534, 4307)
 
-[node name="PuertaCerrada2" parent="PuertaCerrada2/PuertaCerrada2" unique_id=1062918913 instance=ExtResource("3_6ehks")]
-position = Vector2(57078, 5352)
+[node name="PuertaCerrada4" parent="PuertaCerrada2" unique_id=1141896236 instance=ExtResource("3_6ehks")]
+position = Vector2(82705, 19537)
 
-[node name="PuertaCerrada2" parent="PuertaCerrada2/PuertaCerrada2/PuertaCerrada2" unique_id=916885873 instance=ExtResource("3_6ehks")]
-position = Vector2(57078, 5352)
-
-[node name="PuertaCerrada3" parent="PuertaCerrada2/PuertaCerrada2/PuertaCerrada2" unique_id=1141896236 instance=ExtResource("3_6ehks")]
-position = Vector2(12093, 9878)
+[node name="PuertaCerrada5" parent="PuertaCerrada2" unique_id=84129005 instance=ExtResource("3_6ehks")]
+position = Vector2(31, -989)
 
 [node name="Columna1Beige" type="Sprite2D" parent="." unique_id=670571391]
 visible = false
@@ -2066,10 +2086,141 @@ texture = ExtResource("6_s33sl")
 position = Vector2(43793, 3652)
 texture = ExtResource("16_s33sl")
 
-[node name="TuberíaTile" type="Sprite2D" parent="TuberíaTile" unique_id=459166840]
-position = Vector2(43793, 3652)
-texture = ExtResource("16_s33sl")
-
 [node name="TuberíaTile2" type="Sprite2D" parent="TuberíaTile" unique_id=28540904]
 position = Vector2(0, -80)
 texture = ExtResource("16_s33sl")
+
+[node name="MonitorApagado" type="Sprite2D" parent="." unique_id=2027793125]
+position = Vector2(33616, 1018)
+texture = ExtResource("18_0kund")
+
+[node name="MonitorApagado2" type="Sprite2D" parent="." unique_id=1373256074]
+position = Vector2(4428, -132)
+texture = ExtResource("18_0kund")
+
+[node name="MonitorRoto" type="Sprite2D" parent="." unique_id=1699989262]
+position = Vector2(65141, 9167)
+texture = ExtResource("19_01nje")
+
+[node name="MonitorPrendido" type="Sprite2D" parent="." unique_id=152767476]
+position = Vector2(70546, 14551)
+texture = ExtResource("20_anty6")
+
+[node name="MonitorRoto2" type="Sprite2D" parent="." unique_id=325872677]
+position = Vector2(84530, 18853)
+texture = ExtResource("19_01nje")
+
+[node name="MonitorRoto3" type="Sprite2D" parent="." unique_id=1419173698]
+position = Vector2(87612, 18938)
+texture = ExtResource("19_01nje")
+
+[node name="MonitorRoto4" type="Sprite2D" parent="." unique_id=374067361]
+position = Vector2(90927, 18938)
+texture = ExtResource("19_01nje")
+
+[node name="MonitorRoto5" type="Sprite2D" parent="." unique_id=700171745]
+position = Vector2(96743, 18410)
+texture = ExtResource("19_01nje")
+
+[node name="MonitorRoto6" type="Sprite2D" parent="." unique_id=1273068117]
+position = Vector2(99530, 17396)
+texture = ExtResource("19_01nje")
+
+[node name="MonitorRoto7" type="Sprite2D" parent="." unique_id=1733110663]
+position = Vector2(101958, 18347)
+texture = ExtResource("19_01nje")
+
+[node name="LuzRoja" type="Sprite2D" parent="." unique_id=227868744]
+z_index = 1
+position = Vector2(-430, -316)
+texture = ExtResource("21_ruryg")
+flip_h = true
+
+[node name="LuzRoja" type="Sprite2D" parent="LuzRoja" unique_id=937580288]
+z_index = 1
+position = Vector2(13528, 4329)
+texture = ExtResource("21_ruryg")
+flip_h = true
+
+[node name="LuzRoja2" type="Sprite2D" parent="LuzRoja" unique_id=1703633184]
+z_index = 2
+position = Vector2(70431, 9687)
+texture = ExtResource("21_ruryg")
+
+[node name="LuzRoja2" type="Sprite2D" parent="." unique_id=1613475341]
+z_index = 1
+position = Vector2(82253, 19242)
+texture = ExtResource("21_ruryg")
+flip_h = true
+
+[node name="PuertaCerrada" parent="." unique_id=1627060778 instance=ExtResource("23_ruryg")]
+position = Vector2(70674, 8720)
+
+[node name="PuertaCerrada2" parent="PuertaCerrada" unique_id=1046918832 instance=ExtResource("23_ruryg")]
+z_index = 12
+position = Vector2(34775, 8710)
+
+[node name="LuzAzul" type="Sprite2D" parent="PuertaCerrada" unique_id=521342589]
+z_index = 13
+position = Vector2(34170, 9367)
+texture = ExtResource("2_anty6")
+
+[node name="EnergiaAuxiliarDesconectada" type="Sprite2D" parent="PuertaCerrada" unique_id=46964219]
+position = Vector2(-2827, 1520)
+texture = ExtResource("24_5ka5b")
+
+[node name="Maquina1" type="Sprite2D" parent="PuertaCerrada" unique_id=256306100]
+position = Vector2(-6544, 1538)
+texture = ExtResource("25_6lnan")
+
+[node name="Maquina5" type="Sprite2D" parent="PuertaCerrada" unique_id=1883080776]
+position = Vector2(-4226, 6740)
+texture = ExtResource("26_2mmf4")
+
+[node name="Alacena2" type="Sprite2D" parent="." unique_id=365190327]
+position = Vector2(73748, 15883)
+texture = ExtResource("9_murpg")
+
+[node name="Alacena3" type="Sprite2D" parent="." unique_id=506203219]
+position = Vector2(73747, 15267)
+texture = ExtResource("9_murpg")
+
+[node name="Barril2" type="Sprite2D" parent="." unique_id=2012698892]
+position = Vector2(74800, 15722)
+texture = ExtResource("13_anty6")
+
+[node name="Maquina2" type="Sprite2D" parent="." unique_id=215801887]
+position = Vector2(75300, 14197)
+texture = ExtResource("27_pwxyk")
+
+[node name="Columna2Gris" type="Sprite2D" parent="." unique_id=1716384593]
+position = Vector2(80004, 15552)
+texture = ExtResource("28_x0asd")
+
+[node name="Columna2Gris2" type="Sprite2D" parent="." unique_id=1009919301]
+position = Vector2(77369, 15535)
+texture = ExtResource("28_x0asd")
+
+[node name="Escritorio2" type="Sprite2D" parent="." unique_id=746668020]
+position = Vector2(84624, 20141)
+texture = ExtResource("12_01nje")
+
+[node name="Muestras" type="Sprite2D" parent="." unique_id=899764854]
+position = Vector2(84648, 19569)
+texture = ExtResource("29_2mmf4")
+
+[node name="Silla" type="Sprite2D" parent="." unique_id=1756862883]
+position = Vector2(84589, 20129)
+texture = ExtResource("16_ojnpm")
+
+[node name="Pizarra" type="Sprite2D" parent="." unique_id=84837215]
+position = Vector2(89611, 19736)
+texture = ExtResource("15_8cfio")
+
+[node name="Silla3" type="Sprite2D" parent="." unique_id=969591018]
+position = Vector2(89801, 20177)
+texture = ExtResource("16_ojnpm")
+
+[node name="MonitorDePieRoto" type="Sprite2D" parent="." unique_id=1908294701]
+position = Vector2(99586, 18851)
+texture = ExtResource("30_pwxyk")
