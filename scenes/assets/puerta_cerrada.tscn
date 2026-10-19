@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cja5tdbgac1w1"]
+
+[ext_resource type="Texture2D" uid="uid://ol8qvqhqctbw" path="res://assets/escenario/puerta/puerta cerrada.png" id="1_r41k2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fajxd"]
+size = Vector2(954, 4521)
+
+[node name="PuertaCerrada" type="Area2D" unique_id=119817485]
+
+[node name="PuertaCerrada" type="Sprite2D" parent="." unique_id=418881190]
+z_index = 1
+position = Vector2(-546, 247)
+texture = ExtResource("1_r41k2")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1195783229]
+z_index = 1
+position = Vector2(-549, 224.5)
+shape = SubResource("RectangleShape2D_fajxd")

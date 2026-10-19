@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://csx4ijqbvuo2a"]
+
+[ext_resource type="Script" uid="uid://dkaugcgqilxt" path="res://scripts/levels/level.gd" id="1_8i1lk"]
+[ext_resource type="PackedScene" uid="uid://cbjq317rakh8c" path="res://scenes/levels/design_level1.tscn" id="2_8i1lk"]
+[ext_resource type="PackedScene" uid="uid://dcnimqo3mepwo" path="res://scenes/player.tscn" id="3_b4tpv"]
+[ext_resource type="PackedScene" uid="uid://bktsnhsldevym" path="res://scenes/dialogue.tscn" id="4_hkuam"]
+[ext_resource type="Resource" uid="uid://d2i4sec6ess7r" path="res://dialogues/level1/terminal.dialogue" id="5_f3b2k"]
+[ext_resource type="PackedScene" uid="uid://6qf3o3w8nrnm" path="res://dialoges_ballons/balloon.tscn" id="6_sqrei"]
+[ext_resource type="PackedScene" uid="uid://m0xgjtncfmwx" path="res://scenes/killzone.tscn" id="7_yhrca"]
+[ext_resource type="PackedScene" uid="uid://6a76tged43n0" path="res://scenes/enemy_movement/moving_enemy.tscn" id="8_4eecq"]
+[ext_resource type="Resource" uid="uid://gcrwsf207o5r" path="res://dialogues/level1/after_combat.dialogue" id="9_b3p8y"]
+[ext_resource type="PackedScene" uid="uid://bpobp4q0r8uwv" path="res://scenes/Collectibles/memory_item.tscn" id="10_bxuut"]
+[ext_resource type="Resource" uid="uid://cs5yevhncg5ah" path="res://dialogues/level1/memory.dialogue" id="11_g04qb"]
+[ext_resource type="PackedScene" uid="uid://begmy88w5vc3v" path="res://scenes/victory_zone.tscn" id="12_ida7w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7nr6d"]
+size = Vector2(2789.5, 39)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m32bo"]
+
+[node name="level1" type="Node2D" unique_id=2030530310]
+script = ExtResource("1_8i1lk")
+
+[node name="DesignLevel1" parent="." unique_id=804521204 instance=ExtResource("2_8i1lk")]
+z_index = -4096
+position = Vector2(-365, -416)
+
+[node name="Player" parent="DesignLevel1" unique_id=1929255917 instance=ExtResource("3_b4tpv")]
+z_index = 4
+position = Vector2(318, 927)
+
+[node name="Camera2D" type="Camera2D" parent="DesignLevel1/Player" unique_id=486888125]
+position = Vector2(323, 86)
+offset = Vector2(0, -175)
+
+[node name="Interactable" parent="." unique_id=2114688861 instance=ExtResource("4_hkuam")]
+position = Vector2(525, 899)
+dialogue = ExtResource("5_f3b2k")
+mode = 1
+once = true
+balloon_scene = ExtResource("6_sqrei")
+
+[node name="Killzone" parent="." unique_id=2068063459 instance=ExtResource("7_yhrca")]
+position = Vector2(2751, 607)
+
+[node name="CollisionShape2D" parent="Killzone" index="0" unique_id=92104602]
+position = Vector2(1385.25, 714.5)
+shape = SubResource("RectangleShape2D_7nr6d")
+
+[node name="MovingEnemy" parent="." unique_id=148833900 instance=ExtResource("8_4eecq")]
+position = Vector2(5177, 412)
+scale = Vector2(5.745, 5.745)
+
+[node name="Interactable2" parent="." unique_id=506833300 instance=ExtResource("4_hkuam")]
+position = Vector2(5513, 335)
+dialogue = ExtResource("9_b3p8y")
+mode = 1
+once = true
+balloon_scene = ExtResource("6_sqrei")
+
+[node name="MemoryItem" parent="." unique_id=619595776 instance=ExtResource("10_bxuut")]
+position = Vector2(6401, 715)
+collision_mask = 8
+memory_id = &"foto_lab"
+
+[node name="CollisionShape2D" parent="MemoryItem" index="0" unique_id=1103732760]
+shape = SubResource("RectangleShape2D_m32bo")
+
+[node name="Interactable3" parent="." unique_id=18607850 instance=ExtResource("4_hkuam")]
+position = Vector2(6470, 714)
+dialogue = ExtResource("11_g04qb")
+mode = 1
+once = true
+balloon_scene = ExtResource("6_sqrei")
+
+[node name="Victoryzone" parent="." unique_id=1134312133 instance=ExtResource("12_ida7w")]
+position = Vector2(6814, 734)
+
+[editable path="Killzone"]
+[editable path="MemoryItem"]

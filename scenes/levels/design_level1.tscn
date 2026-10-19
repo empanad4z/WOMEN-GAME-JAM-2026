@@ -1,0 +1,2075 @@
+[gd_scene format=3 uid="uid://cbjq317rakh8c"]
+
+[ext_resource type="Texture2D" uid="uid://x6w3djf6esrq" path="res://assets/escenario/paredes/beige/panel beige 1.png" id="1_3h337"]
+[ext_resource type="PackedScene" uid="uid://xnalhtvui0kn" path="res://scenes/assets/Piso izq.tscn" id="2_x64yw"]
+[ext_resource type="PackedScene" uid="uid://cja5tdbgac1w1" path="res://scenes/assets/puerta_cerrada.tscn" id="3_6ehks"]
+[ext_resource type="PackedScene" uid="uid://c3i1k35ld20dk" path="res://scenes/assets/piso_final_izq.tscn" id="3_o0m5d"]
+[ext_resource type="Texture2D" uid="uid://dg5bouf1fncq8" path="res://assets/escenario/columnas/columna 1 beige.png" id="4_3h337"]
+[ext_resource type="PackedScene" uid="uid://dkyv472q8qce8" path="res://scenes/assets/plataforma.tscn" id="5_3h337"]
+[ext_resource type="Texture2D" uid="uid://b64fuev14xl25" path="res://assets/escenario/tuberia/tubería.png" id="6_s33sl"]
+[ext_resource type="Texture2D" uid="uid://cfgbnhxog6qrl" path="res://assets/escenario/escalera/escalera tile.png" id="8_da5eu"]
+[ext_resource type="Texture2D" uid="uid://iq48etpkmgn1" path="res://assets/mobiliario/alacena.png" id="9_murpg"]
+[ext_resource type="Texture2D" uid="uid://d3dv54sk5hyg7" path="res://assets/mobiliario/caja.png" id="10_kk5ad"]
+[ext_resource type="Texture2D" uid="uid://bejx8s1hs7g8u" path="res://assets/mobiliario/pc apagada.png" id="11_0kund"]
+[ext_resource type="Texture2D" uid="uid://lht7qtomnv3f" path="res://assets/mobiliario/escritorio.png" id="12_01nje"]
+[ext_resource type="Texture2D" uid="uid://d3cqwlaofcm7v" path="res://assets/mobiliario/barril.png" id="13_anty6"]
+[ext_resource type="Texture2D" uid="uid://6d0c04halsp8" path="res://assets/mobiliario/ac.png" id="14_ruryg"]
+[ext_resource type="Texture2D" uid="uid://yid26i2rk7xc" path="res://assets/mobiliario/pizarra.png" id="15_8cfio"]
+[ext_resource type="Texture2D" uid="uid://dvolbap4wqgub" path="res://assets/mobiliario/silla.png" id="16_ojnpm"]
+[ext_resource type="Texture2D" uid="uid://bypmawhmox68t" path="res://assets/escenario/tuberia/tubería tile.png" id="16_s33sl"]
+
+[node name="design_level1" type="Node2D" unique_id=804521204]
+
+[node name="PanelAzul1" type="Sprite2D" parent="." unique_id=378682980]
+position = Vector2(157.75, 32.75)
+scale = Vector2(1.049325, 1.1013628)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1" unique_id=881858806]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2" unique_id=1688186921]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2" unique_id=592154860]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1240933872]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1459267185]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2005687394]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=250192496]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=268287675]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1816782124]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=981578148]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1163823959]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1051971012]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2128423913]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=611330400]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1330632012]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1097398675]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=90436727]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=791149084]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=797193063]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1414488970]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=730278780]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1647222618]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=585385060]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=35463107]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=608861627]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=5860765]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=896047651]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=989820455]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1241138705]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=191243179]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=416217960]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1786537168]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1312322042]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=794717354]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2104126732]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=966005594]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1653342066]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=919417667]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=122710844]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=871337665]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2091383196]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=200708753]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1294600070]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=711011002]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=271635642]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1101716428]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1615912409]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=775312230]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=689768126]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul1" type="Sprite2D" parent="PanelAzul1" unique_id=1696281984]
+position = Vector2(-742.998, 1738.982)
+scale = Vector2(1.049325, 1.1013628)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1" unique_id=1676024672]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2" unique_id=1063711434]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2" unique_id=1757817297]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1027846888]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1463602849]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=934380587]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=997112258]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=814652451]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1091772598]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=612757347]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=955069330]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1173616505]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1807985165]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1971583470]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1904928649]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=666013391]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2131904396]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=534639666]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=697871469]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=542299915]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=562118161]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1684230300]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=755220983]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=207106152]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1266844997]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=236177124]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=749418725]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1516777735]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2034955979]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1595509030]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=863928813]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1367180301]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=519615980]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1423284481]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2030688918]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1113486399]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=278020673]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=358142723]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1735173756]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1385361360]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1421072403]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2008327179]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1036712315]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=29875487]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=765722233]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1596986616]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1201574353]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=508554736]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1962203901]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1853412602]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul1" type="Sprite2D" parent="PanelAzul1/PanelAzul1" unique_id=648514147]
+position = Vector2(51.673107, 1802.9677)
+scale = Vector2(1.049325, 1.1013628)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1" unique_id=541783869]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2" unique_id=884746274]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2" unique_id=754153652]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=190594026]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1419930412]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1690330076]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=474084932]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1070906066]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=146779722]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=167214788]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1922191565]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=331334228]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=790330993]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=472065552]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=796954233]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1670909596]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1560201267]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1807691131]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1403210332]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1966577019]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2010059670]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=346410214]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1792914015]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1035230476]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=109035680]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=263530684]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=372488581]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1004958618]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1094029453]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2142854048]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=269711244]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=788306620]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1456660503]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=401174966]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=886324747]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=279151111]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1229361406]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=648880423]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=135167589]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=448697664]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1140944183]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=367449143]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=313923021]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=692120464]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul1" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1" unique_id=1529965453]
+position = Vector2(19786.324, 1802.4585)
+scale = Vector2(1.049325, 1.1013628)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1" unique_id=1238780941]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2" unique_id=276440493]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2" unique_id=480514213]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=723602528]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1447954715]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=579249419]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1236963957]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=559468492]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=596086650]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=221628708]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=994825703]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2069187314]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1750244148]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=489083051]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=41552550]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=780978255]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1114078844]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=943019414]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1458964384]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1676978932]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=820363747]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=283110110]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1893201212]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=717527884]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1278189790]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1335635085]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=85856783]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1962541671]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=442664672]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=59406239]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1088245053]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=191610635]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=580252088]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1383660540]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=932126372]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1163833005]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1896651644]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1860702057]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1822174911]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=72027708]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1528603164]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2055774261]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=313967201]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul1" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1" unique_id=811164784]
+position = Vector2(11097.973, 1837.0645)
+scale = Vector2(1.049325, 1.1013628)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1" unique_id=1809676109]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2" unique_id=213394865]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2" unique_id=975332593]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1777509208]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=488421484]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=472265444]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=413297122]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=995605345]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=403673048]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1408994606]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1907263125]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=695629580]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1104520387]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=931383176]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=909098614]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1731706943]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=452684088]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=772091930]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1983777453]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=120526530]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2050865092]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1121533448]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1755248045]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=965300591]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=161610154]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=593299137]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1871237671]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=307780097]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=47000806]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1591016036]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul1" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1" unique_id=993961827]
+position = Vector2(51.673107, 1802.9677)
+scale = Vector2(1.049325, 1.1013628)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1" unique_id=1896383681]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2" unique_id=2085470428]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2" unique_id=1748052010]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=102023693]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1535746958]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1469278169]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1413680436]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=40007312]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=780060566]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=324068146]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1393622148]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=882875189]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1240001714]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=326591243]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=367450963]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1938935372]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=502171647]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=975713001]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=628285509]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1385967130]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=293718071]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=393226502]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=397522448]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2105251110]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=485687591]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=796015845]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=361052698]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=107287339]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=682452407]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul1" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1" unique_id=756645020]
+position = Vector2(51.673107, 1802.9677)
+scale = Vector2(1.049325, 1.1013628)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1" unique_id=1622651722]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2" unique_id=1795458967]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2" unique_id=231641262]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=611037285]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1043662444]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=359235338]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2038856435]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1999491350]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=949673552]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1373444318]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=69421226]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=80062389]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1915589431]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=627721034]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=833145430]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=937679204]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=363579387]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=134008738]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=331150436]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1765614242]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=912626497]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=697188028]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2033271907]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1169210160]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=133340228]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=872962399]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1271151503]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=907084065]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=406931994]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1573312145]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1097595449]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1174796248]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1524034911]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=948811049]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2038273166]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1101396426]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1403198362]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1352485671]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1811033781]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=531313469]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1991828585]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=2083071126]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1941048568]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=47418642]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1493111173]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=725863223]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1890000670]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1913706181]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=972150932]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=882632614]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1791122263]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=227192923]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul1" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1" unique_id=154735245]
+position = Vector2(20257.479, 1829.5885)
+scale = Vector2(1.049325, 1.1013628)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1" unique_id=1897680416]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2" unique_id=1634834718]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2" unique_id=1786944670]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=257518356]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1078366410]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1636365756]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1367614310]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1273604439]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1276275610]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=180338970]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1623578718]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=744241680]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=749836336]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1486317925]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=948651453]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1753009118]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=90831870]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=335916349]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1960645816]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=971107897]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1397065050]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=551901352]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1001034079]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1733015890]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=624124378]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=517280945]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1450240257]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=1980818645]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=913038970]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="PanelAzul2" type="Sprite2D" parent="PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul1/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2/PanelAzul2" unique_id=981145096]
+z_index = -1
+position = Vector2(928, 2)
+texture = ExtResource("1_3h337")
+
+[node name="Area2D" parent="." unique_id=1181563553 instance=ExtResource("2_x64yw")]
+position = Vector2(-569, 1303)
+
+[node name="Area2D" parent="Area2D" unique_id=273023909 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D" unique_id=1178965959 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D/Area2D" unique_id=1259425276 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D/Area2D/Area2D" unique_id=1478334876 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1740482513 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1430807831 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1966087392 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1508451830 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=744251496 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1005442862 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1740380971 instance=ExtResource("2_x64yw")]
+z_index = 2
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1224334809 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D2" parent="Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=104590152 instance=ExtResource("3_o0m5d")]
+position = Vector2(3530, -74)
+
+[node name="Area2D2" parent="Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2" unique_id=1833722965 instance=ExtResource("3_o0m5d")]
+position = Vector2(10865, 4364)
+
+[node name="Area2D2" parent="Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D2" unique_id=1339586546 instance=ExtResource("3_o0m5d")]
+position = Vector2(15621, -3160)
+
+[node name="Area2D2" parent="Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D2/Area2D2" unique_id=992963247 instance=ExtResource("3_o0m5d")]
+z_index = 6
+position = Vector2(41764, 13956)
+
+[node name="Area2D2" parent="Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D2/Area2D2/Area2D2" unique_id=1057561839 instance=ExtResource("3_o0m5d")]
+position = Vector2(20527, 3168)
+
+[node name="Area2D2" parent="Area2D" unique_id=1900123882 instance=ExtResource("2_x64yw")]
+position = Vector2(13176, 4365)
+
+[node name="Area2D" parent="Area2D/Area2D2" unique_id=42355303 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D2/Area2D" unique_id=351373618 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D2/Area2D/Area2D" unique_id=1790604057 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D2/Area2D/Area2D/Area2D" unique_id=799419397 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D2/Area2D/Area2D/Area2D/Area2D" unique_id=740089202 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D2/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=412570674 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D2/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=937365504 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D2/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1578289222 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D2/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1819880382 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D2/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=2091352916 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D3" parent="Area2D" unique_id=1698460270 instance=ExtResource("2_x64yw")]
+position = Vector2(29950, 1205)
+
+[node name="Area2D" parent="Area2D/Area2D3" unique_id=1550582978 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D" unique_id=1127352981 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D/Area2D" unique_id=2123284501 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D/Area2D/Area2D" unique_id=1811828064 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D/Area2D/Area2D/Area2D" unique_id=1351960155 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=76763495 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=337479550 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=2063210825 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1425310503 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D3" parent="Area2D/Area2D3" unique_id=1264724439 instance=ExtResource("2_x64yw")]
+position = Vector2(34186, 8499)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3" unique_id=1924046216 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D" unique_id=256261932 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D/Area2D" unique_id=961630382 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D/Area2D/Area2D" unique_id=613408906 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D" unique_id=1097083765 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D3" parent="Area2D/Area2D3/Area2D3" unique_id=592122058 instance=ExtResource("2_x64yw")]
+position = Vector2(-8, 5429)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3" unique_id=2023882822 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D" unique_id=1525971456 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D" unique_id=1220769022 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D" unique_id=191842547 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D" unique_id=1368373434 instance=ExtResource("2_x64yw")]
+position = Vector2(4114, 26)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1185667642 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=212971695 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=192583952 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=346406305 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=830724132 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1327510077 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1038000703 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1202334500 instance=ExtResource("2_x64yw")]
+z_index = 2
+position = Vector2(1157, 1)
+
+[node name="Area2D2" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1910173320 instance=ExtResource("2_x64yw")]
+position = Vector2(9987, 4308)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2" unique_id=199001680 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D" unique_id=1040618345 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D/Area2D" unique_id=2134580600 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D/Area2D/Area2D" unique_id=927495202 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D/Area2D/Area2D/Area2D" unique_id=1606414096 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1469712982 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=721486419 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=603559568 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D2" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2" unique_id=761860418 instance=ExtResource("2_x64yw")]
+position = Vector2(10546, -1141)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D2" unique_id=5928959 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D2/Area2D" unique_id=1816301550 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D2/Area2D/Area2D" unique_id=1752960332 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D2/Area2D/Area2D/Area2D" unique_id=1627817895 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D2/Area2D/Area2D/Area2D/Area2D" unique_id=246688260 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D2/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=712282892 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D2/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=1749705648 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="Area2D" parent="Area2D/Area2D3/Area2D3/Area2D3/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D2/Area2D2/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D/Area2D" unique_id=560569067 instance=ExtResource("2_x64yw")]
+position = Vector2(1157, 1)
+
+[node name="PuertaCerrada2" parent="." unique_id=119817485 instance=ExtResource("3_6ehks")]
+position = Vector2(31, -989)
+
+[node name="PuertaCerrada2" parent="PuertaCerrada2" unique_id=827906858 instance=ExtResource("3_6ehks")]
+position = Vector2(13534, 4307)
+
+[node name="PuertaCerrada2" parent="PuertaCerrada2/PuertaCerrada2" unique_id=1062918913 instance=ExtResource("3_6ehks")]
+position = Vector2(57078, 5352)
+
+[node name="PuertaCerrada2" parent="PuertaCerrada2/PuertaCerrada2/PuertaCerrada2" unique_id=916885873 instance=ExtResource("3_6ehks")]
+position = Vector2(57078, 5352)
+
+[node name="PuertaCerrada3" parent="PuertaCerrada2/PuertaCerrada2/PuertaCerrada2" unique_id=1141896236 instance=ExtResource("3_6ehks")]
+position = Vector2(12093, 9878)
+
+[node name="Columna1Beige" type="Sprite2D" parent="." unique_id=670571391]
+visible = false
+position = Vector2(13287, 466)
+texture = ExtResource("4_3h337")
+flip_h = true
+
+[node name="Columna1Beige" type="Sprite2D" parent="Columna1Beige" unique_id=1453071616]
+position = Vector2(-6667, -6)
+texture = ExtResource("4_3h337")
+flip_h = true
+
+[node name="Plataforma" parent="." unique_id=11221132 instance=ExtResource("5_3h337")]
+position = Vector2(25528, 4971)
+
+[node name="Plataforma2" parent="." unique_id=953284931 instance=ExtResource("5_3h337")]
+position = Vector2(26800, 4220)
+
+[node name="Plataforma3" parent="." unique_id=811388774 instance=ExtResource("5_3h337")]
+position = Vector2(28092, 3540)
+
+[node name="Plataforma4" parent="." unique_id=1039546773 instance=ExtResource("5_3h337")]
+position = Vector2(42673, 14052)
+
+[node name="Plataforma5" parent="." unique_id=1084396688 instance=ExtResource("5_3h337")]
+position = Vector2(45341, 12622)
+
+[node name="Plataforma6" parent="." unique_id=343998569 instance=ExtResource("5_3h337")]
+position = Vector2(48029, 15756)
+
+[node name="Plataforma7" parent="." unique_id=1663951780 instance=ExtResource("5_3h337")]
+position = Vector2(50667, 14014)
+
+[node name="Plataforma8" parent="." unique_id=1684692030 instance=ExtResource("5_3h337")]
+position = Vector2(53157, 12719)
+
+[node name="Plataforma9" parent="." unique_id=1323816813 instance=ExtResource("5_3h337")]
+position = Vector2(49256, 10380)
+
+[node name="Plataforma10" parent="." unique_id=1098129517 instance=ExtResource("5_3h337")]
+position = Vector2(57720, 15209)
+
+[node name="Plataforma11" parent="." unique_id=1570440928 instance=ExtResource("5_3h337")]
+position = Vector2(60511, 13539)
+
+[node name="Plataforma12" parent="." unique_id=1490073816 instance=ExtResource("5_3h337")]
+position = Vector2(56176, 11226)
+
+[node name="Tubería" type="Sprite2D" parent="." unique_id=1706771647]
+position = Vector2(1657, 193)
+texture = ExtResource("6_s33sl")
+
+[node name="Tubería2" type="Sprite2D" parent="." unique_id=1730495826]
+position = Vector2(6297, 295)
+texture = ExtResource("6_s33sl")
+
+[node name="EscaleraTile" type="Sprite2D" parent="." unique_id=1694698653]
+position = Vector2(14504, 4899)
+texture = ExtResource("8_da5eu")
+
+[node name="Alacena" type="Sprite2D" parent="." unique_id=286577834]
+position = Vector2(7947, 718)
+texture = ExtResource("9_murpg")
+
+[node name="Caja" type="Sprite2D" parent="." unique_id=104015066]
+position = Vector2(8132, 137)
+texture = ExtResource("10_kk5ad")
+
+[node name="PcApagada" type="Sprite2D" parent="." unique_id=1478007533]
+z_index = 9
+position = Vector2(20621, 4148)
+texture = ExtResource("11_0kund")
+
+[node name="Escritorio" type="Sprite2D" parent="." unique_id=52369547]
+z_index = 8
+position = Vector2(20475.998, 4898)
+scale = Vector2(1.1553938, 1.335953)
+texture = ExtResource("12_01nje")
+
+[node name="Barril" type="Sprite2D" parent="." unique_id=1164645646]
+z_index = 8
+position = Vector2(22055, 4829)
+scale = Vector2(1.1553938, 1.3359531)
+texture = ExtResource("13_anty6")
+
+[node name="Ac" type="Sprite2D" parent="." unique_id=891842569]
+position = Vector2(31695, 1896)
+texture = ExtResource("14_ruryg")
+
+[node name="pizarra" type="Sprite2D" parent="." unique_id=1634460394]
+position = Vector2(35552, 1462)
+texture = ExtResource("15_8cfio")
+
+[node name="Silla2" type="Sprite2D" parent="." unique_id=2123713573]
+position = Vector2(35911, 2126)
+texture = ExtResource("16_ojnpm")
+
+[node name="Columna1Beige2" type="Sprite2D" parent="." unique_id=1262929948]
+position = Vector2(3036, 416)
+texture = ExtResource("4_3h337")
+flip_h = true
+
+[node name="Columna1Beige2" type="Sprite2D" parent="Columna1Beige2" unique_id=1355718558]
+position = Vector2(6873, -35)
+texture = ExtResource("4_3h337")
+flip_h = true
+
+[node name="Tubería3" type="Sprite2D" parent="." unique_id=1873216113]
+position = Vector2(14528, 4129)
+texture = ExtResource("6_s33sl")
+
+[node name="Tubería4" type="Sprite2D" parent="." unique_id=648872139]
+position = Vector2(23246, 4129)
+texture = ExtResource("6_s33sl")
+
+[node name="Tubería5" type="Sprite2D" parent="." unique_id=956365130]
+position = Vector2(43736, 3974)
+texture = ExtResource("6_s33sl")
+
+[node name="TuberíaTile" type="Sprite2D" parent="." unique_id=317400388]
+position = Vector2(43793, 3652)
+texture = ExtResource("16_s33sl")
+
+[node name="TuberíaTile" type="Sprite2D" parent="TuberíaTile" unique_id=459166840]
+position = Vector2(43793, 3652)
+texture = ExtResource("16_s33sl")
+
+[node name="TuberíaTile2" type="Sprite2D" parent="TuberíaTile" unique_id=28540904]
+position = Vector2(0, -80)
+texture = ExtResource("16_s33sl")
