@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c717jkvvrh0ur"]
+
+[ext_resource type="Texture2D" uid="uid://bypmawhmox68t" path="res://assets/escenario/tuberia/tubería tile.png" id="1_6y5bc"]
+
+[node name="TuberiaTile" type="Sprite2D" unique_id=1553094944]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_6y5bc")

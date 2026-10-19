@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c15tfgbg77djw"]
+
+[ext_resource type="Texture2D" uid="uid://sywlflrbybd8" path="res://assets/mobiliario/monitor sin pie/monitor apagado.png" id="1_xyl55"]
+
+[node name="MonitorApagado" type="Sprite2D" unique_id=2018413690]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_xyl55")

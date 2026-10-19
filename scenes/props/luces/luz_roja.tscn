@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dfmwbvyaphuqu"]
+
+[ext_resource type="Texture2D" uid="uid://e5sfehv8ekuw" path="res://assets/escenario/luz/luz roja.png" id="1_aafyy"]
+
+[node name="LuzRoja" type="Sprite2D" unique_id=913487204]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_aafyy")

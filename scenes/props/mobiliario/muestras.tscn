@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bu8877dv28e1q"]
+
+[ext_resource type="Texture2D" uid="uid://b7drwf2ynl2wi" path="res://assets/mobiliario/muestras.png" id="1_b5cci"]
+
+[node name="Muestras" type="Sprite2D" unique_id=865805412]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_b5cci")

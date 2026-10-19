@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://rlis8gk6atoq"]
+
+[ext_resource type="Texture2D" uid="uid://bf1n5ftnll7in" path="res://assets/mobiliario/lampara.png" id="1_y84ol"]
+
+[node name="Lampara" type="Sprite2D" unique_id=964081655]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_y84ol")

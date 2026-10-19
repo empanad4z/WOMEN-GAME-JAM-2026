@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bxsbi3ij0sjpr"]
+
+[ext_resource type="Texture2D" uid="uid://ds7kg2m5l2jl5" path="res://assets/escenario/paredes/gris/panel gris 1.png" id="1_nltma"]
+
+[node name="PanelGris1" type="Sprite2D" unique_id=50140165]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_nltma")

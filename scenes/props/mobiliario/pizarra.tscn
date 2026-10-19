@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://qr037nos2o23"]
+
+[ext_resource type="Texture2D" uid="uid://yid26i2rk7xc" path="res://assets/mobiliario/pizarra.png" id="1_5bm7c"]
+
+[node name="Pizarra" type="Sprite2D" unique_id=979395404]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_5bm7c")

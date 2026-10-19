@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b2x4xokont4da"]
+
+[ext_resource type="Texture2D" uid="uid://caoaguuunmid4" path="res://assets/escenario/PISO/piso gris.png" id="1_icltl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rm5gi"]
+size = Vector2(495, 65)
+
+[node name="PisoGris" type="StaticBody2D" unique_id=1065241208]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=607416756]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_icltl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1717053871]
+position = Vector2(-1.5, 52.5)
+shape = SubResource("RectangleShape2D_rm5gi")

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cb2hd8oh1abud"]
+
+[ext_resource type="Texture2D" uid="uid://dqmxbjmv5aolt" path="res://assets/mobiliario/locker.png" id="1_n3y4t"]
+
+[node name="Locker" type="Sprite2D" unique_id=1148948437]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_n3y4t")

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dx4l2yga8du16"]
+
+[ext_resource type="Texture2D" uid="uid://b150de8mg1j5s" path="res://assets/escenario/plataformas/plataforma izq.png" id="1_18is7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sphji"]
+size = Vector2(295, 73)
+
+[node name="PlataformaIzq" type="StaticBody2D" unique_id=1549190737]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1410261239]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_18is7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=155817576]
+position = Vector2(-2.5, 11.5)
+shape = SubResource("RectangleShape2D_sphji")
