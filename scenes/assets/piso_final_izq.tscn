@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c3i1k35ld20dk"]
 
-[ext_resource type="Texture2D" uid="uid://crbpru671f3fh" path="res://assets/escenario/PISO/piso beige.png" id="1_wivst"]
+[ext_resource type="Texture2D" uid="uid://caoaguuunmid4" path="res://assets/escenario/PISO/piso gris.png" id="1_wivst"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_peapg"]
 size = Vector2(2483, 481)

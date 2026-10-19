@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gjhofw600cix"
-path="res://.godot/imported/slime_green.png-da04cb70080f2402485d37a3f67a64e0.ctex"
+uid="uid://hh5dfhay55ty"
+path="res://.godot/imported/main.png-4ecd92d6b5898c21e9f4d0d010453b35.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/pruebas/knight/slime_green.png"
-dest_files=["res://.godot/imported/slime_green.png-da04cb70080f2402485d37a3f67a64e0.ctex"]
+source_file="res://assets/sprites/main.png"
+dest_files=["res://.godot/imported/main.png-4ecd92d6b5898c21e9f4d0d010453b35.ctex"]
 
 [params]
 

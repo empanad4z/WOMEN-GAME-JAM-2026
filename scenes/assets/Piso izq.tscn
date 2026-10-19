@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://xnalhtvui0kn"]
 
-[ext_resource type="Texture2D" uid="uid://dtc3k80qh6dg6" path="res://assets/escenario/PISO/tile piso beige.png" id="1_cyri8"]
+[ext_resource type="Texture2D" uid="uid://gq1xje3cxora" path="res://assets/escenario/PISO/tile piso gris.png" id="1_cyri8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nbvux"]
 size = Vector2(2086, 463)

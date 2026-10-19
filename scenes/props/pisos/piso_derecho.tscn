@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bxcrqpncbcovq"]
+
+[ext_resource type="Texture2D" uid="uid://c1nj6vd7kgwxn" path="res://assets/escenario/pisos/piso dcha.png" id="1_h3o7m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+
+[node name="PisoDerecho" type="StaticBody2D" unique_id=1136102531]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=159221285]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_h3o7m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705920857]
+shape = SubResource("RectangleShape2D_6pmnr")
