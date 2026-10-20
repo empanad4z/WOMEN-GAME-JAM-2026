@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bpq0lgggkjbgw"]
+
+[ext_resource type="Texture2D" uid="uid://caoaguuunmid4" path="res://assets/escenario/PISO/piso gris.png" id="1_nemva"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_peapg"]
+size = Vector2(2558, 546)
+
+[node name="Area2D2" type="Area2D" unique_id=1243044212]
+position = Vector2(620, 376)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1717451201]
+position = Vector2(25.75, 91.74999)
+scale = Vector2(1.0206745, 1.2111623)
+texture = ExtResource("1_nemva")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1719665269]
+position = Vector2(20, 334)
+shape = SubResource("RectangleShape2D_peapg")

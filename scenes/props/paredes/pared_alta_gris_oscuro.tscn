@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://e38anwnujudc"]
+
+[ext_resource type="Texture2D" uid="uid://c8jpuidmf1hjm" path="res://assets/escenario/paredes altas/pared alta gris oscuro.png" id="1_ufjqf"]
+
+[node name="ParedAltaGrisOscuro" type="Sprite2D" unique_id=1306308679]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_ufjqf")

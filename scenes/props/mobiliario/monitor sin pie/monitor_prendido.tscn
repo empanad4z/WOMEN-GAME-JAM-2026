@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://d07imxos36ufm"]
+
+[ext_resource type="Texture2D" uid="uid://5wh5kwhfytfo" path="res://assets/mobiliario/monitor sin pie/monitor prendido.png" id="1_abpbf"]
+
+[node name="MonitorPrendido" type="Sprite2D" unique_id=1634211357]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_abpbf")

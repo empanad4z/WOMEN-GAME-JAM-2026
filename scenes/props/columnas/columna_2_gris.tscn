@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dhy2kasojx43"]
+
+[ext_resource type="Texture2D" uid="uid://d50267o4k6ot" path="res://assets/escenario/columnas/columna 2 gris.png" id="1_1lf2q"]
+
+[node name="Columna2Gris" type="Sprite2D" unique_id=460190604]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_1lf2q")

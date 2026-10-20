@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://csceigxynedib"]
+
+[ext_resource type="Texture2D" uid="uid://ga1rlso8rjwy" path="res://assets/mobiliario/monitor de pie/monitor de pie prendido.png" id="1_yo427"]
+
+[node name="MonitorDePiePrendido" type="Sprite2D" unique_id=491780198]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_yo427")

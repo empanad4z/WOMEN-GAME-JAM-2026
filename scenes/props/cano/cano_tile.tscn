@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bdswa3glbwfq4"]
+
+[ext_resource type="Texture2D" uid="uid://bg5ctrn0loup2" path="res://assets/escenario/caño/caño tile.png" id="1_kfavw"]
+
+[node name="CanoTile" type="Sprite2D" unique_id=1745291478]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_kfavw")

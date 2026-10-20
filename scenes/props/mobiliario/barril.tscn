@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://2n106wdmom8f"]
+
+[ext_resource type="Texture2D" uid="uid://d3cqwlaofcm7v" path="res://assets/mobiliario/barril.png" id="1_xw8yt"]
+
+[node name="Barril" type="Sprite2D" unique_id=2033152585]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_xw8yt")

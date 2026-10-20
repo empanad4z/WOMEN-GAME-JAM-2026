@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cgpklalim7ex3"]
+
+[ext_resource type="Texture2D" uid="uid://lht7qtomnv3f" path="res://assets/mobiliario/escritorio.png" id="1_rob4p"]
+
+[node name="Escritorio" type="Sprite2D" unique_id=1006315625]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_rob4p")

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://7nojlr8s36ie"]
+
+[ext_resource type="Texture2D" uid="uid://dhnwpfey2v8s2" path="res://assets/maquinas/maquina 5.png" id="1_ggbrc"]
+
+[node name="Maquina5" type="Sprite2D" unique_id=216137377]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_ggbrc")

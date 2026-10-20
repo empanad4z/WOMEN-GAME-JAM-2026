@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cxr2twro4hp6e"]
+
+[ext_resource type="Texture2D" uid="uid://cnvcxg6jqf3qx" path="res://assets/escenario/plataformas/plataforma dcha.png" id="1_hxi2e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rm5gi"]
+size = Vector2(295, 69)
+
+[node name="PlataformaDcha" type="StaticBody2D" unique_id=33672976]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1526547220]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_hxi2e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=627119651]
+position = Vector2(-1.5, 9.5)
+shape = SubResource("RectangleShape2D_rm5gi")

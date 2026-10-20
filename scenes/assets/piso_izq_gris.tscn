@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c1jmjsu2162eg"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_u1c4f"]
+load_path = "res://.godot/imported/tile piso gris.png-b4614aa4aecb2a3fa874b8505bcb544d.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_peapg"]
+size = Vector2(2056, 444)
+
+[node name="Area2D" type="Area2D" unique_id=244291378]
+
+[node name="TilePisoGris" type="Sprite2D" parent="." unique_id=812313992]
+position = Vector2(154, -215)
+texture = SubResource("CompressedTexture2D_u1c4f")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2125840453]
+position = Vector2(152, -17)
+shape = SubResource("RectangleShape2D_peapg")

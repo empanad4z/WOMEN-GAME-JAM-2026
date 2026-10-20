@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://8t5d5tr8rk8v"]
+
+[ext_resource type="PackedScene" uid="uid://c5c54mj3542gv" path="res://scenes/props/puertas/puerta_cerrada.tscn" id="1_5xutp"]
+[ext_resource type="PackedScene" uid="uid://dcnimqo3mepwo" path="res://scenes/player.tscn" id="2_yyhyi"]
+[ext_resource type="PackedScene" uid="uid://cb87yhdii4vf3" path="res://scenes/props/pisos/tile_piso_gris.tscn" id="3_ogall"]
+[ext_resource type="PackedScene" uid="uid://b2x4xokont4da" path="res://scenes/props/pisos/piso_gris.tscn" id="4_tbhw1"]
+[ext_resource type="PackedScene" uid="uid://cvsxr6oyglppx" path="res://scenes/props/columnas/columna_1_gris.tscn" id="5_7rryd"]
+[ext_resource type="PackedScene" uid="uid://dhy2kasojx43" path="res://scenes/props/columnas/columna_2_gris.tscn" id="6_ho4di"]
+[ext_resource type="PackedScene" uid="uid://bxsbi3ij0sjpr" path="res://scenes/props/paredes/panel_gris_1.tscn" id="7_jsqnj"]
+[ext_resource type="PackedScene" uid="uid://dfmwbvyaphuqu" path="res://scenes/props/luces/luz_roja.tscn" id="8_2uqk2"]
+[ext_resource type="PackedScene" uid="uid://bnqn5gq1s0b4u" path="res://scenes/props/luces/luz_azul.tscn" id="9_v26jo"]
+[ext_resource type="PackedScene" uid="uid://e38anwnujudc" path="res://scenes/props/paredes/pared_alta_gris_oscuro.tscn" id="10_41dss"]
+[ext_resource type="PackedScene" uid="uid://bt2t81dxx4fbv" path="res://scenes/props/maquinas/maquina_1.tscn" id="11_s3jfb"]
+
+[node name="TestingScale" type="Node2D" unique_id=633818187]
+
+[node name="PuertaCerrada" parent="." unique_id=603924953 instance=ExtResource("1_5xutp")]
+position = Vector2(801, 57)
+
+[node name="Player" parent="." unique_id=1929255917 instance=ExtResource("2_yyhyi")]
+position = Vector2(-374.99997, 379)
+
+[node name="TilePisoGris" parent="." unique_id=1351227111 instance=ExtResource("3_ogall")]
+position = Vector2(28, 572)
+
+[node name="PisoGris" parent="." unique_id=1065241208 instance=ExtResource("4_tbhw1")]
+position = Vector2(630, 575)
+
+[node name="Columna1Gris" parent="." unique_id=1457161744 instance=ExtResource("5_7rryd")]
+position = Vector2(94, 379)
+
+[node name="Columna2Gris" parent="." unique_id=1183627766 instance=ExtResource("6_ho4di")]
+position = Vector2(611, 269)
+
+[node name="PanelGris1" parent="." unique_id=1925906518 instance=ExtResource("7_jsqnj")]
+position = Vector2(-86, 309)
+
+[node name="LuzRoja" parent="." unique_id=913487204 instance=ExtResource("8_2uqk2")]
+position = Vector2(775, 114)
+
+[node name="LuzAzul" parent="." unique_id=1606547833 instance=ExtResource("9_v26jo")]
+position = Vector2(775, -20)
+
+[node name="ParedAltaGrisOscuro" parent="." unique_id=1306308679 instance=ExtResource("10_41dss")]
+position = Vector2(311, 91)
+
+[node name="Maquina1" parent="." unique_id=1443091645 instance=ExtResource("11_s3jfb")]
+position = Vector2(-57, 418)
