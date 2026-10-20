@@ -9,3 +9,4 @@ script = ExtResource("1_hetdf")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=100999598]
 stream = ExtResource("2_jd6i5")
 bus = &"Music"
+playback_type = 1
