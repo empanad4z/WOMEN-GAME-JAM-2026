@@ -1,57 +1,31 @@
-[gd_scene format=4 uid="uid://cqmod55c75sea"]
+[gd_scene format=3 uid="uid://cqmod55c75sea"]
 
 [ext_resource type="Script" uid="uid://dkaugcgqilxt" path="res://scripts/levels/level.gd" id="1_d0grl"]
 [ext_resource type="PackedScene" uid="uid://bktsnhsldevym" path="res://scenes/dialogue.tscn" id="1_hghvf"]
+[ext_resource type="PackedScene" uid="uid://cb87yhdii4vf3" path="res://scenes/props/pisos/tile_piso_gris.tscn" id="2_1t5oo"]
 [ext_resource type="PackedScene" uid="uid://dcnimqo3mepwo" path="res://scenes/player.tscn" id="2_hghvf"]
 [ext_resource type="Resource" uid="uid://by1eiu3ne7mja" path="res://dialogues/level0/0_wakeup.dialogue" id="2_ry65h"]
-[ext_resource type="PackedScene" uid="uid://b2wek78wlqwlc" path="res://scenes/props/pisos/piso_izquierdo.tscn" id="2_vals0"]
+[ext_resource type="PackedScene" uid="uid://e38anwnujudc" path="res://scenes/props/paredes/pared_alta_gris_oscuro.tscn" id="3_a76di"]
 [ext_resource type="PackedScene" uid="uid://6qf3o3w8nrnm" path="res://dialoges_ballons/balloon.tscn" id="3_d0grl"]
 [ext_resource type="PackedScene" uid="uid://disno0wijrbr1" path="res://scenes/player_camera.tscn" id="7_1nvli"]
-[ext_resource type="PackedScene" uid="uid://c6gsv3vpni4jr" path="res://scenes/props/pisos/piso_central.tscn" id="7_vals0"]
-[ext_resource type="Texture2D" uid="uid://chvvcqab0pr2h" path="res://assets/tileset_pruebanivel1/main.png" id="9_oem7y"]
+[ext_resource type="PackedScene" uid="uid://kkhh3osqybvp" path="res://scenes/props/mobiliario/alacena.tscn" id="10_3ebcg"]
 [ext_resource type="Texture2D" uid="uid://dg4of4c28vv4u" path="res://assets/maquinas/rotas/maquina 5 rota.png" id="10_a76di"]
-[ext_resource type="Texture2D" uid="uid://bvcn38fx651h" path="res://assets/escenario/paredes/gris/panel gris 5.png" id="11_7s2gi"]
-[ext_resource type="Texture2D" uid="uid://ds7kg2m5l2jl5" path="res://assets/escenario/paredes/gris/panel gris 1.png" id="12_fj52k"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a76di"]
-texture = ExtResource("9_oem7y")
-texture_region_size = Vector2i(64, 64)
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-7:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
-2:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-7:1/0 = 0
-0:2/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-7:2/0 = 0
-4:3/0 = 0
-5:3/0 = 0
-0:4/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-4:4/0 = 0
-7:4/0 = 0
-4:5/0 = 0
-5:5/0 = 0
-7:5/0 = 0
-0:6/0 = 0
-1:6/0 = 0
-2:6/0 = 0
-5:6/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_qa2gp"]
-tile_size = Vector2i(64, 64)
-physics_layer_0/collision_layer = 1
-sources/1 = SubResource("TileSetAtlasSource_a76di")
+[ext_resource type="PackedScene" uid="uid://bgooorwel58tk" path="res://scenes/props/maquinas/rotas/maquina_4_rota.tscn" id="11_luu1i"]
+[ext_resource type="PackedScene" uid="uid://c1dw4x58ghe4f" path="res://scenes/props/maquinas/rotas/maquina_2_rota.tscn" id="12_db1u1"]
+[ext_resource type="PackedScene" uid="uid://drlsjlp5unnaj" path="res://scenes/props/maquinas/rotas/maquina_5_rota.tscn" id="13_po5je"]
+[ext_resource type="PackedScene" uid="uid://rlis8gk6atoq" path="res://scenes/props/mobiliario/lampara.tscn" id="14_mtrs4"]
+[ext_resource type="PackedScene" uid="uid://bfjh85p4fsoje" path="res://scenes/props/mobiliario/cpu.tscn" id="15_rbahy"]
+[ext_resource type="PackedScene" uid="uid://d07hdy05wrev" path="res://scenes/props/maquinas/rotas/maquina_1_rota.tscn" id="16_al08y"]
+[ext_resource type="PackedScene" uid="uid://v6vbtboac5ca" path="res://scenes/props/maquinas/rotas/maquina_3_rota.tscn" id="17_cam4b"]
+[ext_resource type="PackedScene" uid="uid://cnof7mw6wudm1" path="res://scenes/props/cano/cano.tscn" id="19_56goh"]
+[ext_resource type="Texture2D" uid="uid://b2dhpv02ryepe" path="res://assets/FOREGROUND/1.png" id="20_db1u1"]
+[ext_resource type="Texture2D" uid="uid://veoikjnpuuxp" path="res://assets/FOREGROUND/3.png" id="21_po5je"]
+[ext_resource type="Texture2D" uid="uid://cby3ab2pbal3t" path="res://assets/FOREGROUND/8.png" id="22_po5je"]
+[ext_resource type="Texture2D" uid="uid://dgp10p4r2tcla" path="res://assets/FOREGROUND/7.png" id="23_mtrs4"]
+[ext_resource type="PackedScene" uid="uid://c5c54mj3542gv" path="res://scenes/props/puertas/puerta_cerrada.tscn" id="24_rbahy"]
+[ext_resource type="PackedScene" uid="uid://bg51x38iyh64t" path="res://scenes/props/maquinas/energia/energia_auxiliar_desconectada.tscn" id="25_al08y"]
+[ext_resource type="PackedScene" uid="uid://cgpklalim7ex3" path="res://scenes/props/mobiliario/escritorio.tscn" id="26_56goh"]
+[ext_resource type="PackedScene" uid="uid://dav8jmq2k28h7" path="res://scenes/props/mobiliario/pc_prendida.tscn" id="27_j4kqp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
 
@@ -60,14 +34,141 @@ script = ExtResource("1_d0grl")
 level_id = &"nivel_0"
 fade_rect = NodePath("ScreenFade/ColorRect")
 
-[node name="Piso" type="Node2D" parent="." unique_id=567904881]
-visible = false
+[node name="Piso" type="Node2D" parent="." unique_id=379048894]
 
-[node name="PisoIzquierdo" parent="Piso" unique_id=1038185713 instance=ExtResource("2_vals0")]
-position = Vector2(-321.975, 75)
+[node name="TilePisoGris" parent="Piso" unique_id=1351227111 instance=ExtResource("2_1t5oo")]
 
-[node name="PisoCentral" parent="Piso" unique_id=2093455642 instance=ExtResource("7_vals0")]
-position = Vector2(0, 75)
+[node name="TilePisoGris2" parent="Piso" unique_id=381019830 instance=ExtResource("2_1t5oo")]
+position = Vector2(409.5, 0)
+
+[node name="TilePisoGris3" parent="Piso" unique_id=463863499 instance=ExtResource("2_1t5oo")]
+position = Vector2(819, 0)
+
+[node name="TilePisoGris4" parent="Piso" unique_id=1703118810 instance=ExtResource("2_1t5oo")]
+position = Vector2(1228, 0)
+
+[node name="TilePisoGris5" parent="Piso" unique_id=471615916 instance=ExtResource("2_1t5oo")]
+position = Vector2(1638, 0)
+
+[node name="TilePisoGris6" parent="Piso" unique_id=1545117769 instance=ExtResource("2_1t5oo")]
+position = Vector2(2045, 0)
+
+[node name="TilePisoGris7" parent="Piso" unique_id=1622297755 instance=ExtResource("2_1t5oo")]
+position = Vector2(2455, 0)
+
+[node name="TilePisoGris8" parent="Piso" unique_id=1187324174 instance=ExtResource("2_1t5oo")]
+position = Vector2(2864, 0)
+
+[node name="TilePisoGris9" parent="Piso" unique_id=646684434 instance=ExtResource("2_1t5oo")]
+position = Vector2(2864, 0)
+
+[node name="TilePisoGris10" parent="Piso" unique_id=2078883613 instance=ExtResource("2_1t5oo")]
+position = Vector2(3274, 0)
+
+[node name="TilePisoGris11" parent="Piso" unique_id=376374449 instance=ExtResource("2_1t5oo")]
+position = Vector2(3680, 0)
+
+[node name="TilePisoGris12" parent="Piso" unique_id=530542101 instance=ExtResource("2_1t5oo")]
+position = Vector2(4086, 0)
+
+[node name="TilePisoGris13" parent="Piso" unique_id=1932616157 instance=ExtResource("2_1t5oo")]
+position = Vector2(4496, 0)
+
+[node name="TilePisoGris14" parent="Piso" unique_id=1519203859 instance=ExtResource("2_1t5oo")]
+position = Vector2(4905, 0)
+
+[node name="TilePisoGris15" parent="Piso" unique_id=582491585 instance=ExtResource("2_1t5oo")]
+position = Vector2(5314, 0)
+
+[node name="TilePisoGris16" parent="Piso" unique_id=292243220 instance=ExtResource("2_1t5oo")]
+position = Vector2(5724, 0)
+
+[node name="TilePisoGris17" parent="Piso" unique_id=759156173 instance=ExtResource("2_1t5oo")]
+position = Vector2(6134, 0)
+
+[node name="TilePisoGris18" parent="Piso" unique_id=886432366 instance=ExtResource("2_1t5oo")]
+position = Vector2(6543, 0)
+
+[node name="Paredes" type="Node2D" parent="." unique_id=1471261284]
+position = Vector2(-3.32, 3)
+
+[node name="ParedAltaGrisOscuro2" parent="Paredes" unique_id=319995440 instance=ExtResource("3_a76di")]
+position = Vector2(-201.68, -889.38)
+
+[node name="ParedAltaGrisOscuro3" parent="Paredes" unique_id=1306308679 instance=ExtResource("3_a76di")]
+position = Vector2(-17.68, -889.00006)
+
+[node name="ParedAltaGrisOscuro4" parent="Paredes" unique_id=1948819947 instance=ExtResource("3_a76di")]
+position = Vector2(168.32, -889)
+
+[node name="ParedAltaGrisOscuro5" parent="Paredes" unique_id=342338566 instance=ExtResource("3_a76di")]
+position = Vector2(354.32, -889)
+
+[node name="ParedAltaGrisOscuro6" parent="Paredes" unique_id=271715478 instance=ExtResource("3_a76di")]
+position = Vector2(540.32007, -889)
+
+[node name="ParedAltaGrisOscuro7" parent="Paredes" unique_id=2074760245 instance=ExtResource("3_a76di")]
+position = Vector2(726.32, -889)
+
+[node name="ParedAltaGrisOscuro8" parent="Paredes" unique_id=2109458548 instance=ExtResource("3_a76di")]
+position = Vector2(912.32, -889)
+
+[node name="ParedAltaGrisOscuro9" parent="Paredes" unique_id=954080395 instance=ExtResource("3_a76di")]
+position = Vector2(1098.32, -889)
+
+[node name="ParedAltaGrisOscuro10" parent="Paredes" unique_id=1244800114 instance=ExtResource("3_a76di")]
+position = Vector2(1284.32, -889)
+
+[node name="ParedAltaGrisOscuro11" parent="Paredes" unique_id=124427524 instance=ExtResource("3_a76di")]
+position = Vector2(1470.32, -889)
+
+[node name="ParedAltaGrisOscuro12" parent="Paredes" unique_id=381275231 instance=ExtResource("3_a76di")]
+position = Vector2(1656.32, -889)
+
+[node name="ParedAltaGrisOscuro13" parent="Paredes" unique_id=1476352537 instance=ExtResource("3_a76di")]
+position = Vector2(1846.3198, -889)
+
+[node name="ParedAltaGrisOscuro14" parent="Paredes" unique_id=1885139024 instance=ExtResource("3_a76di")]
+position = Vector2(2032.3198, -889)
+
+[node name="ParedAltaGrisOscuro15" parent="Paredes" unique_id=943001444 instance=ExtResource("3_a76di")]
+position = Vector2(2218.3198, -889)
+
+[node name="ParedAltaGrisOscuro16" parent="Paredes" unique_id=1032509627 instance=ExtResource("3_a76di")]
+position = Vector2(2404.32, -889)
+
+[node name="ParedAltaGrisOscuro17" parent="Paredes" unique_id=469431942 instance=ExtResource("3_a76di")]
+position = Vector2(2590.3203, -889)
+
+[node name="ParedAltaGrisOscuro18" parent="Paredes" unique_id=896602287 instance=ExtResource("3_a76di")]
+position = Vector2(2776.32, -889)
+
+[node name="ParedAltaGrisOscuro19" parent="Paredes" unique_id=315573314 instance=ExtResource("3_a76di")]
+position = Vector2(2962.32, -889)
+
+[node name="ParedAltaGrisOscuro20" parent="Paredes" unique_id=251894579 instance=ExtResource("3_a76di")]
+position = Vector2(3148.32, -889)
+
+[node name="ParedAltaGrisOscuro21" parent="Paredes" unique_id=256149443 instance=ExtResource("3_a76di")]
+position = Vector2(3334.32, -889)
+
+[node name="ParedAltaGrisOscuro22" parent="Paredes" unique_id=1054956298 instance=ExtResource("3_a76di")]
+position = Vector2(3520.3203, -889)
+
+[node name="ParedAltaGrisOscuro23" parent="Paredes" unique_id=15693070 instance=ExtResource("3_a76di")]
+position = Vector2(3706.32, -889)
+
+[node name="ParedAltaGrisOscuro24" parent="Paredes" unique_id=245888337 instance=ExtResource("3_a76di")]
+position = Vector2(3892.3198, -889)
+
+[node name="ParedAltaGrisOscuro25" parent="Paredes" unique_id=1560982717 instance=ExtResource("3_a76di")]
+position = Vector2(4078.3198, -889)
+
+[node name="ParedAltaGrisOscuro26" parent="Paredes" unique_id=997218548 instance=ExtResource("3_a76di")]
+position = Vector2(4264.3203, -889)
+
+[node name="ParedAltaGrisOscuro27" parent="Paredes" unique_id=286220879 instance=ExtResource("3_a76di")]
+position = Vector2(4450.32, -889)
 
 [node name="Dialogue1" parent="." unique_id=2114688861 instance=ExtResource("1_hghvf")]
 position = Vector2(0, -63.085)
@@ -76,12 +177,6 @@ dialogue = ExtResource("2_ry65h")
 mode = 1
 once = true
 balloon_scene = ExtResource("3_d0grl")
-
-[node name="Player" parent="." unique_id=1929255917 instance=ExtResource("2_hghvf")]
-position = Vector2(0, -163.395)
-
-[node name="PlayerCamera" parent="Player" unique_id=1464454565 instance=ExtResource("7_1nvli")]
-limit_left = -200
 
 [node name="ScreenFade" type="CanvasLayer" parent="." unique_id=1795839320]
 layer = 50
@@ -96,27 +191,127 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1013322682]
-tile_map_data = PackedByteArray("AADy/wEAAQABAAEAAADz/wEAAQABAAEAAAD0/wEAAQABAAEAAAD1/wEAAQABAAEAAAD2/wEAAQABAAEAAAD3/wEAAQABAAEAAAD4/wEAAQABAAEAAAD5/wEAAQABAAEAAAD6/wEAAQABAAEAAAD7/wEAAQABAAEAAAD8/wEAAQABAAEAAAD9/wEAAQABAAEAAAD+/wEAAQABAAEAAAD//wEAAQABAAEAAAAAAAEAAQABAAEAAAABAAEAAQABAAEAAAACAAEAAQABAAEAAAADAAEAAQABAAEAAAAEAAEAAQABAAEAAAAFAAEAAQABAAEAAAAGAAEAAQABAAEAAAAHAAEAAQABAAEAAAAIAAEAAQABAAEAAAAJAAEAAQABAAEAAAAKAAEAAQABAAEAAAALAAEAAQABAAEAAAAMAAEAAQABAAEAAAANAAEAAQABAAEAAAAOAAEAAQABAAEAAAAPAAEAAQABAAEAAAAQAAEAAQABAAEAAAARAAEAAQABAAEAAAASAAEAAQABAAEAAAATAAEAAQABAAEAAAAUAAEAAQABAAEAAAAVAAEAAQABAAEAAAAWAAEAAQABAAEAAAAXAAEAAQABAAEAAAAYAAEAAQABAAEAAAAZAAEAAQABAAEAAAAaAAEAAQABAAEAAAAbAAEAAQABAAEAAAAcAAEAAQABAAEAAAAdAAEAAQABAAEAAAAeAAEAAQABAAEAAAAfAAEAAQABAAEAAAAgAAEAAQABAAEAAAD9/wAAAQABAAEAAAD9////AQABAAEAAAD9//7/AQABAAEAAAD9//3/AQABAAEAAAD9//z/AQABAAEAAAD9//v/AQABAAEAAAD9//r/AQABAAEAAAD9//n/AQABAAEAAAD9//j/AQABAAEAAAD9//f/AQABAAEAAAD9//b/AQABAAEAAAD9//X/AQABAAEAAAD9//T/AQABAAEAAAA=")
-tile_set = SubResource("TileSet_qa2gp")
+[node name="Alacena" parent="." unique_id=1732104091 instance=ExtResource("10_3ebcg")]
+position = Vector2(640, -132)
+
+[node name="Maquina4Rota" parent="." unique_id=278793222 instance=ExtResource("11_luu1i")]
+position = Vector2(310, -140)
+
+[node name="Maquina2Rota" parent="." unique_id=1344832139 instance=ExtResource("12_db1u1")]
+position = Vector2(1222, -455)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="Maquina5Rota2" parent="." unique_id=1355388097 instance=ExtResource("13_po5je")]
+position = Vector2(1275, -210)
+
+[node name="Maquina5Rota" parent="." unique_id=1350808036 instance=ExtResource("13_po5je")]
+position = Vector2(1144, -208)
+
+[node name="Lampara" parent="." unique_id=964081655 instance=ExtResource("14_mtrs4")]
+position = Vector2(596, -238)
+
+[node name="Cpu" parent="." unique_id=1759585337 instance=ExtResource("15_rbahy")]
+position = Vector2(481, -107)
+
+[node name="Maquina2Rota2" parent="." unique_id=1281516383 instance=ExtResource("12_db1u1")]
+position = Vector2(971, -459)
+
+[node name="Maquina1Rota" parent="." unique_id=40796025 instance=ExtResource("16_al08y")]
+position = Vector2(1926, -175)
+
+[node name="Maquina3Rota" parent="." unique_id=218005723 instance=ExtResource("17_cam4b")]
+position = Vector2(1652, -223.00002)
+scale = Vector2(0.19999999, 0.19999999)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=729816888]
-position = Vector2(1445, 0)
+position = Vector2(2076, -46)
 rotation = 1.5707964
 
 [node name="Maquina5Rota" type="Sprite2D" parent="StaticBody2D" unique_id=582392551]
-scale = Vector2(0.145, 0.145)
+scale = Vector2(0.145, 0.2)
 texture = ExtResource("10_a76di")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=8381474]
-scale = Vector2(6.13, 10.865)
+scale = Vector2(6.13, 15.015)
 shape = SubResource("RectangleShape2D_6pmnr")
 
-[node name="PanelGris5" type="Sprite2D" parent="." unique_id=1637250155]
-position = Vector2(865, -722)
-scale = Vector2(0.33, 0.33)
-texture = ExtResource("11_7s2gi")
+[node name="Node2D" type="Node2D" parent="." unique_id=688328409]
+visible = false
+position = Vector2(-251.99998, -82.00001)
 
-[node name="PanelGris1" type="Sprite2D" parent="." unique_id=1139493012]
-position = Vector2(2118, -567)
-texture = ExtResource("12_fj52k")
+[node name="Cano" parent="Node2D" unique_id=2015877246 instance=ExtResource("19_56goh")]
+position = Vector2(192.99997, -630)
+rotation = 1.5707964
+scale = Vector2(0.45000002, 0.45000002)
+
+[node name="Cano2" parent="Node2D" unique_id=993875421 instance=ExtResource("19_56goh")]
+position = Vector2(480.99994, -630)
+rotation = 1.5707964
+scale = Vector2(0.45000002, 0.45000002)
+
+[node name="Cano3" parent="Node2D" unique_id=805490960 instance=ExtResource("19_56goh")]
+position = Vector2(768.99994, -630)
+rotation = 1.5707964
+scale = Vector2(0.45000002, 0.45000002)
+
+[node name="Cano4" parent="Node2D" unique_id=119066631 instance=ExtResource("19_56goh")]
+position = Vector2(1057, -629.99994)
+rotation = 1.5707964
+scale = Vector2(0.45000002, 0.45000002)
+
+[node name="Cano5" parent="Node2D" unique_id=1459681185 instance=ExtResource("19_56goh")]
+position = Vector2(1344, -628.99994)
+rotation = 1.5707964
+scale = Vector2(0.45000002, 0.45000002)
+
+[node name="Cano" parent="." unique_id=2040268375 instance=ExtResource("19_56goh")]
+position = Vector2(1561, -517)
+
+[node name="PuertaCerrada" parent="." unique_id=603924953 instance=ExtResource("24_rbahy")]
+position = Vector2(4699.3, -516)
+
+[node name="EnergiaAuxiliarDesconectada" parent="." unique_id=666976198 instance=ExtResource("25_al08y")]
+position = Vector2(4458.3, -171)
+
+[node name="Foreground" type="Node2D" parent="." unique_id=2029159496]
+
+[node name="1" type="Sprite2D" parent="Foreground" unique_id=1398313336]
+position = Vector2(451, -684)
+scale = Vector2(0.505, 0.505)
+texture = ExtResource("20_db1u1")
+
+[node name="3" type="Sprite2D" parent="Foreground" unique_id=667295431]
+visible = false
+position = Vector2(41.999992, -68.99999)
+rotation = -1.0297443
+scale = Vector2(0.33500004, 0.33500004)
+texture = ExtResource("21_po5je")
+
+[node name="8" type="Sprite2D" parent="Foreground" unique_id=1065846256]
+position = Vector2(-222.00002, 377)
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("22_po5je")
+
+[node name="9" type="Sprite2D" parent="Foreground" unique_id=579222289]
+position = Vector2(2150, 290)
+rotation = 1.5707964
+scale = Vector2(1.095, 5.67)
+texture = ExtResource("22_po5je")
+
+[node name="7" type="Sprite2D" parent="Foreground" unique_id=4792669]
+position = Vector2(1981, -908)
+texture = ExtResource("23_mtrs4")
+
+[node name="Escritorio" parent="." unique_id=1006315625 instance=ExtResource("26_56goh")]
+position = Vector2(2987.6, -149.4)
+
+[node name="PcPrendida" parent="." unique_id=913847234 instance=ExtResource("27_j4kqp")]
+position = Vector2(2981.6, -285.4)
+
+[node name="Player" parent="." unique_id=1929255917 instance=ExtResource("2_hghvf")]
+position = Vector2(0, -163.395)
+
+[node name="PlayerCamera" parent="Player" unique_id=1464454565 instance=ExtResource("7_1nvli")]
+limit_left = -200
+drag_top_margin = 0.5
+drag_bottom_margin = 0.05

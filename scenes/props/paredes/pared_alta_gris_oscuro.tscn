@@ -5,3 +5,4 @@
 [node name="ParedAltaGrisOscuro" type="Sprite2D" unique_id=1306308679]
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("1_ufjqf")
+centered = false
