@@ -569,13 +569,13 @@ scale = Vector2(0.2, 0.2)
 texture = ExtResource("34_gvwcr")
 
 [node name="PuertaCerrada" parent="." unique_id=1937955197 instance=ExtResource("24_rbahy")]
-position = Vector2(5519, -514)
+position = Vector2(5517, -552)
 
 [node name="LuzRoja" parent="PuertaCerrada" unique_id=913487204 instance=ExtResource("33_xremi")]
 position = Vector2(-28, 118)
 
 [node name="Player" parent="." unique_id=1929255917 instance=ExtResource("2_hghvf")]
-position = Vector2(3.8146973e-06, -166)
+position = Vector2(1.3552527e-20, -196.00002)
 
 [node name="PlayerCamera" parent="Player" unique_id=1464454565 instance=ExtResource("7_1nvli")]
 limit_left = -200
@@ -585,13 +585,13 @@ drag_bottom_margin = 0.05
 
 [node name="PuertaAbierta" type="Sprite2D" parent="." unique_id=1884981057]
 visible = false
-position = Vector2(5518, -514)
-scale = Vector2(0.25, 0.25)
+position = Vector2(5518, -550)
+scale = Vector2(0.25, 0.27)
 texture = ExtResource("36_itdjh")
 
 [node name="LuzAzul" type="Sprite2D" parent="PuertaAbierta" unique_id=1589204090]
-position = Vector2(-108, 472)
-scale = Vector2(0.79999995, 0.79999995)
+position = Vector2(-112, 433.33325)
+scale = Vector2(0.79999995, 0.74074066)
 texture = ExtResource("36_vs12j")
 
 [node name="Foreground" type="Node2D" parent="." unique_id=2029159496]

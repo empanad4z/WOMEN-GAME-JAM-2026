@@ -163,7 +163,7 @@ script = ExtResource("1_dqkch")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1642977503]
 position = Vector2(0, 1.2853364)
-scale = Vector2(0.96, 1.6)
+scale = Vector2(0.95999986, 1.5999999)
 shape = SubResource("RectangleShape2D_d2wvv")
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=418958962]
@@ -193,9 +193,8 @@ shape = SubResource("CapsuleShape2D_3v2ag")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1966613025]
 scale = Vector2(0.075, 0.075)
 sprite_frames = SubResource("SpriteFrames_y4r1p")
-animation = &"run"
+animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.68900716
 
 [node name="HealthComponent" type="Node" parent="." unique_id=438585093]
 script = ExtResource("1_g2els")

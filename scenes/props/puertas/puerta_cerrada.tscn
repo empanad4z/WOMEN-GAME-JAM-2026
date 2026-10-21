@@ -5,9 +5,9 @@
 [node name="PuertaCerrada" type="StaticBody2D" unique_id=603924953]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1431279787]
-scale = Vector2(0.25, 0.25)
+scale = Vector2(0.25, 0.27)
 texture = ExtResource("1_wtmmk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=614117977]
-position = Vector2(58, 31)
-polygon = PackedVector2Array(-87, 454, -86, -571, 73, -569, 76, 554)
+position = Vector2(58, 80)
+polygon = PackedVector2Array(-87, 454, -77, -706, 67, -704, 76, 554)
