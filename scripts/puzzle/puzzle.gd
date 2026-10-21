@@ -23,7 +23,7 @@ signal completado
 signal cerrado
 
 # La escena que contiene este nodo (CanvasLayer > CenterContainer > Control > Puzzle)
-const RUTA_ESCENA := "res://scenes/layer_puzzle.tscn"
+const RUTA_ESCENA := "res://scenes/puzzle/layer_puzzle.tscn"
 
 # Para que no se abran dos puzzles a la vez
 static var hay_puzzle_abierto := false

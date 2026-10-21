@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://cqmod55c75sea"]
 
-[ext_resource type="Script" uid="uid://dkaugcgqilxt" path="res://scripts/levels/level.gd" id="1_d0grl"]
 [ext_resource type="PackedScene" uid="uid://bktsnhsldevym" path="res://scenes/dialogue.tscn" id="1_hghvf"]
+[ext_resource type="Script" uid="uid://03omx72anml" path="res://scripts/levels/level0.gd" id="1_itdjh"]
 [ext_resource type="PackedScene" uid="uid://cb87yhdii4vf3" path="res://scenes/props/pisos/tile_piso_gris.tscn" id="2_1t5oo"]
 [ext_resource type="PackedScene" uid="uid://dcnimqo3mepwo" path="res://scenes/player.tscn" id="2_hghvf"]
 [ext_resource type="Resource" uid="uid://by1eiu3ne7mja" path="res://dialogues/level0/0_wakeup.dialogue" id="2_ry65h"]
 [ext_resource type="PackedScene" uid="uid://e38anwnujudc" path="res://scenes/props/paredes/pared_alta_gris_oscuro.tscn" id="3_a76di"]
 [ext_resource type="PackedScene" uid="uid://6qf3o3w8nrnm" path="res://dialoges_ballons/balloon.tscn" id="3_d0grl"]
+[ext_resource type="PackedScene" uid="uid://b2x4xokont4da" path="res://scenes/props/pisos/piso_gris.tscn" id="4_ecdks"]
 [ext_resource type="PackedScene" uid="uid://disno0wijrbr1" path="res://scenes/player_camera.tscn" id="7_1nvli"]
 [ext_resource type="PackedScene" uid="uid://kkhh3osqybvp" path="res://scenes/props/mobiliario/alacena.tscn" id="10_3ebcg"]
 [ext_resource type="Texture2D" uid="uid://dg4of4c28vv4u" path="res://assets/maquinas/rotas/maquina 5 rota.png" id="10_a76di"]
@@ -15,24 +16,67 @@
 [ext_resource type="PackedScene" uid="uid://drlsjlp5unnaj" path="res://scenes/props/maquinas/rotas/maquina_5_rota.tscn" id="13_po5je"]
 [ext_resource type="PackedScene" uid="uid://rlis8gk6atoq" path="res://scenes/props/mobiliario/lampara.tscn" id="14_mtrs4"]
 [ext_resource type="PackedScene" uid="uid://bfjh85p4fsoje" path="res://scenes/props/mobiliario/cpu.tscn" id="15_rbahy"]
-[ext_resource type="PackedScene" uid="uid://d07hdy05wrev" path="res://scenes/props/maquinas/rotas/maquina_1_rota.tscn" id="16_al08y"]
 [ext_resource type="PackedScene" uid="uid://v6vbtboac5ca" path="res://scenes/props/maquinas/rotas/maquina_3_rota.tscn" id="17_cam4b"]
 [ext_resource type="PackedScene" uid="uid://cnof7mw6wudm1" path="res://scenes/props/cano/cano.tscn" id="19_56goh"]
+[ext_resource type="Resource" uid="uid://b5w8uwg20i28e" path="res://dialogues/level0/1_console.dialogue" id="19_j4kqp"]
 [ext_resource type="Texture2D" uid="uid://b2dhpv02ryepe" path="res://assets/FOREGROUND/1.png" id="20_db1u1"]
 [ext_resource type="Texture2D" uid="uid://veoikjnpuuxp" path="res://assets/FOREGROUND/3.png" id="21_po5je"]
+[ext_resource type="PackedScene" uid="uid://cb2hd8oh1abud" path="res://scenes/props/mobiliario/locker.tscn" id="22_74bpm"]
+[ext_resource type="Texture2D" uid="uid://11mol4fpqj87" path="res://assets/maquinas/energia/energia auxiliar conectada.png" id="22_gvwcr"]
 [ext_resource type="Texture2D" uid="uid://cby3ab2pbal3t" path="res://assets/FOREGROUND/8.png" id="22_po5je"]
 [ext_resource type="Texture2D" uid="uid://dgp10p4r2tcla" path="res://assets/FOREGROUND/7.png" id="23_mtrs4"]
+[ext_resource type="Resource" uid="uid://bjpfbun42yinl" path="res://dialogues/level0/2_aux_power.dialogue" id="24_5lqw3"]
 [ext_resource type="PackedScene" uid="uid://c5c54mj3542gv" path="res://scenes/props/puertas/puerta_cerrada.tscn" id="24_rbahy"]
 [ext_resource type="PackedScene" uid="uid://bg51x38iyh64t" path="res://scenes/props/maquinas/energia/energia_auxiliar_desconectada.tscn" id="25_al08y"]
+[ext_resource type="Texture2D" uid="uid://derd06nllhuth" path="res://assets/vacio/charcos/charco 2.png" id="26_4k6ad"]
 [ext_resource type="PackedScene" uid="uid://cgpklalim7ex3" path="res://scenes/props/mobiliario/escritorio.tscn" id="26_56goh"]
 [ext_resource type="PackedScene" uid="uid://dav8jmq2k28h7" path="res://scenes/props/mobiliario/pc_prendida.tscn" id="27_j4kqp"]
+[ext_resource type="Texture2D" uid="uid://ckssplsfuv2nu" path="res://assets/vacio/charcos/charco 3.png" id="27_vn2at"]
+[ext_resource type="LabelSettings" uid="uid://cpvockp4e1n3y" path="res://ui/prompt_label_settings.tres" id="28_6bn4o"]
+[ext_resource type="Texture2D" uid="uid://d28cbin4g14h7" path="res://assets/vacio/manchas/mancha 1.png" id="28_q6o2s"]
+[ext_resource type="PackedScene" uid="uid://qr037nos2o23" path="res://scenes/props/mobiliario/pizarra.tscn" id="28_wcmim"]
+[ext_resource type="PackedScene" uid="uid://bombhbu8033gp" path="res://scenes/props/mobiliario/silla.tscn" id="29_d7a8j"]
+[ext_resource type="Texture2D" uid="uid://cu1yhogfrmya8" path="res://assets/vacio/manchas/mancha 2.png" id="29_ecdks"]
+[ext_resource type="PackedScene" uid="uid://2n106wdmom8f" path="res://scenes/props/mobiliario/barril.tscn" id="30_6xu13"]
+[ext_resource type="PackedScene" uid="uid://b8ux5fd5rvfqw" path="res://scenes/props/mobiliario/caja.tscn" id="31_74bpm"]
+[ext_resource type="Texture2D" uid="uid://bh5ydd0o8bfdp" path="res://assets/vacio/maquinas/rotas/maquina 2 rota.png" id="32_5g2em"]
+[ext_resource type="PackedScene" uid="uid://bu8877dv28e1q" path="res://scenes/props/mobiliario/muestras.tscn" id="32_a1vlu"]
+[ext_resource type="Texture2D" uid="uid://ce47sgvn1v1l4" path="res://assets/vacio/maquinas/rotas/maquina 5 rota.png" id="33_6wnik"]
+[ext_resource type="PackedScene" uid="uid://dfmwbvyaphuqu" path="res://scenes/props/luces/luz_roja.tscn" id="33_xremi"]
+[ext_resource type="Texture2D" uid="uid://jnfnoshp2vgd" path="res://assets/vacio/rincon.png" id="34_gvwcr"]
+[ext_resource type="Texture2D" uid="uid://byoq57uvvwgpq" path="res://assets/escenario/puerta/puerta abierta.png" id="36_itdjh"]
+[ext_resource type="Texture2D" uid="uid://yv1j1bfw31nt" path="res://assets/escenario/luz/luz azul.png" id="36_vs12j"]
+[ext_resource type="PackedScene" uid="uid://bpobp4q0r8uwv" path="res://scenes/Collectibles/memory_item.tscn" id="40_5g2em"]
+[ext_resource type="Texture2D" uid="uid://b7mx8y5wb4bj5" path="res://assets/FOREGROUND/4.png" id="43_6wnik"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
 
-[node name="Level0" type="Node2D" unique_id=1247627693 node_paths=PackedStringArray("fade_rect")]
-script = ExtResource("1_d0grl")
+[node name="Level0" type="Node2D" unique_id=1247627693 node_paths=PackedStringArray("camera", "closed_door", "open_door", "aux_power_off", "aux_power_on", "fade_rect")]
+script = ExtResource("1_itdjh")
+camera = NodePath("Player/PlayerCamera")
+closed_door = NodePath("PuertaCerrada")
+open_door = NodePath("PuertaAbierta")
+aux_power_off = NodePath("Decoracion/EnergiaAuxiliarDesconectada")
+aux_power_on = NodePath("Decoracion/EnergiaAuxiliarConectada")
 level_id = &"nivel_0"
 fade_rect = NodePath("ScreenFade/ColorRect")
+
+[node name="ScreenFade" type="CanvasLayer" parent="." unique_id=1795839320]
+layer = 50
+
+[node name="ColorRect" type="ColorRect" parent="ScreenFade" unique_id=154580972]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Pared Derecha" parent="." unique_id=603924953 instance=ExtResource("24_rbahy")]
+position = Vector2(8680, -46)
+scale = Vector2(1, 1.9199996)
 
 [node name="Piso" type="Node2D" parent="." unique_id=379048894]
 
@@ -88,6 +132,21 @@ position = Vector2(6134, 0)
 
 [node name="TilePisoGris18" parent="Piso" unique_id=886432366 instance=ExtResource("2_1t5oo")]
 position = Vector2(6543, 0)
+
+[node name="TilePisoGris19" parent="Piso" unique_id=2083367399 instance=ExtResource("2_1t5oo")]
+position = Vector2(6951, 0)
+
+[node name="TilePisoGris20" parent="Piso" unique_id=191141502 instance=ExtResource("2_1t5oo")]
+position = Vector2(7360, 0)
+
+[node name="TilePisoGris21" parent="Piso" unique_id=1210637459 instance=ExtResource("2_1t5oo")]
+position = Vector2(7770, 0)
+
+[node name="TilePisoGris22" parent="Piso" unique_id=1406620011 instance=ExtResource("2_1t5oo")]
+position = Vector2(8179, 0)
+
+[node name="PisoGris" parent="Piso" unique_id=1065241208 instance=ExtResource("4_ecdks")]
+position = Vector2(8499, 0)
 
 [node name="Paredes" type="Node2D" parent="." unique_id=1471261284]
 position = Vector2(-3.32, 3)
@@ -170,7 +229,183 @@ position = Vector2(4264.3203, -889)
 [node name="ParedAltaGrisOscuro27" parent="Paredes" unique_id=286220879 instance=ExtResource("3_a76di")]
 position = Vector2(4450.32, -889)
 
-[node name="Dialogue1" parent="." unique_id=2114688861 instance=ExtResource("1_hghvf")]
+[node name="ParedAltaGrisOscuro28" parent="Paredes" unique_id=678884027 instance=ExtResource("3_a76di")]
+position = Vector2(4636.3203, -889)
+
+[node name="ParedAltaGrisOscuro29" parent="Paredes" unique_id=667511720 instance=ExtResource("3_a76di")]
+position = Vector2(4822.32, -889)
+
+[node name="ParedAltaGrisOscuro30" parent="Paredes" unique_id=55040630 instance=ExtResource("3_a76di")]
+position = Vector2(5008.3203, -889)
+
+[node name="ParedAltaGrisOscuro31" parent="Paredes" unique_id=615468420 instance=ExtResource("3_a76di")]
+position = Vector2(5194.32, -889)
+
+[node name="ParedAltaGrisOscuro32" parent="Paredes" unique_id=2039364119 instance=ExtResource("3_a76di")]
+position = Vector2(5382.32, -889)
+
+[node name="ParedAltaGrisOscuro33" parent="Paredes" unique_id=557714775 instance=ExtResource("3_a76di")]
+position = Vector2(5568.32, -889)
+
+[node name="ParedAltaGrisOscuro34" parent="Paredes" unique_id=536502740 instance=ExtResource("3_a76di")]
+position = Vector2(5754.32, -889)
+
+[node name="ParedAltaGrisOscuro35" parent="Paredes" unique_id=2107503877 instance=ExtResource("3_a76di")]
+position = Vector2(5940.32, -889)
+
+[node name="ParedAltaGrisOscuro36" parent="Paredes" unique_id=625560876 instance=ExtResource("3_a76di")]
+position = Vector2(6126.32, -889)
+
+[node name="ParedAltaGrisOscuro37" parent="Paredes" unique_id=1367151632 instance=ExtResource("3_a76di")]
+position = Vector2(6312.32, -889)
+
+[node name="ParedAltaGrisOscuro38" parent="Paredes" unique_id=1346962610 instance=ExtResource("3_a76di")]
+position = Vector2(6498.32, -889)
+
+[node name="ParedAltaGrisOscuro39" parent="Paredes" unique_id=925664383 instance=ExtResource("3_a76di")]
+position = Vector2(6684.32, -889)
+
+[node name="ParedAltaGrisOscuro40" parent="Paredes" unique_id=1006100980 instance=ExtResource("3_a76di")]
+position = Vector2(6870.3203, -889)
+
+[node name="ParedAltaGrisOscuro41" parent="Paredes" unique_id=1471631459 instance=ExtResource("3_a76di")]
+position = Vector2(7056.32, -889)
+
+[node name="ParedAltaGrisOscuro42" parent="Paredes" unique_id=490211463 instance=ExtResource("3_a76di")]
+position = Vector2(7242.3203, -889)
+
+[node name="ParedAltaGrisOscuro43" parent="Paredes" unique_id=1806677555 instance=ExtResource("3_a76di")]
+position = Vector2(7428.32, -889)
+
+[node name="ParedAltaGrisOscuro44" parent="Paredes" unique_id=2041112641 instance=ExtResource("3_a76di")]
+position = Vector2(7614.3193, -889)
+
+[node name="ParedAltaGrisOscuro45" parent="Paredes" unique_id=101409685 instance=ExtResource("3_a76di")]
+position = Vector2(7800.32, -889)
+
+[node name="ParedAltaGrisOscuro46" parent="Paredes" unique_id=689602979 instance=ExtResource("3_a76di")]
+position = Vector2(7986.3193, -889)
+
+[node name="ParedAltaGrisOscuro47" parent="Paredes" unique_id=496552767 instance=ExtResource("3_a76di")]
+position = Vector2(8172.32, -889)
+
+[node name="ParedAltaGrisOscuro48" parent="Paredes" unique_id=205859865 instance=ExtResource("3_a76di")]
+position = Vector2(8358.319, -889)
+
+[node name="Decoracion" type="Node2D" parent="." unique_id=1115226104]
+
+[node name="Alacena" parent="Decoracion" unique_id=1732104091 instance=ExtResource("10_3ebcg")]
+position = Vector2(640, -132)
+
+[node name="Maquina4Rota" parent="Decoracion" unique_id=278793222 instance=ExtResource("11_luu1i")]
+position = Vector2(310, -140)
+
+[node name="Maquina2Rota2" parent="Decoracion" unique_id=1281516383 instance=ExtResource("12_db1u1")]
+position = Vector2(971, -459)
+
+[node name="Maquina2Rota" parent="Decoracion" unique_id=1344832139 instance=ExtResource("12_db1u1")]
+position = Vector2(1154, -460.00003)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="Maquina2Rota3" parent="Decoracion" unique_id=1857570127 instance=ExtResource("12_db1u1")]
+position = Vector2(1332, -460.00003)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="Maquina2Rota4" parent="Decoracion" unique_id=1902297933 instance=ExtResource("12_db1u1")]
+position = Vector2(1499, -460.00003)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="Maquina5Rota4" parent="Decoracion" unique_id=1355388097 instance=ExtResource("13_po5je")]
+position = Vector2(1539.0001, -211.00002)
+scale = Vector2(0.19999997, 0.19999997)
+
+[node name="Maquina5Rota3" parent="Decoracion" unique_id=1472575028 instance=ExtResource("13_po5je")]
+position = Vector2(1407.0001, -211)
+scale = Vector2(0.19999997, 0.19999997)
+
+[node name="Maquina5Rota2" parent="Decoracion" unique_id=1043392170 instance=ExtResource("13_po5je")]
+position = Vector2(1275, -210)
+
+[node name="Maquina5Rota" parent="Decoracion" unique_id=1350808036 instance=ExtResource("13_po5je")]
+position = Vector2(1144, -208)
+
+[node name="Lampara" parent="Decoracion" unique_id=964081655 instance=ExtResource("14_mtrs4")]
+position = Vector2(596, -238)
+
+[node name="Cpu" parent="Decoracion" unique_id=1759585337 instance=ExtResource("15_rbahy")]
+position = Vector2(481, -107)
+
+[node name="Maquina3Rota" parent="Decoracion" unique_id=218005723 instance=ExtResource("17_cam4b")]
+position = Vector2(2527, -230.00002)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="EnergiaAuxiliarDesconectada" parent="Decoracion" unique_id=666976198 instance=ExtResource("25_al08y")]
+position = Vector2(5276, -162)
+
+[node name="Escritorio" parent="Decoracion" unique_id=1006315625 instance=ExtResource("26_56goh")]
+position = Vector2(2987.6, -149.4)
+
+[node name="PcPrendida" parent="Decoracion" unique_id=913847234 instance=ExtResource("27_j4kqp")]
+position = Vector2(2981.6, -285.4)
+
+[node name="Pizarra" parent="Decoracion" unique_id=979395404 instance=ExtResource("28_wcmim")]
+position = Vector2(3321, -226)
+
+[node name="Silla" parent="Decoracion" unique_id=1983511533 instance=ExtResource("29_d7a8j")]
+position = Vector2(2960, -147)
+
+[node name="Barril3" parent="Decoracion" unique_id=2033152585 instance=ExtResource("30_6xu13")]
+position = Vector2(4172.6997, -152.1)
+
+[node name="Barril2" parent="Decoracion" unique_id=1746604517 instance=ExtResource("30_6xu13")]
+position = Vector2(4049.7, -151.1)
+
+[node name="Barril" parent="Decoracion" unique_id=708959035 instance=ExtResource("30_6xu13")]
+position = Vector2(3762, -156)
+
+[node name="Caja2" parent="Decoracion" unique_id=500158024 instance=ExtResource("31_74bpm")]
+position = Vector2(3648, -123)
+
+[node name="Caja" parent="Decoracion" unique_id=942091676 instance=ExtResource("31_74bpm")]
+position = Vector2(3539, -123)
+
+[node name="Muestras" parent="Decoracion" unique_id=865805412 instance=ExtResource("32_a1vlu")]
+position = Vector2(3624, -216)
+
+[node name="Locker2" parent="Decoracion" unique_id=1148948437 instance=ExtResource("22_74bpm")]
+position = Vector2(4887.4, -119.79999)
+rotation = -1.5707964
+flip_h = true
+
+[node name="Locker" parent="Decoracion" unique_id=2002676716 instance=ExtResource("22_74bpm")]
+position = Vector2(4665.4, -216.79999)
+
+[node name="Locker3" parent="Decoracion" unique_id=2066144488 instance=ExtResource("22_74bpm")]
+position = Vector2(4555, -218)
+
+[node name="Locker4" parent="Decoracion" unique_id=1756457574 instance=ExtResource("22_74bpm")]
+position = Vector2(4447, -218)
+
+[node name="Locker5" parent="Decoracion" unique_id=1377661931 instance=ExtResource("22_74bpm")]
+position = Vector2(4336, -218)
+
+[node name="EnergiaAuxiliarConectada" type="Sprite2D" parent="Decoracion" unique_id=737879436]
+visible = false
+position = Vector2(5268, -179)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("22_gvwcr")
+
+[node name="Dialogos" type="Node2D" parent="." unique_id=309649721]
+
+[node name="Energy" parent="Dialogos" unique_id=2114688861 node_paths=PackedStringArray("prompt") instance=ExtResource("1_hghvf")]
+position = Vector2(5283, -145)
+scale = Vector2(3.45, 3.45)
+dialogue = ExtResource("24_5lqw3")
+once = true
+balloon_scene = ExtResource("3_d0grl")
+prompt = NodePath("../LabelEnergy")
+
+[node name="WakeupDialogue" parent="Dialogos" unique_id=349090326 instance=ExtResource("1_hghvf")]
 position = Vector2(0, -63.085)
 scale = Vector2(2.7101264, 3.8943353)
 dialogue = ExtResource("2_ry65h")
@@ -178,62 +413,78 @@ mode = 1
 once = true
 balloon_scene = ExtResource("3_d0grl")
 
-[node name="ScreenFade" type="CanvasLayer" parent="." unique_id=1795839320]
-layer = 50
+[node name="MensajeConsola" parent="Dialogos" unique_id=1549574073 node_paths=PackedStringArray("prompt") instance=ExtResource("1_hghvf")]
+position = Vector2(2907, -210)
+scale = Vector2(4.85, 4.85)
+dialogue = ExtResource("19_j4kqp")
+balloon_scene = ExtResource("3_d0grl")
+prompt = NodePath("../LabelInteract")
 
-[node name="ColorRect" type="ColorRect" parent="ScreenFade" unique_id=154580972]
-modulate = Color(1, 1, 1, 0)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(0, 0, 0, 1)
+[node name="LabelInteract" type="Label" parent="Dialogos" unique_id=1286804215]
+offset_left = 2701.0
+offset_top = -417.0
+offset_right = 3123.0
+offset_bottom = -372.0
+text = "Presiona E para interactuar"
+label_settings = ExtResource("28_6bn4o")
 
-[node name="Alacena" parent="." unique_id=1732104091 instance=ExtResource("10_3ebcg")]
-position = Vector2(640, -132)
+[node name="LabelEnergy" type="Label" parent="Dialogos" unique_id=1973802776]
+offset_left = 4962.0
+offset_top = -417.0
+offset_right = 5458.0
+offset_bottom = -372.0
+text = "Presiona E para interactuar "
+label_settings = ExtResource("28_6bn4o")
 
-[node name="Maquina4Rota" parent="." unique_id=278793222 instance=ExtResource("11_luu1i")]
-position = Vector2(310, -140)
+[node name="Obstaculos" type="Node2D" parent="." unique_id=1401642689]
+position = Vector2(-106, -8)
 
-[node name="Maquina2Rota" parent="." unique_id=1344832139 instance=ExtResource("12_db1u1")]
-position = Vector2(1222, -455)
-scale = Vector2(0.19999999, 0.19999999)
-
-[node name="Maquina5Rota2" parent="." unique_id=1355388097 instance=ExtResource("13_po5je")]
-position = Vector2(1275, -210)
-
-[node name="Maquina5Rota" parent="." unique_id=1350808036 instance=ExtResource("13_po5je")]
-position = Vector2(1144, -208)
-
-[node name="Lampara" parent="." unique_id=964081655 instance=ExtResource("14_mtrs4")]
-position = Vector2(596, -238)
-
-[node name="Cpu" parent="." unique_id=1759585337 instance=ExtResource("15_rbahy")]
-position = Vector2(481, -107)
-
-[node name="Maquina2Rota2" parent="." unique_id=1281516383 instance=ExtResource("12_db1u1")]
-position = Vector2(971, -459)
-
-[node name="Maquina1Rota" parent="." unique_id=40796025 instance=ExtResource("16_al08y")]
-position = Vector2(1926, -175)
-
-[node name="Maquina3Rota" parent="." unique_id=218005723 instance=ExtResource("17_cam4b")]
-position = Vector2(1652, -223.00002)
-scale = Vector2(0.19999999, 0.19999999)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=729816888]
-position = Vector2(2076, -46)
+[node name="MaquinaRota6" type="StaticBody2D" parent="Obstaculos" unique_id=418603397]
+position = Vector2(1795, -46)
 rotation = 1.5707964
 
-[node name="Maquina5Rota" type="Sprite2D" parent="StaticBody2D" unique_id=582392551]
+[node name="Maquina5Rota" type="Sprite2D" parent="Obstaculos/MaquinaRota6" unique_id=564866420]
 scale = Vector2(0.145, 0.2)
 texture = ExtResource("10_a76di")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=8381474]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstaculos/MaquinaRota6" unique_id=2063421126]
 scale = Vector2(6.13, 15.015)
 shape = SubResource("RectangleShape2D_6pmnr")
+
+[node name="MaquinaRota5" type="StaticBody2D" parent="Obstaculos" unique_id=729816888]
+position = Vector2(2076, -46)
+rotation = 1.5707964
+
+[node name="Maquina5Rota" type="Sprite2D" parent="Obstaculos/MaquinaRota5" unique_id=582392551]
+scale = Vector2(0.145, 0.2)
+texture = ExtResource("10_a76di")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstaculos/MaquinaRota5" unique_id=8381474]
+scale = Vector2(6.13, 15.015)
+shape = SubResource("RectangleShape2D_6pmnr")
+
+[node name="Caja2" type="StaticBody2D" parent="Obstaculos" unique_id=686681750]
+position = Vector2(-110, 0)
+
+[node name="Caja3" parent="Obstaculos/Caja2" unique_id=1111371349 instance=ExtResource("31_74bpm")]
+position = Vector2(2147, -146)
+scale = Vector2(0.19999999, 0.19999999)
+flip_h = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstaculos/Caja2" unique_id=1253586659]
+position = Vector2(2153, -114)
+polygon = PackedVector2Array(-83, 35, 49, 35, 70, 10, 70, -100, -41, -100, -83, -73)
+
+[node name="Caja1" type="StaticBody2D" parent="Obstaculos" unique_id=1996088871]
+
+[node name="Caja3" parent="Obstaculos/Caja1" unique_id=1648290020 instance=ExtResource("31_74bpm")]
+position = Vector2(2147, -146)
+scale = Vector2(0.19999999, 0.19999999)
+flip_h = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstaculos/Caja1" unique_id=1083298791]
+position = Vector2(2153, -114)
+polygon = PackedVector2Array(-83, 35, 49, 35, 70, 10, 70, -100, -41, -100, -83, -73)
 
 [node name="Node2D" type="Node2D" parent="." unique_id=688328409]
 visible = false
@@ -264,14 +515,84 @@ position = Vector2(1344, -628.99994)
 rotation = 1.5707964
 scale = Vector2(0.45000002, 0.45000002)
 
-[node name="Cano" parent="." unique_id=2040268375 instance=ExtResource("19_56goh")]
-position = Vector2(1561, -517)
+[node name="Decoracion2" type="Node2D" parent="." unique_id=1517739543]
 
-[node name="PuertaCerrada" parent="." unique_id=603924953 instance=ExtResource("24_rbahy")]
-position = Vector2(4699.3, -516)
+[node name="Charco2" type="Sprite2D" parent="Decoracion2" unique_id=850769861]
+position = Vector2(6477, -26)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("26_4k6ad")
 
-[node name="EnergiaAuxiliarDesconectada" parent="." unique_id=666976198 instance=ExtResource("25_al08y")]
-position = Vector2(4458.3, -171)
+[node name="Charco3" type="Sprite2D" parent="Decoracion2" unique_id=1081232027]
+position = Vector2(5789, -78)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("27_vn2at")
+flip_h = true
+
+[node name="Mancha1" type="Sprite2D" parent="Decoracion2" unique_id=1358654866]
+position = Vector2(5769, -724)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("28_q6o2s")
+
+[node name="Mancha2" type="Sprite2D" parent="Decoracion2" unique_id=1409408514]
+position = Vector2(8269, -793)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("29_ecdks")
+
+[node name="Mancha3" type="Sprite2D" parent="Decoracion2" unique_id=1381526897]
+position = Vector2(8269, -793)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("29_ecdks")
+
+[node name="Maquina2Rota" type="Sprite2D" parent="Decoracion2" unique_id=1029952603]
+position = Vector2(6693, -463)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("32_5g2em")
+
+[node name="Maquina2Rota2" type="Sprite2D" parent="Decoracion2" unique_id=647609533]
+position = Vector2(6910, -469)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("32_5g2em")
+
+[node name="Maquina5Rota2" type="Sprite2D" parent="Decoracion2" unique_id=1415674784]
+position = Vector2(6984, -207)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("33_6wnik")
+
+[node name="Maquina5Rota" type="Sprite2D" parent="Decoracion2" unique_id=1342295983]
+position = Vector2(6859.2, -209)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("33_6wnik")
+
+[node name="Rincon" type="Sprite2D" parent="Decoracion2" unique_id=1864018763]
+position = Vector2(8489, -296)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("34_gvwcr")
+
+[node name="PuertaCerrada" parent="." unique_id=1937955197 instance=ExtResource("24_rbahy")]
+position = Vector2(5519, -514)
+
+[node name="LuzRoja" parent="PuertaCerrada" unique_id=913487204 instance=ExtResource("33_xremi")]
+position = Vector2(-28, 118)
+
+[node name="Player" parent="." unique_id=1929255917 instance=ExtResource("2_hghvf")]
+position = Vector2(3.8146973e-06, -166)
+
+[node name="PlayerCamera" parent="Player" unique_id=1464454565 instance=ExtResource("7_1nvli")]
+limit_left = -200
+limit_right = 5646
+drag_top_margin = 0.5
+drag_bottom_margin = 0.05
+
+[node name="PuertaAbierta" type="Sprite2D" parent="." unique_id=1884981057]
+visible = false
+position = Vector2(5518, -514)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("36_itdjh")
+
+[node name="LuzAzul" type="Sprite2D" parent="PuertaAbierta" unique_id=1589204090]
+position = Vector2(-108, 472)
+scale = Vector2(0.79999995, 0.79999995)
+texture = ExtResource("36_vs12j")
 
 [node name="Foreground" type="Node2D" parent="." unique_id=2029159496]
 
@@ -298,20 +619,34 @@ rotation = 1.5707964
 scale = Vector2(1.095, 5.67)
 texture = ExtResource("22_po5je")
 
+[node name="11" type="Sprite2D" parent="Foreground" unique_id=353668792]
+position = Vector2(14533, 282)
+rotation = 1.5707964
+scale = Vector2(1.095, 5.67)
+texture = ExtResource("22_po5je")
+
 [node name="7" type="Sprite2D" parent="Foreground" unique_id=4792669]
 position = Vector2(1981, -908)
 texture = ExtResource("23_mtrs4")
 
-[node name="Escritorio" parent="." unique_id=1006315625 instance=ExtResource("26_56goh")]
-position = Vector2(2987.6, -149.4)
+[node name="10" type="Sprite2D" parent="Foreground" unique_id=1748411112]
+position = Vector2(7083, -903)
+texture = ExtResource("23_mtrs4")
 
-[node name="PcPrendida" parent="." unique_id=913847234 instance=ExtResource("27_j4kqp")]
-position = Vector2(2981.6, -285.4)
+[node name="4" type="Sprite2D" parent="Foreground" unique_id=709193740]
+modulate = Color(1, 1, 1, 0.54901963)
+position = Vector2(3654.9998, -603.99994)
+rotation = -0.28797933
+texture = ExtResource("21_po5je")
 
-[node name="Player" parent="." unique_id=1929255917 instance=ExtResource("2_hghvf")]
-position = Vector2(0, -163.395)
+[node name="5" type="Sprite2D" parent="Foreground" unique_id=392442445]
+modulate = Color(1, 1, 1, 0.6392157)
+position = Vector2(8170.9995, 27)
+scale = Vector2(0.47, 0.47)
+texture = ExtResource("43_6wnik")
 
-[node name="PlayerCamera" parent="Player" unique_id=1464454565 instance=ExtResource("7_1nvli")]
-limit_left = -200
-drag_top_margin = 0.5
-drag_bottom_margin = 0.05
+[node name="MemoryItem" parent="." unique_id=619595776 instance=ExtResource("40_5g2em")]
+position = Vector2(7682.0005, -186.00002)
+scale = Vector2(7.44, 7.44)
+collision_mask = 520
+puzzle_path = &"res://assets/puzzle_recuerdo_prueba/"

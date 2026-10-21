@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bjpfbun42yinl"
+path="res://.godot/imported/2_aux_power.dialogue-bf7c7933086211b52e53cff0ac9c5972.tres"
+
+[deps]
+
+source_file="res://dialogues/level0/2_aux_power.dialogue"
+dest_files=["res://.godot/imported/2_aux_power.dialogue-bf7c7933086211b52e53cff0ac9c5972.tres"]
+
+[params]
+
+defaults=true

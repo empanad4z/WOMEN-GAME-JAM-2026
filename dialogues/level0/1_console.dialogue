@@ -1,0 +1,14 @@
+~ start
+# aux_power_connected, doors_open y open_doors() vienen de level0.gd (la escena actual)
+if doors_open
+	PUERTAS ABIERTAS
+elif aux_power_connected
+	do open_doors()
+	PUERTAS ABIERTAS
+else
+	# esto es solo un cuadro
+	MENSAJE ENCONTRADO\:\n\nACCESO RESTRINGIDO\nPROTOCOLO DE CONTENCIÓN ACTIVADO\nESTADO DEL SISTEMA\: CRÍTICO\nSUMINISTRO ELÉCTRICO\: INTERRUMPIDO
+	Alice: ¿Contención?
+	Alice: ¿Qué estaban intentando contener?
+	ERROR\: ENERGÍA AUXILIAR DESCONECTADA
+=> END
