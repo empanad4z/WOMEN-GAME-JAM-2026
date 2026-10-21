@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://6a76tged43n0" path="res://scenes/enemy_movement/moving_enemy.tscn" id="8_4eecq"]
 [ext_resource type="Resource" uid="uid://gcrwsf207o5r" path="res://dialogues/level1/after_combat.dialogue" id="9_b3p8y"]
 [ext_resource type="PackedScene" uid="uid://bpobp4q0r8uwv" path="res://scenes/Collectibles/memory_item.tscn" id="10_bxuut"]
-[ext_resource type="Resource" uid="uid://cs5yevhncg5ah" path="res://dialogues/level1/memory.dialogue" id="11_g04qb"]
+[ext_resource type="Resource" uid="uid://cs5yevhncg5ah" path="res://dialogues/level1/conseguido_memory.dialogue" id="11_g04qb"]
 [ext_resource type="PackedScene" uid="uid://begmy88w5vc3v" path="res://scenes/victory_zone.tscn" id="12_ida7w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7nr6d"]

@@ -6,23 +6,25 @@
 [ext_resource type="Script" uid="uid://dvmox6kffbnxp" path="res://scripts/health_component.gd" id="4_smecd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_00287"]
-size = Vector2(10, 10)
+size = Vector2(10, 28.399998)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rm5gi"]
-size = Vector2(12, 11)
+size = Vector2(12, 28.999998)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrxyo"]
-size = Vector2(10, 11)
+size = Vector2(10, 28.599998)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rm5gi"]
 radius = 25.079872
 
 [node name="MovingEnemy" type="CharacterBody2D" unique_id=148833900]
+scale = Vector2(10, 10)
 collision_layer = 16
 script = ExtResource("1_4baig")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=705002578]
-position = Vector2(0, -1)
+position = Vector2(0, -10.199997)
+scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("RectangleShape2D_00287")
 
 [node name="Hurtbox" type="Area2D" parent="." unique_id=1002235309 node_paths=PackedStringArray("health")]
@@ -33,7 +35,8 @@ health = NodePath("../HealthComponent")
 metadata/_custom_type_script = "uid://c0ces1i788qmt"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=170630288]
-position = Vector2(0, -1.5)
+position = Vector2(0, -10.499999)
+scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("RectangleShape2D_rm5gi")
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=250105442]
@@ -43,7 +46,8 @@ script = ExtResource("2_4baig")
 metadata/_custom_type_script = "uid://cxgnm2ph6v17j"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=470660758]
-position = Vector2(0, -1.5)
+position = Vector2(0, -10.299998)
+scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("RectangleShape2D_xrxyo")
 
 [node name="HealthComponent" type="Node" parent="." unique_id=1261842416]
