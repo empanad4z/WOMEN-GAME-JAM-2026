@@ -1,0 +1,5 @@
+~ start
+# connect_aux_power() viene de level0.gd (la escena actual)
+do connect_aux_power()
+ENERGÍA AUXILIAR\: CONECTADA
+=> END

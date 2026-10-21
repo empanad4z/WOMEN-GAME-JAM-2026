@@ -3,5 +3,5 @@
 [ext_resource type="Texture2D" uid="uid://dibstkc46jixq" path="res://assets/escenario/caño/caño.png" id="1_l2ucf"]
 
 [node name="Cano" type="Sprite2D" unique_id=2015877246]
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.4, 0.4)
 texture = ExtResource("1_l2ucf")

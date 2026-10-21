@@ -5,6 +5,33 @@
 [ext_resource type="Script" uid="uid://c0ces1i788qmt" path="res://scripts/hurtbox.gd" id="2_qhqgy"]
 [ext_resource type="Script" uid="uid://cxgnm2ph6v17j" path="res://scripts/hitbox.gd" id="3_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://bjhgognvftiio" path="res://assets/sprites/character/alice_00.png" id="3_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://vt5lw4nno1hr" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0000.png" id="5_gl8cc"]
+[ext_resource type="Texture2D" uid="uid://bu7ay7pxwex25" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0001.png" id="6_487ah"]
+[ext_resource type="Texture2D" uid="uid://cchf0c43s172y" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0002.png" id="7_md1ol"]
+[ext_resource type="Texture2D" uid="uid://barp374ja3lg4" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0003.png" id="8_bj30b"]
+[ext_resource type="Texture2D" uid="uid://dwt5q4e2snnyk" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0004.png" id="9_jc3p3"]
+[ext_resource type="Texture2D" uid="uid://ctls0ytsys8x0" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0005.png" id="10_hax0n"]
+[ext_resource type="Texture2D" uid="uid://cru7ok32vdewg" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0006.png" id="11_t4otl"]
+[ext_resource type="Texture2D" uid="uid://c2t63wclh8tk4" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0007.png" id="12_j2b1d"]
+[ext_resource type="Texture2D" uid="uid://bhrqixhmvldku" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0008.png" id="13_cs1tg"]
+[ext_resource type="Texture2D" uid="uid://c6wd21jasaj6y" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0009.png" id="14_2dvfe"]
+[ext_resource type="Texture2D" uid="uid://dm5u6o6le0stw" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0010.png" id="15_giy8y"]
+[ext_resource type="Texture2D" uid="uid://crk84wt0gumbt" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0011.png" id="16_fdfoy"]
+[ext_resource type="Texture2D" uid="uid://bm7tpbm82glp" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0012.png" id="17_hhpqf"]
+[ext_resource type="Texture2D" uid="uid://b36dfmo35daxj" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0013.png" id="18_g5jhy"]
+[ext_resource type="Texture2D" uid="uid://dkcvhaos7tlfb" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0014.png" id="19_holxr"]
+[ext_resource type="Texture2D" uid="uid://i5vl4gyenk5m" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0015.png" id="20_mx1m4"]
+[ext_resource type="Texture2D" uid="uid://c3ccbsm8xlpfo" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0016.png" id="21_4gjji"]
+[ext_resource type="Texture2D" uid="uid://cn52fd0hgp0x8" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0017.png" id="22_u2ulf"]
+[ext_resource type="Texture2D" uid="uid://52y7l4ulu4ug" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0018.png" id="23_6e8lb"]
+[ext_resource type="Texture2D" uid="uid://d2kc2t11n7ukt" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0019.png" id="24_2gdjj"]
+[ext_resource type="Texture2D" uid="uid://c2iqvibrxecdr" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0020.png" id="25_sc3ue"]
+[ext_resource type="Texture2D" uid="uid://bfcxyhb4ye700" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0021.png" id="26_lxlsd"]
+[ext_resource type="Texture2D" uid="uid://bndl3ajy7mses" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0022.png" id="27_ha2mi"]
+[ext_resource type="Texture2D" uid="uid://bl0x75386ibog" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0023.png" id="28_apa73"]
+[ext_resource type="Texture2D" uid="uid://f3fmkix33dhd" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0024.png" id="29_74r1k"]
+[ext_resource type="Texture2D" uid="uid://c0hejkq8g8ons" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0025.png" id="30_8svfe"]
+[ext_resource type="Texture2D" uid="uid://dnq5hjrtatv2r" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0026.png" id="31_2a3c5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d2wvv"]
 size = Vector2(55.22, 85.77333)
@@ -44,11 +71,89 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_tuyoq")
+"texture": ExtResource("5_gl8cc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_487ah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_md1ol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_bj30b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jc3p3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_hax0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_t4otl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_j2b1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_cs1tg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_2dvfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_giy8y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_fdfoy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hhpqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_g5jhy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_holxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_mx1m4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_4gjji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_u2ulf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_6e8lb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_2gdjj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_sc3ue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_lxlsd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_ha2mi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_apa73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_74r1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_8svfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_2a3c5")
 }],
 "loop": 1,
 "name": &"run",
-"speed": 10.0
+"speed": 30.0
 }]
 
 [node name="Player" type="CharacterBody2D" unique_id=1929255917 groups=["Player"]]
@@ -58,7 +163,7 @@ script = ExtResource("1_dqkch")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1642977503]
 position = Vector2(0, 1.2853364)
-scale = Vector2(0.96, 1.6)
+scale = Vector2(0.95999986, 1.5999999)
 shape = SubResource("RectangleShape2D_d2wvv")
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=418958962]
@@ -88,7 +193,7 @@ shape = SubResource("CapsuleShape2D_3v2ag")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1966613025]
 scale = Vector2(0.075, 0.075)
 sprite_frames = SubResource("SpriteFrames_y4r1p")
-animation = &"attack"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="HealthComponent" type="Node" parent="." unique_id=438585093]

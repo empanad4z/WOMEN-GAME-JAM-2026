@@ -3,6 +3,7 @@ class_name MemoryItem extends Area2D
 signal collected(memory_id)
 
 @export var memory_id = &"recuerdo1"
+@export var puzzle_path := &""
 @export var float_height := 3.0
 @export var float_time := 0.8
 
@@ -35,5 +36,6 @@ func _on_body_entered(body: Node2D):
 	set_deferred("monitoring", false)
 	GameState.collect_memory(memory_id)
 	print("Abrir puzle recuerdo", memory_id)
+	Puzzle.abrir(self, puzzle_path)
 	collected.emit(memory_id)
 	queue_free()
