@@ -7,7 +7,7 @@
 
 [node name="MemoryItem" type="Area2D" unique_id=619595776]
 collision_layer = 0
-collision_mask = 512
+collision_mask = 8
 script = ExtResource("1_bogtd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1103732760]

@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 var is_moving_left = true
-var speed = 10
+var speed = 100
 var target: Node2D = null
 @onready var pivot = $Pivot
 @onready var floor_ray =  $Pivot/RayCast2D

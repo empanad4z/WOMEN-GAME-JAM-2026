@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b7fiyyl8qo52s"
+path="res://.godot/imported/enemy_appears.dialogue-44d0df4c8fcbfa26c3e727da839d332a.tres"
+
+[deps]
+
+source_file="res://dialogues/level1/enemy_appears.dialogue"
+dest_files=["res://.godot/imported/enemy_appears.dialogue-44d0df4c8fcbfa26c3e727da839d332a.tres"]
+
+[params]
+
+defaults=true

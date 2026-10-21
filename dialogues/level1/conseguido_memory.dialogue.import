@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cs5yevhncg5ah"
+path="res://.godot/imported/conseguido_memory.dialogue-c888fa056cdc319917a881e07e520bbf.tres"
+
+[deps]
+
+source_file="res://dialogues/level1/conseguido_memory.dialogue"
+dest_files=["res://.godot/imported/conseguido_memory.dialogue-c888fa056cdc319917a881e07e520bbf.tres"]
+
+[params]
+
+defaults=true

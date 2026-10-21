@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b4jfpo3c73srh"
+path="res://.godot/imported/cumple_memory.dialogue-f69b11986dafe5e14a008ece4b2fecdb.tres"
+
+[deps]
+
+source_file="res://dialogues/level1/cumple_memory.dialogue"
+dest_files=["res://.godot/imported/cumple_memory.dialogue-f69b11986dafe5e14a008ece4b2fecdb.tres"]
+
+[params]
+
+defaults=true
