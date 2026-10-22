@@ -1,4 +1,5 @@
 ~ start
+do Puzzle.abrir_desde_dialogo("res://assets/puzzle_recuerdo_prueba/")
 RECUERDO
 Chloe: ¡Lo conseguimos! ¿Te das cuenta de lo que significa esto?
 Alice: Sí… Podríamos ayudar a muchísima gente que lleva años sufriendo por sus recuerdos.

@@ -28,3 +28,18 @@ layout_mode = 2
 mouse_filter = 2
 
 [node name="Puzzle" parent="CenterContainer/Control" unique_id=42912142 instance=ExtResource("1_04xda")]
+
+[node name="BotonCerrar" type="Button" parent="." unique_id=1271299559]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1840.0
+offset_top = 80.0
+offset_right = -1832.0
+offset_bottom = 88.0
+grow_horizontal = 0
+focus_mode = 0
+theme_override_font_sizes/font_size = 60
+text = "X"
+
+[connection signal="pressed" from="BotonCerrar" to="CenterContainer/Control/Puzzle" method="cerrar_puzzle"]

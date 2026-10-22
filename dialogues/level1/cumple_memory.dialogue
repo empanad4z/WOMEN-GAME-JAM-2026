@@ -1,7 +1,10 @@
 ~ start
+do Puzzle.abrir_desde_dialogo("res://assets/puzzle_recuerdo_prueba/")
+RECUERDO
 Daniel: Pide un deseo, Ali.
 EVELYN: Y no lo cuentes, si no, no se cumple.
 EMMA: ¡Yo ayudo a soplar!
 ALICE (de niña): Ya sé qué voy a pedir.
+FIN DEL RECUERDO
 ALICE (ahora): Ellos sí me escuchaban… Ahí nadie me hacía dudar de lo que quería.
 => END

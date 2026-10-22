@@ -103,6 +103,12 @@ static func abrir(padre: Node, carpeta: String) -> Puzzle:
 	padre.get_tree().current_scene.add_child(capa)
 	return puzzle
 
+static func abrir_desde_dialogo(carpeta: String) -> void:
+	var arbol := Engine.get_main_loop() as SceneTree
+	var puzzle := abrir(arbol.current_scene, carpeta)
+	if puzzle == null:
+		return
+	await puzzle.cerrado
 
 # Ahora se ejecuta al iniciar la escena, cambia por otra función si necesitas que se haga en otro momento
 func _ready() -> void:
