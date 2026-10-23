@@ -5,10 +5,11 @@ if doors_open
 elif aux_power_connected
 	do open_doors()
 	PUERTAS ABIERTAS
+	Alice: No sé qué pasó aquí, pero debo encontrar una salida.
 else
 	# esto es solo un cuadro
 	MENSAJE ENCONTRADO\:\n\nACCESO RESTRINGIDO\nPROTOCOLO DE CONTENCIÓN ACTIVADO\nESTADO DEL SISTEMA\: CRÍTICO\nSUMINISTRO ELÉCTRICO\: INTERRUMPIDO
 	Alice: ¿Contención?
 	Alice: ¿Qué estaban intentando contener?
-	ERROR\: ENERGÍA AUXILIAR DESCONECTADA
+	Objetivo actualizado. Restablece la energía para abrir la puerta.
 => END

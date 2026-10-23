@@ -6,6 +6,8 @@ signal collected(memory_id)
 @export var puzzle_path := &""
 @export var float_height := 3.0
 @export var float_time := 0.8
+# En false se recoge solo llamando a collect() (por ejemplo desde un diálogo con E)
+@export var collect_on_touch := true
 
 var _collected = false
 
@@ -30,7 +32,11 @@ func _start_effects():
 	glow_tween.tween_property(visual, "modulate", Color.WHITE, 0.6)
 	
 func _on_body_entered(body: Node2D):
-	if _collected or not body.is_in_group("Player"):
+	if collect_on_touch and body.is_in_group("Player"):
+		collect()
+
+func collect():
+	if _collected:
 		return
 	_collected = true
 	set_deferred("monitoring", false)
