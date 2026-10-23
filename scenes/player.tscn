@@ -32,6 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://f3fmkix33dhd" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0024.png" id="29_74r1k"]
 [ext_resource type="Texture2D" uid="uid://c0hejkq8g8ons" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0025.png" id="30_8svfe"]
 [ext_resource type="Texture2D" uid="uid://dnq5hjrtatv2r" path="res://assets/sprites/character/Walk Cycle 1/Personaje 1_0026.png" id="31_2a3c5"]
+[ext_resource type="Texture2D" path="res://assets/sprites/pruebas/slash_placeholder.svg" id="32_slash"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d2wvv"]
 size = Vector2(55.22, 85.77333)
@@ -177,6 +178,11 @@ metadata/_custom_type_script = "uid://cxgnm2ph6v17j"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1896991280]
 shape = SubResource("RectangleShape2D_jej6c")
 disabled = true
+
+[node name="Slash" type="Sprite2D" parent="Hitbox"]
+visible = false
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("32_slash")
 
 [node name="Hurtbox" type="Area2D" parent="." unique_id=1914193078 node_paths=PackedStringArray("health")]
 scale = Vector2(1.004, 1.599)
