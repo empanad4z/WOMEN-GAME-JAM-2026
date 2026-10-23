@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c16vxtk4rp3u8"
+path="res://.godot/imported/3_memory_fragment.dialogue-ffa987b36601deb6ce81231c2430f94f.tres"
+
+[deps]
+
+source_file="res://dialogues/level0/3_memory_fragment.dialogue"
+dest_files=["res://.godot/imported/3_memory_fragment.dialogue-ffa987b36601deb6ce81231c2430f94f.tres"]
+
+[params]
+
+defaults=true

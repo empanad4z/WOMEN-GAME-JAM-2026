@@ -48,16 +48,26 @@
 [ext_resource type="Texture2D" uid="uid://yv1j1bfw31nt" path="res://assets/escenario/luz/luz azul.png" id="36_vs12j"]
 [ext_resource type="PackedScene" uid="uid://bpobp4q0r8uwv" path="res://scenes/Collectibles/memory_item.tscn" id="40_5g2em"]
 [ext_resource type="Texture2D" uid="uid://b7mx8y5wb4bj5" path="res://assets/FOREGROUND/4.png" id="43_6wnik"]
+[ext_resource type="Resource" uid="uid://c16vxtk4rp3u8" path="res://dialogues/level0/3_memory_fragment.dialogue" id="44_frag1"]
+[ext_resource type="Script" uid="uid://dtue2f11nlpju" path="res://scripts/levels/level_exit.gd" id="45_exit1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
 
-[node name="Level0" type="Node2D" unique_id=1247627693 node_paths=PackedStringArray("camera", "closed_door", "open_door", "aux_power_off", "aux_power_on", "fade_rect")]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_exit1"]
+size = Vector2(467, 800)
+
+[node name="Level0" type="Node2D" unique_id=1247627693 node_paths=PackedStringArray("camera", "closed_door", "open_door", "aux_power_off", "aux_power_on", "memory_fragment", "level_exit", "memory_flash", "flash_rect", "memory_image", "fade_rect")]
 script = ExtResource("1_itdjh")
 camera = NodePath("Player/PlayerCamera")
 closed_door = NodePath("PuertaCerrada")
 open_door = NodePath("PuertaAbierta")
 aux_power_off = NodePath("Decoracion/EnergiaAuxiliarDesconectada")
 aux_power_on = NodePath("Decoracion/EnergiaAuxiliarConectada")
+memory_fragment = NodePath("MemoryItem")
+level_exit = NodePath("LevelExit")
+memory_flash = NodePath("MemoryFlash")
+flash_rect = NodePath("MemoryFlash/Flash")
+memory_image = NodePath("MemoryFlash/MemoryImage")
 level_id = &"nivel_0"
 fade_rect = NodePath("ScreenFade/ColorRect")
 
@@ -425,7 +435,7 @@ offset_left = 2701.0
 offset_top = -417.0
 offset_right = 3123.0
 offset_bottom = -372.0
-text = "Presiona E para interactuar"
+text = "Presiona E para examinar la consola."
 label_settings = ExtResource("28_6bn4o")
 
 [node name="LabelEnergy" type="Label" parent="Dialogos" unique_id=1973802776]
@@ -433,7 +443,23 @@ offset_left = 4962.0
 offset_top = -417.0
 offset_right = 5458.0
 offset_bottom = -372.0
-text = "Presiona E para interactuar "
+text = "E - Reconectar cable."
+label_settings = ExtResource("28_6bn4o")
+
+[node name="Fragmento" parent="Dialogos" unique_id=1820473615 node_paths=PackedStringArray("prompt") instance=ExtResource("1_hghvf")]
+position = Vector2(7682, -186)
+scale = Vector2(4, 4)
+dialogue = ExtResource("44_frag1")
+once = true
+balloon_scene = ExtResource("3_d0grl")
+prompt = NodePath("../LabelFragment")
+
+[node name="LabelFragment" type="Label" parent="Dialogos" unique_id=1630958214]
+offset_left = 7472.0
+offset_top = -417.0
+offset_right = 7892.0
+offset_bottom = -372.0
+text = "Presiona E para examinar."
 label_settings = ExtResource("28_6bn4o")
 
 [node name="Obstaculos" type="Node2D" parent="." unique_id=1401642689]
@@ -649,4 +675,47 @@ texture = ExtResource("43_6wnik")
 position = Vector2(7682.0005, -186.00002)
 scale = Vector2(7.44, 7.44)
 collision_mask = 520
-puzzle_path = &"res://assets/puzzle_recuerdo_prueba/"
+memory_id = &"fragmento_investigadoras"
+collect_on_touch = false
+
+[node name="LevelExit" type="Area2D" parent="." unique_id=1407715932]
+position = Vector2(8550, -300)
+collision_layer = 0
+collision_mask = 8
+script = ExtResource("45_exit1")
+next_level = "res://scenes/levels/level1.tscn"
+locked = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelExit" unique_id=1093384727]
+position = Vector2(-183.5, 0)
+shape = SubResource("RectangleShape2D_exit1")
+
+[node name="MemoryFlash" type="CanvasLayer" parent="." unique_id=1288561047]
+layer = 40
+visible = false
+
+[node name="Flash" type="ColorRect" parent="MemoryFlash" unique_id=1739120554]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MemoryImage" type="TextureRect" parent="MemoryFlash" unique_id=1952307416]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="LabelFragment" type="Label" parent="." unique_id=2080713138]
+offset_left = 8142.0
+offset_top = -465.0
+offset_right = 8562.0
+offset_bottom = -420.0
+text = "Acercate para seguir"
+label_settings = ExtResource("28_6bn4o")

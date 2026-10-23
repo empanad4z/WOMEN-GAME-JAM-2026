@@ -1,0 +1,7 @@
+~ start
+# collect_fragment() y show_memory_flash() vienen de level0.gd (la escena actual)
+do collect_fragment()
+do show_memory_flash()
+Alice: ¿Qué es esto?
+Objetivo\: explorar el laboratorio
+=> END
