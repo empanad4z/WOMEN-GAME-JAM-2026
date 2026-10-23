@@ -54,6 +54,9 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qa2gp"]
+size = Vector2(188.5, 993.75)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_exit1"]
 size = Vector2(467, 800)
 
@@ -671,6 +674,13 @@ modulate = Color(1, 1, 1, 0.6392157)
 position = Vector2(8170.9995, 27)
 scale = Vector2(0.47, 0.47)
 texture = ExtResource("43_6wnik")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=433534398]
+position = Vector2(-260, -744)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1385748395]
+position = Vector2(-41, 335.125)
+shape = SubResource("RectangleShape2D_qa2gp")
 
 [node name="MemoryItem" parent="." unique_id=619595776 instance=ExtResource("40_5g2em")]
 position = Vector2(7682.0005, -186.00002)
