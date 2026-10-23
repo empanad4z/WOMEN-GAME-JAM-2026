@@ -1,4 +1,4 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://dwdigdrudi50x"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
 content_margin_left = 16.0
@@ -16,18 +16,18 @@ font_size = 22
 outline_size = 8
 outline_color = Color(0, 0, 0, 1)
 
-[node name="ControlsOverlay" type="CanvasLayer"]
+[node name="ControlsOverlay" type="CanvasLayer" unique_id=1323020739]
 layer = 10
 
-[node name="Panel" type="PanelContainer" parent="."]
+[node name="Panel" type="PanelContainer" parent="." unique_id=920540128]
 offset_left = 24.0
 offset_top = 24.0
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
 
-[node name="Label" type="Label" parent="Panel"]
+[node name="Label" type="Label" parent="Panel" unique_id=1319302976]
 layout_mode = 2
-text = "← →   Moverse
+text = "<--   -->   Moverse
 Z / Espacio   Saltar
 Shift   Correr
 X   Atacar
