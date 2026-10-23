@@ -1,10 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 160 100">
-  <defs>
-    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#bff6ff" stop-opacity="0"/>
-      <stop offset="0.6" stop-color="#e6fbff" stop-opacity="0.7"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="1"/>
-    </linearGradient>
-  </defs>
-  <path d="M30 6 Q 165 50 30 94 Q 120 50 30 6 Z" fill="url(#fade)"/>
+  <path d="M30 4 Q 168 50 30 96 Q 112 50 30 4 Z" fill="#9fefff" fill-opacity="0.45"/>
+  <path d="M34 8 Q 160 50 34 92 Q 132 50 34 8 Z" fill="#ffffff"/>
 </svg>
