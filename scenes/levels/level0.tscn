@@ -50,6 +50,7 @@
 [ext_resource type="Texture2D" uid="uid://b7mx8y5wb4bj5" path="res://assets/FOREGROUND/4.png" id="43_6wnik"]
 [ext_resource type="Resource" uid="uid://c16vxtk4rp3u8" path="res://dialogues/level0/3_memory_fragment.dialogue" id="44_frag1"]
 [ext_resource type="Script" uid="uid://dtue2f11nlpju" path="res://scripts/levels/level_exit.gd" id="45_exit1"]
+[ext_resource type="PackedScene" path="res://scenes/ui/controls_overlay.tscn" id="46_ctrls"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
 
@@ -719,3 +720,5 @@ offset_right = 8562.0
 offset_bottom = -420.0
 text = "Acercate para seguir"
 label_settings = ExtResource("28_6bn4o")
+
+[node name="ControlsOverlay" parent="." instance=ExtResource("46_ctrls")]

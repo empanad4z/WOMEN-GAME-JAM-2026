@@ -36,6 +36,7 @@
 [ext_resource type="Texture2D" uid="uid://c7i0ap4tehldy" path="res://assets/vacio/overlays/alacena.png" id="30_7plwd"]
 [ext_resource type="Texture2D" uid="uid://va1y285do2m0" path="res://assets/vacio/maquinas/maquina 2.png" id="31_agrr7"]
 [ext_resource type="PackedScene" uid="uid://bu8877dv28e1q" path="res://scenes/props/mobiliario/muestras.tscn" id="34_7plwd"]
+[ext_resource type="PackedScene" path="res://scenes/ui/controls_overlay.tscn" id="35_ctrls"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_wsdxu"]
 font_size = 32
@@ -412,5 +413,7 @@ position = Vector2(5398, -550)
 position = Vector2(5373, -247)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("28_6d4iq")
+
+[node name="ControlsOverlay" parent="." instance=ExtResource("35_ctrls")]
 
 [editable path="PuertasCerradas/PuertaCerrada"]

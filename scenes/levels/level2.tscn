@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://bpobp4q0r8uwv" path="res://scenes/Collectibles/memory_item.tscn" id="10_bxuut"]
 [ext_resource type="Resource" uid="uid://cs5yevhncg5ah" path="res://dialogues/level1/conseguido_memory.dialogue" id="11_g04qb"]
 [ext_resource type="PackedScene" uid="uid://begmy88w5vc3v" path="res://scenes/victory_zone.tscn" id="12_ida7w"]
+[ext_resource type="PackedScene" path="res://scenes/ui/controls_overlay.tscn" id="13_ctrls"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7nr6d"]
 size = Vector2(2789.5, 39)
@@ -75,6 +76,8 @@ balloon_scene = ExtResource("6_sqrei")
 
 [node name="Victoryzone" parent="." unique_id=1134312133 instance=ExtResource("12_ida7w")]
 position = Vector2(6814, 734)
+
+[node name="ControlsOverlay" parent="." instance=ExtResource("13_ctrls")]
 
 [editable path="Killzone"]
 [editable path="MemoryItem"]
